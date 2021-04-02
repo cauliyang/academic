@@ -12,7 +12,7 @@ projects: []
 date: "2020-12-13T00:00:00Z"
 
 # Date updated
-lastmod: "2020-12-13T00:00:00Z"
+lastmod: "2020-12-14T00:00:00Z"
 
 # Is this an unpublished draft?
 draft: false
@@ -30,7 +30,6 @@ image:
 
 authors:
 - admin
-- 吳恩達
 
 tags:
 - Academic

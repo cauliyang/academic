@@ -1,26 +1,26 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Yangyang Li
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Ph.D. of University of Minnesota
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: University of Minnesota
+  url: https://www.umn.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include deep learning, machine learning and bioinformatics.
 
 # Interests to show in About widget
 interests:
 - Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Deep Learning 
+- Computational Biology
 
 # Education to show in About widget
 education:
@@ -51,7 +51,7 @@ social:
   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/cauliyang
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/
@@ -64,7 +64,7 @@ social:
 #   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "li002252@umn.edu"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false

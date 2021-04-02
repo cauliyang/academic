@@ -5,9 +5,9 @@
 
 # Appearance
 
-theme: minimal
+theme: Forest
 day_night: true
-font: ''
+font:
 font_size: L
 
 # SEO
@@ -20,8 +20,8 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
-phone: 888 888 88 88
+email: li002252@umn.edu
+phone:
 address:
   street: 450 Serra Mall
   city: Stanford
@@ -77,8 +77,12 @@ address_format: en-us
 highlight: true
 highlight_languages:
   - r
-math: false
-diagram: false
+  - python
+  - c++
+  - java
+  - go
+math: true
+diagram: true
 privacy_pack: false
 edit_page:
   repo_url: ''
@@ -100,11 +104,11 @@ section_pager: false
 docs_section_pager: true
 sharing: true
 copyright_license:
-  enable: false
+  enable: true
   allow_derivatives: false
   share_alike: true
   allow_commercial: false
-  notice: 'This work is licensed under {license}'
+  notice: 'This website is licensed under CC BY-NC-ND 4.0'
 abstract_length: 135
 plugins_js: []
 avatar:
