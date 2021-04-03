@@ -1,6 +1,6 @@
 # IDEs
 .idea/
-
+.DS*
 # Hugo
 /resources/
 public/

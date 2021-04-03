@@ -28,7 +28,7 @@ feature:
 - icon: cpp
   icon_pack: "custom"
   name: "C++"
-  description: "60%"
+  description: "50%"
 - description: 90%
   icon: overleaf
   icon_pack: ai
@@ -38,8 +38,12 @@ feature:
 # Uncomment to use emoji icons.
 - icon: ":smile:"
   icon_pack: "emoji"
-  name: "Emojiness"
+  name: Optimism
   description: "100%"  
+- description: 80%
+  icon: kaggle
+  icon_pack: fab
+  name: Kaggle
 
 # Uncomment to use custom SVG icons.
 # Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
