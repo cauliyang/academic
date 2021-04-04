@@ -11,7 +11,7 @@ date: 2021-04-03T11:15:00+08:00
 lastmod: 2021-04-03T11:15:00+08:00
 featured: false
 draft: false
-type: book
+# type: book
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

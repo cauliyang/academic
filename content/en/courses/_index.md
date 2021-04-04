@@ -7,4 +7,4 @@ header:
   image: ""
 ---
 
-I have finished the following courses:
+**Sharing** the excellent courses I have finished:
