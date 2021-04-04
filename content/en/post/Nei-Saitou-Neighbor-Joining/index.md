@@ -5,11 +5,11 @@ title: "Nei Saitou Neighbor Joining"
 subtitle: "Code for implementing NJ Algorithm"
 summary: "one of my homework that requires me to implement Nei-Saitou Neighbor Joining algorithm to construct phylogenetic tree, as well as evaluating the bootstrap cconfidence"
 authors: ['admin']
-tags: ['Algorithm']
-categories: []
+tags: ['Bioinformatics']
+categories: ['Algorithm ']
 date: 2021-04-03T11:15:00+08:00
 lastmod: 2021-04-03T11:15:00+08:00
-featured: false
+featured: true
 draft: false
 # type: book
 
@@ -17,10 +17,12 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  focal_point: "Smart"
+  placement: 0
+  preview_only: true
 
+# url_code: 'https://unsplash.com/photos/CpkOjOcXdUY'
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
@@ -31,7 +33,7 @@ projects: []
 
 ## Background
 
-Before diving into code, the description of NJ algorithm can be found in ![This Link](1605172209524.png), where first column indicates parent node, and second column is its children node, the last column is the value of edge. 
+Before diving into code, the description of NJ algorithm can be found in ![This Link](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1605172209524.png), where first column indicates parent node, and second column is its children node, the last column is the value of edge. 
 
 ## Neighbor Joining Algorithm 
 
