@@ -5,11 +5,14 @@ weight: 10
 title: Personal Academic Site
 hero_media: hero-academic.png
 cta:
-  label: '**Get Started**'
-  url: https://github.com/cauliyang
-cta_alt:
-  label: Ask a question
+  label: '**Ask a question**' 
   url: mailto:li002252@umn.edu
+#cta:
+#  label: '**Get Started**'
+#  url: https://github.com/cauliyang
+cta_alt:
+  label: Go to Github
+  url: https://github.com/cauliyang
 design:
   background:
     gradient_end: '#0099CC'

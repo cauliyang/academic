@@ -7,26 +7,26 @@
 
 theme: Forest
 day_night: true
-font:
+font: native
 font_size: L
 
 # SEO
 
 site_type: Person
 local_business_type: ''
-org_name: 'University of Minnesota'
-description: 'Deep Learning and Bioinformatics'
-twitter: ''
+org_name: 'Yangyang Li; Ph.D; University of Minnesota'
+description: 'My personal academic blog about Deep Learning and Bioinformatics'
+twitter: 'yangyangliz5'
 
 # Contact (edit or remove options as required)
 
 email: li002252@umn.edu
-phone:
+phone: 507-355-5260
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
+  street: 801 16th Avenue NE
+  city: Austin
+  region: MN
+  postcode: '55912'
   country: United States
   country_code: US
 coordinates:
@@ -38,10 +38,10 @@ office_hours:
   - 'Wednesday 09:00 to 10:00'
 appointment_url: 'https://calendly.com'
 contact_links:
-  - icon: twitter
-    icon_pack: fab
-    name: DM Me
-    link: 'https://twitter.com/Twitter'
+#  - icon: twitter
+#    icon_pack: fab
+#    name: DM Me
+#    link: 'https://twitter.com/Twitter'
   - icon: skype
     icon_pack: fab
     name: Skype Me
@@ -59,7 +59,7 @@ contact_links:
 
 main_menu:
   enable: true
-  align: l
+  align: r
   show_logo: true
   show_language: false
   show_day_night: true
@@ -125,7 +125,7 @@ breadcrumb:
   page_types:
     book: true
 comments:
-  provider: ''
+  provider: 'utterances'
   commentable:
     post: true
     book: true
@@ -149,7 +149,7 @@ map:
   api_key: ''
   zoom: 15
 marketing:
-  google_analytics: ''
+  google_analytics: 'UA-193681907-1'
   google_tag_manager: ''
   google_site_verification: ''
   baidu_site_verification: ''
