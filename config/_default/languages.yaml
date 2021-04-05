@@ -12,9 +12,9 @@ en:
 zh:
   languageCode: zh-Hans
   contentDir: content/zh
-  title: 李阳
+  title: 我的学术生涯
   params:
-    description: Site description in Chinese...
+    description: Site description in Chineise...
   menu:
     main:
       - name: 主页

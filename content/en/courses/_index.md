@@ -3,9 +3,10 @@ title: Courses
 type: page
 
 header:
-  caption: ''
-  image:
+  caption: 'test'
+  image: ''
   focal_point: Smart
+  placement: 0
 ---
 
-**Sharing** the excellent courses I have finished:
+**Sharing** the excellent online courses I have finished:

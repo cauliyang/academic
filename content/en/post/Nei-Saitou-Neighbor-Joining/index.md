@@ -30,12 +30,12 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-
-## Background
+{{< toc  >}}
+## 1. Background
 
 Before diving into code, the description of NJ algorithm can be found in ![This Link](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1605172209524.png), where first column indicates parent node, and second column is its children node, the last column is the value of edge. 
 
-## Neighbor Joining Algorithm 
+## 2. Neighbor Joining Algorithm 
 
 The Neighbor-joining Algorithm Given a distance matrix d compute an unrooted tree topology complete with edge lengths that tries to preserve the additive property: $d_ {i,m} + d_{j,m} − d_{i,j} = 2d_{k,m}$ where $k$ is the ﬁrst node on both routes from $i$ and $j$ to $m$.
 
@@ -62,8 +62,7 @@ $$edge_{j,k} = d_{i,j} $$
 **Implementation Notes Consider this part of the computation:**
 $$D_{i,j} = d_{i,j} − (r_i + r_j ) \ where \ r_i =  \frac{1}{|L|-2} \sum_{z \in L}d_{i,z}$$
 The values of r_z can be computed once each time we want to compute matrix $D$. This saves a vast amount of time. Furthermore, since $D_{i,j}$ is only used to ﬁnd the argmin of $D_{i,j}$ we actually don’t have to save array $D$; we only need to ﬁnd the argmin of it. So ﬁrst compute all the r and then combine the argmin step with the computation of $D_{i,j}$
-
-## Implementation
+## 3. Implementation
 
 I write code contained comments, and it is about 1000 lines that consumes me two whole days. Now let me show my code with rich comments. If you have any questions or recommendation, I am very glad to communicate with you! Please feel free to reach me. 
 

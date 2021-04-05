@@ -1,6 +1,6 @@
 ---
 title: Example Talk
-
+draft: true
 event: Wowchemy Conference
 event_url: https://example.org
 
@@ -44,6 +44,7 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 
+    
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
@@ -58,6 +59,11 @@ slides: example
 #   Otherwise, set `projects = []`.
 projects:
 - example
+
+gallery_item:
+- album: 'test'
+  image: featured.jpg
+  caption: Write your image caption here
 ---
 
 {{% callout note %}}

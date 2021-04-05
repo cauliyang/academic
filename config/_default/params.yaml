@@ -78,7 +78,7 @@ highlight: true
 highlight_languages:
   - r
   - python
-  - c++
+  - cpp
   - java
   - go
 math: true

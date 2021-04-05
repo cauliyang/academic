@@ -18,8 +18,8 @@ bio: My research interests include deep learning, machine learning and bioinform
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Deep Learning 
+- Deep Learning
+- Data Mining
 - Computational Biology
 
 # Education to show in About widget
