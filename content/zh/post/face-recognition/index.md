@@ -18,6 +18,7 @@ draft: false
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
   focal_point: ""
+  placement: 0
   preview_only: true
 
 # links:
@@ -40,6 +41,9 @@ url_video: ''
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+{{< toc  >}}
+
 <style>
 img{
     width: 70%;
