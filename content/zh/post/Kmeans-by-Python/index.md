@@ -9,7 +9,7 @@ tags: ['Python']
 categories: ['Algorithm']
 date: 2021-04-05T12:54:10+08:00
 lastmod: 2021-04-05T12:54:10+08:00
-featured: false
+featured: true
 draft: false
 
 # Featured image
