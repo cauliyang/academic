@@ -28,7 +28,7 @@ feature:
 - icon: cpp
   icon_pack: "custom"
   name: "C++"
-  description: "50%"
+  description: "40%"
 - description: 90%
   icon: overleaf
   icon_pack: ai
@@ -40,7 +40,7 @@ feature:
   icon_pack: "emoji"
   name: Optimism
   description: "100%"  
-- description: 80%
+- description: 60%
   icon: kaggle
   icon_pack: fab
   name: Kaggle

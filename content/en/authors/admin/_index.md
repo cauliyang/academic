@@ -70,6 +70,6 @@ email: "li002252@umn.edu"
 highlight_name: false
 ---
 
-I am a Ph.D student of BICB Program in University of Minnesota. Now I work in [Dr.Yang's lab](https://ylab-hi.github.io/) to pay high attention on machine learning, deep learning, and cancer genomics. I am very willing to share my thoughts and knowledges with others. Welcome to reach me! 
+I am a Ph.D student of BICB Program in University of Minnesota. Now I work in [Dr.Yang's lab](https://ylab-hi.github.io/) to pay high attention on machine learning, deep learning, and cancer genomics. I am very willing to share my thoughts and knowledge with others. Welcome to reach me! 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

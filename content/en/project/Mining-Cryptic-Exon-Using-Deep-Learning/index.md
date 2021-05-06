@@ -16,7 +16,7 @@ external_link: ""
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)"
-  focal_point: ""
+  focal_point: "Smart"
   preview_only: false
   placement: 1
 
