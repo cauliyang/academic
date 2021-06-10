@@ -52,9 +52,6 @@ All configuration or dot files are store in the Github, you can click Icon above
 
 <!-- /code_chunk_output -->
 
-
-
-
 ## 1. Applications and Tools
 
 The first part will show the applications and tools I used for production, and every app or tool has a simple description. If you have an interest in a certain app, you can click the link I leave to get more information.  
@@ -94,25 +91,13 @@ In addition, I recommend that you use [mamba](https://mamba.readthedocs.io/en/la
 
 * [tldr](https://tldr.sh/)
 
-The tldr pages are a community effort to simplify the beloved man pages with practical examples. You can get uasage clearly and quickly by using `tldr` compared to `man`. In mac, you can install that by `brew install tldr`.  
+The TLDR pages are a community effort to simplify the beloved man pages with practical examples. You can get uasage clearly and quickly by using `tldr` compared to `man`. In mac, you can install that by `brew install tldr`.  
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190712.png)
 
 * [tree](https://www.geeksforgeeks.org/tree-command-unixlinux/)
 
 **tree** is a recursive directory listing program that produces a depth-indented listing of files. With no arguments, tree lists the files in the current directory. When directory arguments are given, tree lists all the files or directories found in the given directories each in turn. Upon completion of listing all files and directories found, tree returns the total number of files. You can install that by `brew install tree`. 
-
-![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png) 
-
-* [tldr](https://tldr.sh/)
-
-The TLDR pages are a community effort to simplify the beloved man pages with practical examples. You can get usage clearly and quickly by using `tldr` compared to `man`. In mac, you can install that by `brew install tldr`.  
-
-![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190712.png)
-
-* [tree](https://www.geeksforgeeks.org/tree-command-unixlinux/)
-
-**tree** is a recursive directory listing program that produces a depth-indented listing of files. With no arguments, the tree lists the files in the current directory. When directory arguments are given, the tree lists all the files or directories found in the given directories each in turn. Upon completion of listing all files and directories found, the tree returns the total number of files. You can install that by `brew install tree`. 
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png) 
 

@@ -9,7 +9,7 @@ tags: ['Bioinformatics']
 categories: ['Algorithm ']
 date: 2021-04-03T11:15:00+08:00
 lastmod: 2021-04-03T11:15:00+08:00
-featured: true
+featured: false
 draft: false
 # type: book
 
