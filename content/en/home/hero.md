@@ -15,8 +15,8 @@ cta_alt:
   url: https://github.com/cauliyang
 design:
   background:
-    gradient_end: '#0099CC'
-    gradient_start: '#CCFF66'
+    gradient_end: '#fff5b7'
+    gradient_start: '#00ead3'
     text_color_light: true
 advanced:
   css_class: fullscreen

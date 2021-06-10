@@ -28,6 +28,19 @@ image:
 projects: []
 ---
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [1. Introduction](#1-introduction)
+  - [1.1 What's PCA?](#11-whats-pca)
+  - [1.2 Algorithm](#12-algorithm)
+- [2. PCA from scratch](#2-pca-from-scratch)
+- [3. PCA by  scikit-learn](#3-pca-by--scikit-learn)
+- [3. Summary](#3-summary)
+
+<!-- /code_chunk_output -->
+
 ## 1. Introduction
 
 ### 1.1 What's PCA? 
@@ -38,19 +51,19 @@ What is reducing dimension? I will show you an example as follows:
 
 First, suppose you have a five-dimensional data set :  
 
-Id|1-d|2-d|3-d|4-d|5-d|
--|-|-|-|-|-|-
-data-1|1|2|3|4|5|
-data-2|6|7|8|9|10|
-..|..|..|..|..|   
+| Id     | 1-d | 2-d | 3-d | 4-d | 5-d |
+| ------ | --- | --- | --- | --- | --- |  |
+| data-1 | 1   | 2   | 3   | 4   | 5   |
+| data-2 | 6   | 7   | 8   | 9   | 10  |
+| ..     | ..  | ..  | ..  | ..  |
 
 Then, you could pick up PC1 and PC2 after PCA to reduce dimension for plotting: 
 
-Id|PC1|PC2|
--|-|-
-data-1|0.3|0.6|
-data-2|0.1|1.2|
-..|..|.. 
+| Id     | PC1 | PC2 |
+| ------ | --- | --- |
+| data-1 | 0.3 | 0.6 |
+| data-2 | 0.1 | 1.2 |
+| ..     | ..  | ..  |
 
 **PC1** and **PC2** are the result obtained through data is projection on the unit vectors, which enable result to have the most biggest variance(means its distribution is wide) and to be irrelevant(covariance = 0).
 

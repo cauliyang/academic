@@ -5,14 +5,14 @@
 
 # Appearance
 
-theme: Forest
+theme: Minimal 
 day_night: true
 font: native
 font_size: L
 
 # SEO
 
-site_type: Person
+site_type: Academic
 local_business_type: ''
 org_name: 'Yangyang Li; Ph.D; University of Minnesota'
 description: 'My personal academic blog about Deep Learning and Bioinformatics'
