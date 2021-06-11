@@ -5,7 +5,7 @@ weight: 10
 title: Personal Academic Site
 hero_media: hero-academic.png
 cta:
-  label: '**Ask a question**' 
+  label: '**有问题**' 
   url: mailto:li002252@umn.edu
 #cta:
 #  label: '**Get Started**'
@@ -22,6 +22,6 @@ advanced:
   css_class: fullscreen
 ---
 
-***My personal site will record my academic life including courses, publications, code as well as projects***
+***我的个人网站将记录我的学术生涯包括课程，出版文章，代码和项目***
 
-***I am open-minded man who prefer the spirit of open source. If you have any questions, please do not hesitate to reach me!***
+***我是一个喜欢开源精神的人，如果你有相关问题，请不要犹豫的联系我***
