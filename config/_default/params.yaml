@@ -7,8 +7,8 @@
 
 theme: Minimal 
 day_night: true
-font: native
-font_size: L
+font: Arial
+font_size: m
 
 # SEO
 
@@ -21,7 +21,7 @@ twitter: 'yangyangliz5'
 # Contact (edit or remove options as required)
 
 email: li002252@umn.edu
-phone: 507-355-5260
+phone: 507-606-8822
 address:
   street: 801 16th Avenue NE
   city: Austin
@@ -32,28 +32,24 @@ address:
 coordinates:
   latitude: '37.4275'
   longitude: '-122.1697'
-directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-office_hours:
-  - 'Monday 10:00 to 13:00'
-  - 'Wednesday 09:00 to 10:00'
-appointment_url: 'https://calendly.com'
+# appointment_url: 'https://calendly.com'
 contact_links:
 #  - icon: twitter
 #    icon_pack: fab
 #    name: DM Me
 #    link: 'https://twitter.com/Twitter'
-  - icon: skype
-    icon_pack: fab
-    name: Skype Me
-    link: 'skype:echo123?call'
-  - icon: keybase
-    icon_pack: fab
-    name: Chat on Keybase
-    link: 'https://keybase.io/'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
+  # - icon: skype
+  #   icon_pack: fab
+  #   name: Skype Me
+  #   link: 'skype:echo123?call'
+  # - icon: keybase
+  #   icon_pack: fab
+  #   name: Chat on Keybase
+  #   link: 'https://keybase.io/'
+  # - icon: comments
+  #   icon_pack: fas
+  #   name: Discuss on Forum
+  #   link: 'https://discourse.gohugo.io'
 
 # Site header
 
@@ -61,7 +57,7 @@ main_menu:
   enable: true
   align: r
   show_logo: true
-  show_language: false
+  show_language: true
   show_day_night: true
   show_search: true
   highlight_active_link: true
@@ -83,14 +79,14 @@ highlight_languages:
   - go
 math: true
 diagram: true
-privacy_pack: false
+privacy_pack: true
 edit_page:
-  repo_url: ''
-  content_dir: ''
-  repo_branch: main
+  repo_url: 'https://github.com/cauliyang/academic'
+  content_dir: 'content/en'
+  repo_branch: master
   editable:
     page: false
-    post: false
+    post: true
     book: false
 show_related:
   book: true

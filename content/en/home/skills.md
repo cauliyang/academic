@@ -21,7 +21,7 @@ feature:
   icon: python
   icon_pack: fab
   name: Python 
-- description: 70%
+- description: 60%
   icon: r-project
   icon_pack: fab
   name: R

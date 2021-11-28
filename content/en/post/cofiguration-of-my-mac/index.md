@@ -19,9 +19,11 @@ image:
   placement: 0
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
   focal_point: "Center"
-  preview_only: false
+  preview_only: true
 
-
+# header:
+#   image: "featured.jpeg"
+#   caption: "test"
 #   Uncomment and edit lines below to show custom links.
 # links:
 #  - name: dot-files
@@ -35,30 +37,19 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-
 ---
-<!-- {{% callout note %}}
-All configuration or dot files are store in the Github, you can click Icon above to check that.
-{{% /callout %}} -->
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [1.  System Environment  Tools](#1--system-environment--tools)
-- [2. Editor](#2-editor)
-- [3. Application](#3-application)
-
-<!-- /code_chunk_output -->
+{{< toc >}}
+# 1. Introduction
 My new M1  Macbook Pro is a powerful machine, and I am very happy to use it. Also, many powerful tools make my life easier.
 Here is a list of tools I use:
 
-{{< figure src="iShot2021-11-27 22.26.58.png" caption="Page 1" numbered="true" >}}
-{{< figure src= "iShot2021-11-27 22.27.07.png" caption="Page 2" numbered="true" >}}
-{{< figure src="iShot2021-11-27 22.27.14.png" caption="Page 3" numbered="true" >}}
 
+{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.26.58.png" caption="Page 1" numbered="true"  width="500">}}
+{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27 22.27.07.png" caption="Page 2" numbered="true" width="500" >}}
+{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27 22.27.14.png" caption="Page 3" numbered="true" width="500" >}}
 
-## 1.  System Environment  Tools
+# 2.  System Environment  Tools
 
 The first part will show the applications and tools I used for production, and every app or tool has a simple description. If you have an interest in a certain app, you can click the link I leave to get more information.  
 
@@ -106,12 +97,12 @@ The TLDR pages are a community effort to simplify the beloved man pages with pra
 
 ![tree](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png)
 
-## 2. Editor
+# 3. Editor
 
-I will list the editors I used in different situations. If you have any other recommendations, please reach to me!  
+I will list the editors I used in different situations. If you have any other recommendations, please reach to me!
 
 - [Vscode](https://code.visualstudio.com/)  
-  
+
 *Vscode* is an open-source editor, and I mainly use *Vscode* to write *Markdown*, *Latex*, and *RST*. Some simple modifications of the project for *Python* and *C/C++* will happen in *Vscode*. There are lots of extensions to help you achieve your goals. I usually use it to write my blog.
 
 - [pycharm](https://www.jetbrains.com/pycharm/)  
@@ -122,7 +113,9 @@ I will list the editors I used in different situations. If you have any other re
 
 *CLion* is my *C/C++* IDE, which includes many features like code generation, code quality assurance. I use *EDU* email to apply for the professional version.
 
-## 3. Application  
+------
+
+# 4. Application
 
 This part list variety of applications used for different goals. Every application has a one word description
 
@@ -146,8 +139,8 @@ This part list variety of applications used for different goals. Every applicati
 - [Transmit][] Upload, download and manage files on servers with beautiful and powerful UI
 - [Time Sink][] Time Sink a good tool to record your using time to track your behaviour
 - [SoundSource][] SoundSource can help you get truly powerful control over all the audio
-- [Reeder 5][] A RSS reader and keep control of your reading 
-- [Path Finder][] Better file manager for Macos 
+- [Reeder 5][] A RSS reader and keep control of your reading
+- [Path Finder][] Better file manager for Macos
 - [Notion][] A excellent notion tool
 - [One Switch][] One Switch can help you finish some progress like keep awake and hide icons on one button
 - [iShot][] A great tool to  take screenshots

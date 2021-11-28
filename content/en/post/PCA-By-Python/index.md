@@ -27,23 +27,11 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+{{<toc>}}
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+# 1.  Introduction
 
-<!-- code_chunk_output -->
-
-- [1. Introduction](#1-introduction)
-  - [1.1 What's PCA?](#11-whats-pca)
-  - [1.2 Algorithm](#12-algorithm)
-- [2. PCA from scratch](#2-pca-from-scratch)
-- [3. PCA by  scikit-learn](#3-pca-by--scikit-learn)
-- [3. Summary](#3-summary)
-
-<!-- /code_chunk_output -->
-
-## 1. Introduction
-
-### 1.1 What's PCA? 
+## 1.1 What's PCA?
 
 When it comes to methods of reducing dimension, PCA that is an unsupervised linear transformation technique, must be not ignored. Moreover, if you want to know the subtle relationships among data set and reduce the computational complexity in downstream analysis, the PCA may be your best choice! Meanwhile, if you would like to present your data in a 2-dimension or 3-dimension coordinate system, and PCA would sweep your problems!  
 
@@ -52,12 +40,12 @@ What is reducing dimension? I will show you an example as follows:
 First, suppose you have a five-dimensional data set :  
 
 | Id     | 1-d | 2-d | 3-d | 4-d | 5-d |
-| ------ | --- | --- | --- | --- | --- |  |
+| ------ | --- | --- | --- | --- | --- |  
 | data-1 | 1   | 2   | 3   | 4   | 5   |
 | data-2 | 6   | 7   | 8   | 9   | 10  |
 | ..     | ..  | ..  | ..  | ..  |
 
-Then, you could pick up PC1 and PC2 after PCA to reduce dimension for plotting: 
+Then, you could pick up PC1 and PC2 after PCA to reduce dimension for plotting:
 
 | Id     | PC1 | PC2 |
 | ------ | --- | --- |
@@ -67,21 +55,22 @@ Then, you could pick up PC1 and PC2 after PCA to reduce dimension for plotting:
 
 **PC1** and **PC2** are the result obtained through data is projection on the unit vectors, which enable result to have the most biggest variance(means its distribution is wide) and to be irrelevant(covariance = 0).
 
-### 1.2 Algorithm
+## 1.2 Algorithm
 
 1. Normalize $d$ dimension raw data
-2. Creat the covariance matrix 
+2. Creat the covariance matrix
 3. Calculate the eigenvalues of the covariance matrix and the corresponding eigenvectors
 5. The eigenvectors are sorted in the matrix according to the corresponding feature value, and the first k rows are formed into a matrix $W$. ($k<<d$)
 6. $Y = xW$ is the result after reducing dimension to k dimension  
 
 **Note:** There are two prerequisites for conducting PCA
+
 - Raw data has no NA
 - The raw data should be normalized
 
-## 2. PCA from scratch 
+# 2. PCA from scratch
 
-- Importing necessary modules 
+- Importing necessary modules
 
 ```python
 import pandas as pd 
@@ -91,7 +80,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 ```
 
-- Creating raw data 
+- Creating raw data
 
 ```python
 # get  data set 
@@ -105,7 +94,7 @@ df_wine.head()
 
 ![Test](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572760322010.png)
 
-- Creating train and test data set 
+- Creating train and test data set
   
 ```python
 # creat train and test data set 
@@ -118,7 +107,7 @@ x_train,x_test,y_train,y_test = \
                     random_state = 0 )
 ```
 
-- Standardizing the features 
+- Standardizing the features
 
 ```python
 # create standard instance
@@ -132,16 +121,16 @@ x_test_std = sc.fit_transform(x_test)
 
 the calculation of the covariance matrix :
 $$\sigma_{jk} =  \frac{1}{n} \sum^{n}_{i=1}\bigg(x_{j}^{(i)} - \mu_j\bigg)\bigg(x_{k}^{(i)} - \mu_k\bigg)$$
-Then, using `numpy.cov` and `numpy.linalg.eig` to get the covariance matrix and eigenvectors respectively 
+Then, using `numpy.cov` and `numpy.linalg.eig` to get the covariance matrix and eigenvectors respectively
 
-```python 
+```python
 # calculate the covariance matrix 
 cov_mat = np.cov(x_train_std.T)
 # Getting eigenvectors and eigenvalues
 eigen_vals, eigen_vecs = np.linalg.eig(cov_mat)
 ```
 
-**NOTE:** there are 13 eigenvectors totally, the number of eigenvalues might be not as same as the number of features sometimes. 
+**NOTE:** there are 13 eigenvectors totally, the number of eigenvalues might be not as same as the number of features sometimes.
 
 Firstly, plotting the Variance interpretation ratio, which is obtained through eigenvalue $\lambda_j$ divided by the sum of all the eigenvalues:
 $$ \frac{\lambda_j}{\sum^d_{j=1}\lambda_j}$$
@@ -156,7 +145,7 @@ cum_var_exp = np.cumsum(var_exp)
 
 Besides, plotting the result to get in-depth understanding:
 
-```python 
+```python
 plt.figure() # creat plot
 # creat bar plot
 plt.bar(
@@ -178,11 +167,13 @@ plt.legend(loc='best')
 # save picture
 plt.savefig('pca_index.png', format='png', bbox_inches='tight', dpi=300)
 ```
+
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572764173795.png)
 We can conclude that **PC1** only takes account for about 40%. Furthermore, the sum of **PC1** and **PC2** have 60% variance.
-- Selecting the first **k** values to form matrix $W$ 
 
-```python 
+- Selecting the first **k** values to form matrix $W$
+
+```python
 # integrate eigenvalues  and eigenvectors 
 eigen_paris = [(np.abs(eigen_vals[i]), eigen_vecs[:, i])
                for i in range(len(eigen_vals))]
@@ -199,15 +190,16 @@ w
 
 - Transforming raw data
 
-```python 
+```python
 # reduce dimension 
 x_train_pca = x_train_std.dot(w)
 # check resulted data 
 x_train_pca.shape
 ```
+
 `(124, 2)`
 
-Then plotting the result and putting the label in terms of original info, but keeping in mind PCA is unsupervised learning skill without labels 
+Then plotting the result and putting the label in terms of original info, but keeping in mind PCA is unsupervised learning skill without labels
 
 ```python
 # init colors and markers 
@@ -229,7 +221,7 @@ plt.savefig('distribution.png', format='png', bbox_inches='tight', dpi=300)
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572766761786.png)
 
-## 3. PCA by  scikit-learn 
+# 3. PCA by  scikit-learn
 
 we can  conduct PCA easily by **sklearn**
 
@@ -276,9 +268,9 @@ def plot_dicision_regions(X, y, classifier, resolution=0.02):
         )
 ```
 
-- PCA by sklearn 
+- PCA by sklearn
 
-```python 
+```python
 # creat pca instance 
 pca = PCA(n_components = 2 )
 # creat classifier instance 
@@ -296,15 +288,16 @@ plt.ylabel('PC 2')
 plt.legend(loc='lower left')
 plt.show()
 ```
+
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572767868782.png)
 We can see that the classifier's accurate is excellent according to actual labels
 
 **TIPS**:
 
-You can set `n_components = None`, and the result would retain all principle components. Moreover, you could call `explained_variance_ration_` to use variance explanation ratio. 
+You can set `n_components = None`, and the result would retain all principle components. Moreover, you could call `explained_variance_ration_` to use variance explanation ratio.
 
+# 3. Summary
 
-## 3. Summary 
 All the above are the main content, welcome everybody communicates with me! 🤠
 
 **Reference book :** [Python machine learning](https://www.amazon.com/dp/B0742K7HYF/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=27TEKOK8R4TOR&keywords=python+machine+learning+sebastian+raschka&qid=1572770147&s=digital-text&sprefix=python+machine++learning+seb%2Cdigital-text%2C389&sr=1-1)

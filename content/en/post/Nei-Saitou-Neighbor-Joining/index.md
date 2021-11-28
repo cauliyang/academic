@@ -30,14 +30,14 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-{{< toc  >}}
-## 1. Background
+{{<toc>}}
+# 1. Background
 
-Before diving into code, the description of NJ algorithm can be found in ![This Link](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1605172209524.png), where first column indicates parent node, and second column is its children node, the last column is the value of edge. 
+Before diving into code, the description of NJ algorithm can be found in ![This Link](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1605172209524.png), where first column indicates parent node, and second column is its children node, the last column is the value of edge.
 
-## 2. Neighbor Joining Algorithm 
+# 2. Neighbor Joining Algorithm
 
-The Neighbor-joining Algorithm Given a distance matrix d compute an unrooted tree topology complete with edge lengths that tries to preserve the additive property: $d_ {i,m} + d_{j,m} − d_{i,j} = 2d_{k,m}$ where $k$ is the ﬁrst node on both routes from $i$ and $j$ to $m$.
+The Neighbor-joining Algorithm Given a distance matrix d compute an unrooted tree topology complete with edge lengths that tries to preserve the additive property: $d_{i,m} + d_{j,m} − d_{i,j} = 2d_{k,m}$ where $k$ is the ﬁrst node on both routes from $i$ and $j$ to $m$.
 
 1. Let the set of clusters be called $L$ and initially $i → C_i; ∀i$ that is $| C_i | = 1$ and $L = C_1 , C_2 , . . . C_N$.
 2. $d_{i,j}$ is the distance from the initial distance matrix.
@@ -54,19 +54,20 @@ This uses the additivity of the distances to compute the distance to the new clu
 $$edge_{i,k} = (d_{i,j} + r_i − r_j)$$
 $$edge_{j,k} = (d_{i,j} + r_j − r_i)$$
 9. Deﬁne height $h_k = d_{i,j} /2$ where $h_k$ is the height of node that is the ancestor to all in $C_k$ . When drawing the tree $h_k$ is the height above the baseline (where all the leaves are).
-10.  $L ← L ∪ C_k$
+10. $L ← L ∪ C_k$
 11. While there is more than two clusters left go to step 3
 12. Finally, join the remaining two clusters with:
 $$edge_{j,k} = d_{i,j} $$  
-    
+
 **Implementation Notes Consider this part of the computation:**
 $$D_{i,j} = d_{i,j} − (r_i + r_j ) \ where \ r_i =  \frac{1}{|L|-2} \sum_{z \in L}d_{i,z}$$
 The values of r_z can be computed once each time we want to compute matrix $D$. This saves a vast amount of time. Furthermore, since $D_{i,j}$ is only used to ﬁnd the argmin of $D_{i,j}$ we actually don’t have to save array $D$; we only need to ﬁnd the argmin of it. So ﬁrst compute all the r and then combine the argmin step with the computation of $D_{i,j}$
-## 3. Implementation
 
-I write code contained comments, and it is about 1000 lines that consumes me two whole days. Now let me show my code with rich comments. If you have any questions or recommendation, I am very glad to communicate with you! Please feel free to reach me. 
+# 3. Implementation
 
-```python 
+I write code contained comments, and it is about 1000 lines that consumes me two whole days. Now let me show my code with rich comments. If you have any questions or recommendation, I am very glad to communicate with you! Please feel free to reach me.
+
+```python
 # -*- coding: UTF-8 -*-
 # Time 20201109
 '''
@@ -1050,6 +1051,5 @@ if __name__ == "__main__":
     main()
 
 ```
-
 
 **Thanks for your reading! Hopefully helpful!**
