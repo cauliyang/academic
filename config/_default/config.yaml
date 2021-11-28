@@ -3,9 +3,9 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: My Academic # Website name
+title: My Ph.D Life # Website name
 baseurl: 'https://cauliyang.github.io/' # Website URL
-copyright: '© 2020 Yangyang Li. All Rights Reserved.' # Footer text, e.g. '© {year} Me'
+copyright: '© 2021 Yangyang Li. All Rights Reserved.' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
@@ -29,7 +29,7 @@ module:
 ## ADVANCED
 ############################
 
-enableGitInfo: false
+enableGitInfo: true 
 summaryLength: 30
 paginate: 10
 enableEmoji: true
