@@ -40,16 +40,17 @@ projects: []
 ---
 
 {{< toc >}}
-# 1. Introduction
+
+## 1. Introduction
+
 My new M1  Macbook Pro is a powerful machine, and I am very happy to use it. Also, many powerful tools make my life easier.
 Here is a list of tools I use:
-
 
 {{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.26.58.png" caption="Page 1" numbered="true"  width="500">}}
 {{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27 22.27.07.png" caption="Page 2" numbered="true" width="500" >}}
 {{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27 22.27.14.png" caption="Page 3" numbered="true" width="500" >}}
 
-# 2.  System Environment  Tools
+## 2.  System Environment  Tools
 
 The first part will show the applications and tools I used for production, and every app or tool has a simple description. If you have an interest in a certain app, you can click the link I leave to get more information.  
 
@@ -97,7 +98,7 @@ The TLDR pages are a community effort to simplify the beloved man pages with pra
 
 ![tree](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png)
 
-# 3. Editor
+## 3. Editor
 
 I will list the editors I used in different situations. If you have any other recommendations, please reach to me!
 
@@ -115,7 +116,7 @@ I will list the editors I used in different situations. If you have any other re
 
 ------
 
-# 4. Application
+## 4. Application
 
 This part list variety of applications used for different goals. Every application has a one word description
 

@@ -59,8 +59,18 @@ The most important part is the first part (Chapter 1 - Chapter 11) which  explai
 
 As for the second part (Chapter 12 - Chapter 14),  you can skip them if you do not have interest on them. Or you can select one or two of them to follow. I mean type every code to see what it returns.  Forget to say you should use [*Ipython*][] to run the code, and *Ipython* is a powerful tool to run code interactively. If you can learn how to install *Ipython* by using [*Google*] and [*Bing*]. What is more,  you need to read the basic part at least twice, and you also should review that usually in order to get more deeper understanding. I am sure that you will own different things every time you read this book.  After you think you have master the basic rules, you should try to write relatively simple script to automate your work in order to use the knoledage you have learned. Maybe you will encounter lots of bugs but do not be afraid  you can fix them. Search engine is your best friend when you want to figure out something.  [*Stackoverflow*][] is best forum to ask questions about programming and get answers. The problems you come with are usually others have encountered before. During the process of wirting and fixing the bugs,  you will dive into the *Python* world and learn how to use it properly.
 
+## 4. Useful Resources
+
+Here are some useful resources to help you get started with *Python* after you have read the book. I assume you have already know the basic rules of *Python* and you are ready to write some code.
+[This website][] will provide you with some problems or topics you can try to fix with your code. Once I use this website and work out some problems. However, I do not fix all the problems.  You can try from the relatively easy problems for example *Python Village*,  then you can try more complex ones like *Bioinformatics Stronghold*. Although *Data structure and algorithm* is extremely important,  I do not recommend you to learn them now. I will explain that later.
+
+{{% callout note %}}
+If you have any questions about what I mean, please feel free to reach me. I am  always happy to help you. Also, I will add content when I  think I have something new to share. :blush:
+{{% /callout %}}
+
 <!-- link -->
 [*Ipython*]: https://ipython.org/
 [*Google*]: https://www.google.com/
 [*Bing*]: https://www.bing.com/
 [*Stackoverflow*]: https://stackoverflow.com/
+[This website]: https://rosalind.info/problems/locations/
