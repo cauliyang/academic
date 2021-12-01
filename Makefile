@@ -4,7 +4,7 @@ publish:
 	git commit -m "add new content"
 	git push 
 	hugo 
-	cd publish
+	cd public
 	git add .
 	git commit -m "add new content"
 	git push 
