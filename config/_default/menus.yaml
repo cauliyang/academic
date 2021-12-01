@@ -19,7 +19,7 @@ main:
   - name: Publications
     url: '#featured'
     weight: 50
-  - name: Courses
+  - name: Learning
     url: courses/
     weight: 60
   - name: Contact
