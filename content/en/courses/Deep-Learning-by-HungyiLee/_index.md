@@ -2,19 +2,16 @@
 title: Deep Learning
 linkTitle: Course Notes
 summary: Courses about deep learning instructed by Hung-Yee Li in NTU.  
-date: '2021-01-24'
+date: '2021-11-24'
 type: book
+include_toc: true
 ---
 
-{{< figure src="featured.png" >}}
-
-{{< toc hide_on="xl" >}}
-
-{{<figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/Screen%20Shot%202021-04-05%20at%205.37.55%20PM.png">}}
+<!-- {{< figure src="featured.png" >}} -->
 
 
  ## Homeworks
 
 {{< list_children >}}
 
-{{< cta cta_text="Read the Note" cta_link="/" cta_new_tab="false" cta_alt_text="Begin the course" cta_alt_link="https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.html" cta_alt_new_tab="true" >}}
+{{< cta cta_text="Read the Note" cta_link="/" cta_new_tab="false" cta_alt_text="Begin the course" cta_alt_link="https://atcold.github.io/NYU-DLSP21/" cta_alt_new_tab="true" >}}

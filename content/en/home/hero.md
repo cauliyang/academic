@@ -16,7 +16,7 @@ design:
     # gradient_start: '#00ead3'
     # text_color_light: true
     image: background.jpg
-    image_darken: 0.3
+    image_darken: 0.9
     #  Options are `cover` (default), `contain`, or `actual` size.
     image_size: cover
     # Options include `left`, `center` (default), or `right`.
@@ -30,6 +30,8 @@ design:
 advanced:
   css_class: fullscreen
 ---
+
+
 
 ***My personal site will record my academic life including courses, publications, code as well as projects***
 
