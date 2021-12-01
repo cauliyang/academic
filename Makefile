@@ -1,11 +1,12 @@
+.ONESHELL:
 
 publish:
 	git add .
 	git commit -m "add new content"
 	git push 
 	hugo 
-	cd public
-	git add .
-	git commit -m "add new content"
-	git push 
-	echo "publish successly!"
+	cd public && git add . && git commit -m "add new content" && git push  && echo "publish successly!"
+
+test:
+	cd public && ls
+
