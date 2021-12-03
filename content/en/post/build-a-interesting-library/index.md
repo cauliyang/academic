@@ -10,7 +10,7 @@ categories: ['Python']
 date: 2021-12-03T00:03:50-06:00
 lastmod: 2021-12-03T00:03:50-06:00
 featured: false
-draft: true
+draft: false
 
 
 # Featured image
@@ -40,12 +40,14 @@ The library is available on [pypi][] so that you can install it with `pip` or `p
 
 ## 3. Usage
 
+{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20211203154400.png" caption="SceenShot" numbered="true"  width="600">}}
+
 ```bash
     pybox -h # show help 
 ```
 
 ```bash
-    pybox driver -h # show help for Google Driver
+    pybox gdriver -h # show help for Google Driver
 ```
 
 ## 4. TODO
