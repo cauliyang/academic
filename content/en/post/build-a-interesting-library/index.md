@@ -36,7 +36,7 @@ Many people have been asking for a toolbox of useful commands for their everyday
 
 ## 2. Installation
 
-The library is available on [pypi][] so that you can install it with `pip` or `pip3` by typing `pip install pybox`. I also have plan to publish this librarcy on [Conda][] so that you can install it with `conda install pybox`. 
+The library is available on [pypi][] so that you can install it with `pip` or `pip3` by typing `pip install pybox`. I also have plan to publish this librarcy on [Conda][] so that you can install it with `conda install pyboxes`. 
 
 ## 3. Usage
 
