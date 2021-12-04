@@ -9,4 +9,4 @@ header:
   placement: 0
 ---
 
-**Sharing** the excellent online courses I have finished:
+*Sharing* the excellent online courses I have finished:

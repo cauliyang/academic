@@ -5,8 +5,8 @@ weight: 10
 title: Personal Academic Site
 # hero_media: hero-academic.png
 cta:
-  label: '**Make Friends**' 
-  url: mailto:li002252@umn.edu
+  label: '**Subscribed**' 
+  url: https://tinyletter.com/yangliz5
 cta_alt:
   label: '*RSS Feed*'
   url: https://yangyangli.top/en/index.xml

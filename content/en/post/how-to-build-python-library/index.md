@@ -18,6 +18,12 @@ image:
   focal_point: "Smart"
   preview_only: false
 
+links:
+ - name: Subcribe
+   url: https://tinyletter.com/yangliz5
+   icon_pack: fas
+   icon: envelope
+
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
