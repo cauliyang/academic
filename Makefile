@@ -10,3 +10,4 @@ add:
 	git add . 
 	git commit -m "change post"
 	git push
+	git status
