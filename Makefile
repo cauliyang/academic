@@ -9,3 +9,4 @@ add:
 	pwd;time
 	git add . 
 	git commit -m "change post"
+	git push
