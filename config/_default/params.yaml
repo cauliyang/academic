@@ -149,6 +149,7 @@ marketing:
   google_tag_manager: ''
   google_site_verification: ''
   baidu_site_verification: ''
+  microsoft_clarity: '9lonep7yby'
   baidu_tongji: ''
 cms:
   branch: master
