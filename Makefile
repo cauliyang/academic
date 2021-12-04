@@ -9,5 +9,6 @@ add:
 	pwd;time
 	git add . 
 	git commit -m "change post"
+	echo "--------"
 	git push
 	git status
