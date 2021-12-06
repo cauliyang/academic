@@ -19,11 +19,10 @@ image:
   preview_only: false
 
 links:
- - name: Subcribe
-   url: https://tinyletter.com/yangliz5
-   icon_pack: fas
-   icon: envelope
-
+ - name: Github
+   url: https://github.com/cauliyang/pybox
+   icon_pack: fab
+   icon: github
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
@@ -35,9 +34,12 @@ projects: []
 
 ## 1. Introduction
 
-I am sure that you must want to create something fantanstic and amazing after you have master Python. But how to do it? Which part of the process is the most important? Here I will show the best way I use to build Python library from scratch. Also, I will share some valuable resources to help you to imporve quality of your project.  You should keep in mind that good tool will make your project more attractive and more attractive to other people, which help me save a lot of time as well.  
+I am sure that you must want to create something fantastic after you have mastered Python. But how to do it? Which part of the process is the most important? Here I will show you the best way I know how to build a Python library from scratch. Also, I will share some valuable resources to help you improve the quality of your project. You should keep in mind that a good tool will make your project more attractive and more attractive to other people, which helps me save a lot of time as well. I am also a new Python developer, so if you have any other great recommendations, please let me know. Follow the questions below to get started.
 
-## 2. How to start 
+## 2. What is the goal of your project?
+
+The first step is to think about why you want to build a Python library. Which aim do you want to achieve? What is the main goal of your project? After you get a mature idea, you are ready to start now. [*GitHub*][] is the first tool you need to get started. *GitHub* is a great tool to share your project with the world and store your code. You can also use it to share your ideas with other people. Learning how to use *GitHub* is important as well.
+
 
 ## 3. How to build
 
@@ -58,7 +60,8 @@ I am sure that you must want to create something fantanstic and amazing after yo
 - [Sphnix Theme][]
 
 ----
-## How to write Readme
+
+## How to write ReadMe
 
 - [waka-readme-stats][]
 - [waka-readme][]
@@ -83,3 +86,4 @@ I am sure that you must want to create something fantanstic and amazing after yo
 [cookiecutter]: https://cookiecutter.readthedocs.io/en/1.7.2/usage.html
 [readme-so]: https://readme.so/editor
 [how-to-write-readme]: https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project
+[*GitHub*]: https://github.com 

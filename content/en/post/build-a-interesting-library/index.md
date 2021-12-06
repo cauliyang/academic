@@ -27,6 +27,14 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
+
+
+links:
+ - name: Subcribe
+   url: https://tinyletter.com/yangliz5
+   icon_pack: fas
+   icon: envelope
+
 ---
 {{< toc >}}
 
