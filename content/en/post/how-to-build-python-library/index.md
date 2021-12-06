@@ -57,9 +57,29 @@ I am sure that you must want to create something fantanstic and amazing after yo
 - [Badge][]
 - [Sphnix Theme][]
 
+----
+## How to write Readme
+
+- [waka-readme-stats][]
+- [waka-readme][]
+- [amazing-github-template][]
+- [awesome-pinned-gists][]
+- [awesome-open-source][]
+- [cookiecutter][]
+- [readme-so][]
+- [how-to-write-readme][]
+ 
 <!-- link -->
 [Pepy]: https://pepy.tech/project/pyboxes
 [Pypistats]: https://pypistats.org/search/%20pyboxes
 [Shield]: https://shields.io/category/downloads
 [Badge]: https://forthebadge.com/
 [Sphnix Theme]: https://sphinx-themes.org/#themes
+[waka-readme-stats]: https://github.com/anmol098/waka-readme-stats
+[waka-readme]: https://github.com/athul/waka-readme
+[amazing-github-template]: https://github.com/dec0dOS/amazing-github-template#readme
+[awesome-pinned-gists]: https://github.com/matchai/awesome-pinned-gists
+[awesome-open-source]: https://awesomeopensource.com/project/anmol098/waka-readme-stats
+[cookiecutter]: https://cookiecutter.readthedocs.io/en/1.7.2/usage.html
+[readme-so]: https://readme.so/editor
+[how-to-write-readme]: https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project
