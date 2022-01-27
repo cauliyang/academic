@@ -1,7 +1,7 @@
 ---
 title: "How to Learn Python Part 1"
 subtitle: "My Path to Become A Pythoner"
-summary: "The experience about how to learn python better from the beginer"
+summary: "The experience about how to learn python better from the beginner"
 authors: ['admin']
 tags: ["Python"]
 categories: ["tutorial"]

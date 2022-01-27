@@ -48,7 +48,7 @@ The library is available on [pypi][] so that you can install it with `pip` or `p
 
 ## 3. Usage
 
-{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20211203154400.png" caption="SceenShot" numbered="true"  width="600">}}
+{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20211203154400.png" caption="Screenshot" numbered="true"  width="600">}}
 
 ```bash
     pybox -h # show help 
@@ -66,7 +66,6 @@ I will add more commands to this toolbox as I find them useful in the future. Wh
 
 If you would like to contribute to this toolbox, please feel free to fork it on [GitHub][]. Please make sure you read the [contributing guide][] before you start. Also, please make sure you pass all the tests before you pull request.
 
-        
 <!-- link -->
 [Google Driver]: https://drive.google.com/
 [pypi]: https://pypi.org/project/pybox/
