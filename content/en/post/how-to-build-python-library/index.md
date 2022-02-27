@@ -1,7 +1,7 @@
 ---
-title: "The Most  Steps You Cannot Miss When Building Python Library"
+title: "The Important  Steps You Cannot Miss When Building Python Library Part 1"
 subtitle: "Build Python Library from Scratch"
-summary: "Some golden tips to build Python library from scratch"
+summary: "Some golden tips to build Python library"
 authors: ["admin"]
 tags: ["Development"]
 categories: ["Python"]
@@ -34,11 +34,11 @@ projects: []
 
 ## 1. Introduction
 
-You may want to create something fantastic after you have known more about Python. But how to do it? Which part is the most important? Here I will show you the best way to build a Python library from scratch, as well as sharing valuable resources to help you improve the quality of your project. All these resources are mined when I learn how to write a better library by myself.  I share here and hope everyone can find that early. Keeping in mind that a good tool will make project more attractive, which enable you to save a lot of time as well. However, you can share your thoughts in comment if you have any other great recommendations.  I will be happy to receive your feedback.
+After you've learned more about Python, you might want to make something spectacular. But how do you go about doing it? Which part is the most crucial? Here, I'll show you how to build a Python library from the ground up, as well as share useful resources to help you improve the quality of your project. All of these resources will be mined as I learn how to write a better library on my own. I'm sharing it here in the hopes that everyone will find it soon. Keeping in mind that a good tool will make your project more appealing, allowing you to save a lot of time. If you have any other great recommendations, please share them in the comments. I look forward to hearing from you.
 
 ## 2. Think over the goal of your project?
 
-The first step is to think about why you want to build a Python library. What do you want to achieve?  This question will help you answer the main goal of your project. After getting a mature idea, you are ready to start now.  Now, following topics are you should consider:  
+The first step is to consider why you want to create a Python library. What do you hope to accomplish? This question will assist you in answering the primary goal of your project. You are now ready to begin once you have developed a mature idea. Now, you should think about the following topics:
 
 - How to build a library
 - How to write a good codebase
@@ -51,11 +51,11 @@ The resources I will share are closely related to the above topics.
 
 ## 3. Git and GitHub
 
-I guess you must hear [*GitHub*], which is the first tool you need to get started. *GitHub* is a great tool to share your project with the world and store your code. You can also use it to share your ideas with other people. Learning how to use *GitHub* is important as well. [Git] is a free and open source distributed version control system designed to handle everything from small to very large projects. In addition to learn how to use *Git* and *GitHub* to share your project. [git-flow] is another one you should not miss. It will show you ideas and techniques about how to manage your branches during development. You should adopt this strategy even if you develop project alone.  *git-flow* is not only an idea, but a [tool](https://github.com/nvie/gitflow). It also includes [commands completion](https://github.com/bobthecow/git-flow-completion).  What is more, writing a good commit message is also important. You can check the [blog](https://medium.com/@hritik.jaiswal/how-to-write-a-good-commit-message-9d2d533b9052) to learn more.
+I'm sure you've heard of [*GitHub*], which is the first tool you'll need to get started. *GitHub* is a fantastic tool for sharing your project with the rest of the world and storing your code. You can also use it to share your thoughts with others. It's also a good idea to learn how to use *GitHub*. [Git] is a free and open source distributed version control system that can handle projects ranging from small to very large. In addition, learn how to share your project using *Git* and *GitHub*. Another one to check out is [git-flow]. It will demonstrate ideas and techniques for managing your branches during development. Even if you are developing a project on your own, you should follow this strategy. *git-flow* is more than just an idea; it's also a [tool](https://github.com/nvie/gitflow). It also comes with [commands completion](https://github.com/bobthecow/git-flow-completion). Furthermore, writing a good commit message is essential. To learn more, visit the [blog](https://medium.com/@hritik.jaiswal/how-to-write-a-good-commit-message-9d2d533b9052).
 
 ## 4.  Documentation
 
-The default document system for Python is [**Sphinx**](https://www.sphinx-doc.org/en/master/) and [**reStructuredText (RST)**](https://docutils.sourceforge.io/rst.html).  *Sphinx* is a tool that makes it easy to create intelligent and beautiful documentation. *RST* is an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser system.  Here, I recommend a [great blog][https://realpython.com/documenting-python-code/] from [*Real Python*](https://realpython.com/), which is cool website that has a lot of great tutorials.
+The default document system for Python is [**Sphinx**](https://www.sphinx-doc.org/en/master/) and [**reStructuredText (RST)**](https://docutils.sourceforge.io/rst.html). *Sphinx* is a tool that makes it simple to create intelligent and visually appealing documentation. *RST* is an easy-to-read plaintext markup syntax and parser system that is what you see is what you get. I recommend a [great blog][https://realpython.com/documenting-python-code/] from [*Real Python*](https://realpython.com/), a cool website with a lot of great tutorials.
 
 I will leave some other useful resources for you to explore:
 
@@ -72,12 +72,12 @@ In fact, we can also use `markdown` to write documentation.  However, docstrings
 
 ## 5. Type Annotator
 
-Type hint is one of my favorite feature in Python even though someone may complain this feature is again flexity of Python.  It gives you a chance to write more readable and maintainable code.
-[typing](https://docs.python.org/3/library/typing.html) is a library that provides this feature for you.  Sometimes, you are bored with writing type hint, or you take over other's codebase. [MonkeyType](https://github.com/instagram/MonkeyType) will enable you to have a rest :smile:. It can collect runtime types of function arguments and return values, and automatically generate stub files or even add draft type annotations directly to your Python code based on the types collected at runtime.  [Stub files](https://mypy.readthedocs.io/en/stable/stubs.html) is a file type that contains type hints for your code and split source code and type hint. Also, [pytype - 🦆✔](https://google.github.io/pytype/) can infer types for your Python code - without requiring type annotations.  If you would like to know more about these two tools, please check out related links. Although two tools are Type Annotator, keep in mind that it is not reason you do not write type hint. You always need to double-check the types tools annotate.
+Although some may argue that type hint is incompatible with Python's flexibility, it is one of my favorite features. It allows you to write more readable and maintainable code.
+This feature is provided by the [typing](https://docs.python.org/3/library/typing.html) library. Sometimes you get tired of writing type hint, or you take over someone else's codebase. You can take a break with [MonkeyType](https://github.com/instagram/MonkeyType) :smile:. It can collect runtime types of function arguments and return values and generate stub files or even add draft type annotations directly to your Python code based on the types it collects. [Stub files](https://mypy.readthedocs.io/en/stable/stubs.html) are a type of file that contains type hints for your code as well as split source code and type hint. Additionally, [pytype- 🦆✔](https://google.github.io/pytype/) can infer types for your Python code - without the need for type annotations. If you want to learn more about these two tools, please visit the related links. Despite the fact that both tools are Type Annotator, keep in mind that this is not the reason you do not write type hint. You should always double-check the types that the tools annotate.
 
 ## 6. Type Checker
 
-Type Checker is a kind of tool used to check correctness of type hint. It is one of safe nets to prevent errors from your code.  There are several type checkers:
+A type checker is a tool that checks the correctness of a type hint. It is one of the safety nets for preventing errors in your code. There are several types of type checkers:
 
 - [Mypy](https://mypy.readthedocs.io/en/stable/)
 - [Pyre](https://pyre-check.org/docs/getting-started/)
@@ -87,7 +87,7 @@ Type Checker is a kind of tool used to check correctness of type hint. It is one
 
 ## 7.  Linter
 
-A linter is basically a program that inspects your code and gives feedback. It can tell you the issues in your program and also, a way to resolve them. You can run it anytime to ensure that your code is matching standard quality.  There are several linters:
+A linter is essentially a program that inspects and provides feedback on your code. It can tell you about the problems in your program and how to fix them. You can run it at any time to ensure that your code meets industry standards. There are several types of linters:
 
 - [Pylint](https://www.pylint.org/)
 - [Flake8](https://flake8.readthedocs.io/en/latest/)
@@ -122,6 +122,8 @@ Here is a list of extensions I use:
 
 *Python* provides [a tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-the-package-files) about how to build and public package. However, I like to use [poetry](https://python-poetry.org/) as a tool to build and public package. Also, *poetry* is good tool to manage your dependencies, and *poetry* is a project manage tool.  It helps me save lots of time and effort.  
 
+Other interesting tools and resources are included Part 2 is coming soon.
+<!-- 
 ## 9. Miscellaneous
 
 This section contains some other useful information about how to build a professional Python package.
@@ -143,8 +145,7 @@ This section contains some other useful information about how to build a profess
 
 [https://github.com/replicatedhq/dockerfilelint](https://github.com/replicatedhq/dockerfilelint)
 [https://github.com/rubik/radon](https://github.com/rubik/radon)
-[https://github.com/dry-python/returns](https://github.com/dry-python/returns)
-
+[https://github.com/dry-python/returns](https://github.com/dry-python/returns) -->
 
 <!-- link -->
 [Pepy]: https://pepy.tech/project/pyboxes
@@ -160,6 +161,6 @@ This section contains some other useful information about how to build a profess
 [cookiecutter]: https://cookiecutter.readthedocs.io/en/1.7.2/usage.html
 [readme-so]: https://readme.so/editor
 [how-to-write-readme]: https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project
-[*github*]: https://github.com 
+[*github*]: https://github.com
 [git-flow]: https://jeffkreeftmeijer.com/git-flow/
-[git]: https://git-scm.com/
+[git]: https://git-scm.com
