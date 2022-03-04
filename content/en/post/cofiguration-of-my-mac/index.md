@@ -9,7 +9,7 @@ tags: ["tool"]
 categories: ["macos"]
 date: 2021-11-10T13:38:00+08:00
 lastmod: 2021-11-10T13:38:00+08:00
-featured: true 
+featured: false
 draft: false
 include_toc: true
 # Featured image

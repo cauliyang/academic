@@ -7,17 +7,16 @@ tags: ["Development"]
 categories: ["Python"]
 date: 2021-12-03T09:56:07-06:00
 lastmod: 2021-12-03T09:56:07-06:00
-featured: false
+featured: true
 draft: false
-
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: "Tools to build Python library"
   focal_point: "Smart"
-  preview_only: false
 
+  preview_only: false
 links:
  - name: Github
    url: https://github.com/cauliyang/pybox
@@ -29,8 +28,9 @@ links:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
+toc: true
 ---
-{{< toc >}}
+<!-- {{< toc >}} -->
 
 ## 1. Introduction
 

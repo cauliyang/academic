@@ -17,18 +17,18 @@ subtitle:
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
 
-- description: 100%
+- description: 99%
   icon: python
   icon_pack: fab
   name: Python 
-- description: 60%
+- description: 55%
   icon: r-project
   icon_pack: fab
   name: R
 - icon: cpp
   icon_pack: "custom"
   name: "C++"
-  description: "40%"
+  description: "49%"
 - description: 90%
   icon: overleaf
   icon_pack: ai
