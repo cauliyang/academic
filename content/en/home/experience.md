@@ -37,7 +37,7 @@ experience:
         
   - title: Master
     company: China Agricultural University 
-    company_url: ''
+    company_url: 'https://en.cau.edu.cn/'
     location: Beijing, China
     date_start: '2018-09-01'
     date_end: '2020-07-01'
