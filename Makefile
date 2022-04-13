@@ -12,3 +12,6 @@ add:
 	echo --------
 	git push
 	git status
+
+server:
+	hugo server
