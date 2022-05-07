@@ -12,4 +12,4 @@ header:
   caption: ""
   image: ""
 ---
-We welcome your comments and suggestions. Please give use respetcfule comments! :smile:
+Welcome your comments and suggestions. Please give use respectful comments! :smile:

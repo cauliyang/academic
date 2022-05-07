@@ -6,12 +6,12 @@ title: Yangyang Li
 superuser: true
 
 # Role/position/tagline
-role: Ph.D. of University of Minnesota
+role: Ph.D. of Northwestern University 
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: University of Minnesota
-  url: https://www.umn.edu/
+- name: Northwestern University
+  url: https://www.feinberg.northwestern.edu/
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include deep learning, machine learning and bioinformatics.
@@ -21,10 +21,15 @@ interests:
 - Deep Learning
 - Data Mining
 - Computational Biology
+- Asynchronous Computing
+
 
 # Education to show in About widget
 education:
   courses:
+  - course: Ph.D., Computational Biology
+    institution: Northwestern University
+    year: 2022
   - course: Ph.D., Bioinformatics and Computational Biology
     institution: University of Minnesota
     year: 2020
@@ -54,7 +59,7 @@ social:
   link: https://github.com/cauliyang
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/yangyangli-51543a164/
+  link: https://www.linkedin.com/in/yangyang-li-a64b83226/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -64,12 +69,12 @@ social:
   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "li002252@umn.edu"
+email: "yangyang.li@northwestern.edu"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
 
-I am a Ph.D student of BICB Program in University of Minnesota. Now I work in [Dr.Yang's lab](https://ylab-hi.github.io/) to pay high attention on machine learning, deep learning, and cancer genomics. I am very willing to share my thoughts and knowledge with others. Welcome to reach me! 
+I am a Ph.D student of DGP Program in Northwestern University Feinberg School of Medicine. Now I work in [Dr.Yang's lab](https://ylab-hi.github.io/) to pay high attention on machine learning, deep learning, and cancer genomics. I am very willing to share my thoughts and knowledge with others. Welcome to reach me! 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

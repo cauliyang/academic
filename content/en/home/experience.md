@@ -22,6 +22,19 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Ph.D 
+    company: Northwestern University
+    company_url: https://northwestern.edu
+    location: Chicago, IL
+    date_start: 2022-06-01
+    date_end: 2025-06-01
+    description: |2-
+        Responsibilities include:
+
+        * Developing Research and Development projects
+        * Developing and maintaining software applications
+        * Designing algorithms
+
   - title: Ph.D. 
     company: University of Minnesota
     company_url: 'https://twin-cities.umn.edu/'
