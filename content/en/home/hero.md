@@ -2,7 +2,7 @@
 widget: hero
 headless: true
 weight: 10
-title: Personal Academic Site
+title: <img src="https://readme-typing-svg.herokuapp.com?font=New+Roman+Times&size=22&color=6AF738&center=true&vCenter=true&width=440&height=45&lines=Ph.D.+In+Bioinformatics;Experienced+Algorithm+Development;Focus+on+Deep+Learning+Application;Always+Learning+!">
 # hero_media: hero-academic.png
 cta:
   label: '**Subscribed**' 
@@ -30,9 +30,5 @@ design:
 advanced:
   css_class: fullscreen
 ---
-
-
-
-***My personal site will record my academic life including courses, publications, code as well as projects***
 
 ***I am open-minded man who prefer the spirit of open source. If you have any questions, please do not hesitate to reach me!***
