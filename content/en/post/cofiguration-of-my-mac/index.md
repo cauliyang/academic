@@ -8,7 +8,7 @@ authors: ["admin"]
 tags: ["tool"]
 categories: ["macos"]
 date: 2021-11-10T13:38:00+08:00
-lastmod: 2021-11-10T13:38:00+08:00
+lastmod: 2022-06-15T13:38:00+08:00
 featured: false
 draft: false
 include_toc: true
@@ -37,9 +37,8 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
+toc: true
 ---
-
-{{< toc >}}
 
 ## 1. Introduction
 
@@ -98,6 +97,14 @@ The TLDR pages are a community effort to simplify the beloved man pages with pra
 
 ![tree](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png)
 
+- [cheat.sh](https://github.com/chubin/cheat.sh)
+
+  **cheat.sh** is the unified access to the best community driven cheat sheets repositories of the world. I like it very much :heart:
+
+{{< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="500" >}}
+
+
+
 ## 3. Editor
 
 I will list the editors I used in different situations. If you have any other recommendations, please reach to me!
@@ -114,14 +121,20 @@ I will list the editors I used in different situations. If you have any other re
 
 *CLion* is my *C/C++* IDE, which includes many features like code generation, code quality assurance. I use *EDU* email to apply for the professional version.
 
-------
+- [Lunarvim](https://github.com/LunarVim/LunarVim)
+
+  *Lunarvim* is a comprehensive configuration of Neovim, and It give you full-profile IDE developed experience! I cannot live without it! :rocket:
+
+  
+
+
 
 ## 4. Application
 
 This part list variety of applications used for different goals. Every application has a one word description
 
 - [Alfred][] A tool can give your different control and efficiency in mac
-- [Sensei][] The Next Generation Mac performance tool
+- ~~[Sensei][] The Next Generation Mac performance tool~~
 - [Default Folder x][]  A tool can empower default finder
 - [Docker][] Docker is a tool to create a safe environment for development or production
 - [Chrome][] There is no reason not to use it. :heart:

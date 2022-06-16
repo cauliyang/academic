@@ -28,8 +28,6 @@ image:
 projects: []
 toc: true
 ---
-{{<toc>}}
-
 # 1.  Introduction
 
 ## 1.1 What's PCA?
@@ -121,7 +119,13 @@ x_test_std = sc.fit_transform(x_test)
 - Creating the covariance matrix and Getting eigenvectors and eigenvalues
 
 the calculation of the covariance matrix :
+
+
+
 $$\sigma_{jk} =  \frac{1}{n} \sum^{n}_{i=1}\bigg(x_{j}^{(i)} - \mu_j\bigg)\bigg(x_{k}^{(i)} - \mu_k\bigg)$$
+
+
+
 Then, using `numpy.cov` and `numpy.linalg.eig` to get the covariance matrix and eigenvectors respectively
 
 ```python

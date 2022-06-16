@@ -14,7 +14,7 @@ font_size: m
 
 site_type: Academic
 local_business_type: ''
-org_name: 'Yangyang Li; Ph.D; University of Minnesota'
+org_name: 'Yangyang Li; Ph.D in Northwestern University'
 description: 'My personal academic blog about Deep Learning and Bioinformatics'
 twitter: 'yangyangliz5'
 
@@ -121,7 +121,7 @@ breadcrumb:
   page_types:
     book: true
 comments:
-  provider: 'disqus'
+  provider: ''
   commentable:
     post: true
     book: true

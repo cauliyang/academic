@@ -1,0 +1,73 @@
+---
+# Documentation: https://wowchemy.com/docs/managing-content/
+
+title: "Build Cpp Development Env With Conda"
+subtitle: "Standardize Cpp Development"
+summary: "Config cpp development environment in macos or linux and fix dependencies for htslib"
+authors: ["admin"]
+tags: ["develop"]
+categories: ["c++"]
+date: 2022-06-15T23:17:30-05:00
+lastmod: 2022-06-15T23:17:30-05:00
+featured: true
+draft: ture
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+toc : true
+---
+
+## 1. Config Compile Evevironment with Conda
+
+
+
+## 2. The Error you may encounter
+
+
+
+### 2.1 Error 1
+
+
+
+**How to fix that**
+
+
+
+### 2.2 Error 2 
+
+
+
+**How to fix that**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

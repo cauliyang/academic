@@ -108,15 +108,15 @@ Here is a list of extensions I use:
 - [safety]
 
 <!-- Link -->
- [flake8-bandit]: https://pypi.org/project/flake8-bandit/
- [flake8-bugbear]: https://pypi.org/project/flake8-bugbear/
- [flake8-docstrings]: https://pypi.org/project/flake8-docstrings/
- [flake8-rst-docstrings]: https://pypi.org/project/flake8-rst-docstrings/
- [flake8-broken-line]: https://pypi.org/project/flake8-broken-line/
- [flake8-comprehensions]: https://pypi.org/project/flake8-comprehensions/
- [flake8-eradicate]: https://pypi.org/project/flake8-eradicate/
- [darglint]: https://pypi.org/project/darglint/
- [safety]: https://pypi.org/project/safety/
+[flake8-bandit]: https://pypi.org/project/flake8-bandit/
+[flake8-bugbear]: https://pypi.org/project/flake8-bugbear/
+[flake8-docstrings]: https://pypi.org/project/flake8-docstrings/
+[flake8-rst-docstrings]: https://pypi.org/project/flake8-rst-docstrings/
+[flake8-broken-line]: https://pypi.org/project/flake8-broken-line/
+[flake8-comprehensions]: https://pypi.org/project/flake8-comprehensions/
+[flake8-eradicate]: https://pypi.org/project/flake8-eradicate/
+[darglint]: https://pypi.org/project/darglint/
+[safety]: https://pypi.org/project/safety/
 
 ## 8. Package
 
@@ -148,6 +148,7 @@ This section contains some other useful information about how to build a profess
 [https://github.com/dry-python/returns](https://github.com/dry-python/returns) -->
 
 <!-- link -->
+
 [Pepy]: https://pepy.tech/project/pyboxes
 [Pypistats]: https://pypistats.org/search/%20pyboxes
 [Shield]: https://shields.io/category/downloads
