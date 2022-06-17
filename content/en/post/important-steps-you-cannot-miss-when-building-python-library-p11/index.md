@@ -124,6 +124,7 @@ Here is a list of extensions I use:
 
 Other interesting tools and resources are included Part 2 is coming soon.
 <!-- 
+
 ## 9. Miscellaneous
 
 This section contains some other useful information about how to build a professional Python package.

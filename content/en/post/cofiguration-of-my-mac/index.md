@@ -170,6 +170,7 @@ This part list variety of applications used for different goals. Every applicati
 <!-- link -->
 [Alfred]: https://www.alfredapp.com/
 [Sensei]: https://sensei.app/
+
 [Default Folder x]: https://www.stclairsoft.com/DefaultFolderX/
 [Docker]: https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI1yYmAI5cysoIDN2Vbhs5tplap41qP5MKKybSNbg9nTCA8oPe2yeXAaAofgEALw_wcB
 [Chrome]: https://www.google.com/chrome/?brand=FKPE&geo=US&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI0QHFokL1RZC_foWkHv92lRIhon6vMSWCm_2Zfe6g5vrkRO-JxOwJcaAsToEALw_wcB&gclsrc=aw.ds
@@ -201,3 +202,4 @@ This part list variety of applications used for different goals. Every applicati
 [AltTab]: https://alt-tab-macos.netlify.app/
 [AlDente]: https://github.com/davidwernhart/AlDente
 [Zotero]: https://www.zotero.org/
+

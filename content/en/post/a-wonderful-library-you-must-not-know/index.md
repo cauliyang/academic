@@ -40,25 +40,39 @@ links:
 
 ## 1. Introduction
 
-Many people have been asking for a toolbox of useful commands for their everyday tasks. I also wanted to build a toolbox for my own use,  and I also wanted to make it as easy as possible to use. Hence, I decided to build a toolbox for Python, which is a valuable tool for other people to use. I will add more commands to this toolbox as I find them useful in the future. Now, there is a command about [Google Driver][], which helps you to download files located on [Google Driver][]. Forget to say,  I call it **pybox** as it is a toolbox based on Python.
+Many people have been asking for a toolbox of useful commands for their everyday tasks. I also wanted to build a toolbox for my own use,  and I also wanted to make it as easy as possible to use. Hence, I decided to build a toolbox for Python, which is a valuable tool for other people to use. I will add more commands to this toolbox as I find them useful in the future. Now, there is a command about [Google Driver][], which helps you to download files located on [Google Driver][]. Also, this toolbox include other features shown below. Forget to say,  I call it **pybox** as it is a toolbox based on Python.
 
 ## 2. Installation
 
-The library is available on [pypi][] so that you can install it with `pip` or `pip3` by typing `pip install pybox`. I also have plan to publish this librarcy on [Conda][] so that you can install it with `conda install pyboxes`. 
+The library is available on [pypi][] so that you can install it with `pip` or `pip3` by typing `pip install pyboxes`. I also have plan to publish this librarcy on [Conda][] so that you can install it with `conda install pyboxes`. 
 
 ## 3. Usage
 
-{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20211203154400.png" caption="Screenshot" numbered="true"  width="600">}}
+
+
+<img src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20211203154400.png" alt="demo" style="zoom:50%;" />
+
+
 
 ```bash
     pybox -h # show help 
 ```
 
-```bash
-    pybox gdriver -h # show help for Google Driver
-```
 
-## 4. TODO
+
+## 4. Features
+
+
+
+- [A simple and easy to download files by sharing link](https://github.com/cauliyang/pybox#a-simple-and-easy-to-download-files-by-sharing-link)
+
+- [A simple and easy to send message to Slack Channel](https://github.com/cauliyang/pybox#a-simple-and-easy-to-send-message-to-slack-channel)
+
+- [Download multiple files asynchronously](https://github.com/cauliyang/pybox#download-multiple-files-asynchronously)
+
+- Download Books from Zlib in terms of Title Will come!
+
+  
 
 I will add more commands to this toolbox as I find them useful in the future. What is more,  I would like to make sure the quality of the toolbox is high. I write some examples of commands. If you need something specific, please let me know. We can discuss about it.
 
