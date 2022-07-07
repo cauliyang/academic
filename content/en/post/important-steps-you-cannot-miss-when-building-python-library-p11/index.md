@@ -7,7 +7,7 @@ tags: ["Development"]
 categories: ["Python"]
 date: 2021-12-03T09:56:07-06:00
 lastmod: 2021-12-03T09:56:07-06:00
-featured: true
+featured: false
 draft: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -15,8 +15,8 @@ draft: false
 image:
   caption: "Tools to build Python library"
   focal_point: "Smart"
-
   preview_only: false
+
 links:
  - name: Github
    url: https://github.com/cauliyang/pybox
