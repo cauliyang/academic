@@ -77,6 +77,7 @@ highlight_languages:
   - cpp
   - java
   - go
+  - rust
 math: true
 diagram: true
 privacy_pack: true
