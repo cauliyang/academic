@@ -31,11 +31,11 @@ toc: true
 
 ## 1. Config Compile Environment
 
-I am preparing to develop a tool using _C++_ in the Linux and Macos environments. Usually, I do not have root rights to download dependencies for C++ using `apt-get install -y denpendencies` directly in _Ubuntu_. However, I usually feel frustrated when the dependency chain is complicated. That means I need to download and compile every library I use. This may cost you one night or even one week. **[Conda]** is a package manager mainly used in _the data science_ domain. So far, **Conda** provides some other language dependencies, for instance _C++_, _Rust_ and _R_ as well. For concrete package support, you can go through the [Conda cloud]. The package name in [Conda cloud] may change at any time. You may need to search for "real name" in Conda Cloud before installation. Hence, **Conda** can be regarded as a tool used to install dependencies for _C++_, especially in **the bioinformatics domain**. However, I must say that nowadays, there are several solutions for managing _C++_ dependencies like [Vcpkg], [Conan], [CPM], etc. I use [CPM] as an alternative choice.
+I am preparing to develop a tool using _C++_ in the Linux and macOS environments. Usually, I do not have root rights to download dependencies for C++ using `apt-get install -y denpendencies` directly in _Ubuntu_. However, I usually feel frustrated when the dependency chain is complicated. That means I need to download and compile every library I use. This may cost you one night or even one week. **[Conda]** is a package manager mainly used in _the data science_ domain. So far, **Conda** provides some other language dependencies, for instance _C++_, _Rust_ and _R_ as well. For concrete package support, you can go through the [Conda cloud]. The package name in [Conda cloud] may change at any time. You may need to search for "real name" in Conda Cloud before installation. Hence, **Conda** can be regarded as a tool used to install dependencies for _C++_, especially in **the bioinformatics domain**. However, I must say that nowadays, there are several solutions for managing _C++_ dependencies like [Vcpkg], [Conan], [CPM], etc. I use [CPM] as an alternative choice.
 
 ### 1.1 Install GCC or Clang
 
-When it comes to the compilation environment, it is important to install a compiler, and [GCC] or [Clang] may be your choices. In general, Linux systems will ship with GCC, but the version may be low (4.9). That will not allow you to use the latest features of _C++_. In the meantime, you do not have root access yet. But you can use [Conda] to install any version of GCC or Clang by running `conda install -c conda-forge gcc` or `conda install -c conda-forge clang`. Keep in mind that you should search for gcc or clang in [conda cloud] first before installation in order to install the proper version.
+When it comes to the compilation environment, it is important to install a compiler, and [GCC] or [Clang] may be your choices. In general, Linux systems will ship with GCC, but the version may be low (4.9). That will not allow you to use the latest features of _C++_. In the meantime, you do not have root access yet. But you can use [Conda] to install any version of GCC or Clang by running `conda install -c conda-forge gcc` or `conda install -c conda-forge clang`. Keep in mind that you should search for GCC or clang in [Conda cloud] first before installation in order to install the proper version.
 
 After installation, Conda may set three significant variables for you: `CFLAGS`, `CXXFLAGS,` and `LDFLAGS`. You can check that by using `echo $CFLAGS`. You need to set that in your `~/.bashrc` or `~/.zshrc` if you do not find that. Here are examples:
 
@@ -51,7 +51,7 @@ export CFLAGS="-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-prote
 export LDFLAGS="-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/your_conda_absolute_path/miniconda3/lib -Wl,-rpath-link,/your_conda_absolute_path/miniconda3/lib -L/your_conda_absolute_path/miniconda3/lib"
 ```
 
-**You must change your_conda_absolute_path to your path of conda**. I installed conda in the base environment, and I also recommend gcc or clang be installed in the base environment.
+**You must change your_Conda_absolute_path to your path of Conda**. I installed Conda in the base environment, and I also recommend GCC or clang be installed in the base environment.
 
 ## 2. Add htslib dependencies
 
@@ -91,7 +91,7 @@ I use [Cmake] as a build system, and here are several useful and valuable Cmake 
   include(htslib)
   ```
 
-  If `htslib` is found in your current environment, `cmake` will define the variables `HTSlib_FOUND` and HTSlib_INCLUDE_DIRS``and`HTSlib_LIBRARIES`. Otherwise, `cmake`will build static htslib from sources, and`cmake`will check if every dependency of htslib exists respectively. If it exists,`cmake`will use the compiler flags of htslib to build a static library. Otherwise,`cmake`will disable related compiler flags. However, [zlib] is the only one that must exist. So, if [zlib] does not exist,`cmake` will help you build [zlib] from source. All these cmake scripts can be found at the above link. Please feel free to explore that.
+  If `htslib` is found in your current environment, `cmake` will define the variables `HTSlib_FOUND` and HTSlib_INCLUDE_DIRS``and`HTSlib_LIBRARIES`. Otherwise, `cmake`will build static htslib from sources, and`cmake`will check if every dependency of htslib exists respectively. If it exists,`cmake`will use the compiler flags of htslib to build a static library. Otherwise,`cmake`will disable related compiler flags. However, [zlib] is the only one that must exist. So, if [zlib] does not exist,`cmake` will help you build [zlib] from source. All these CMake scripts can be found at the above link. Please feel free to explore that.
 
   Indeed, we use [FindHTSlib.cmake] to search for htslib. [htslib.cmake] is shown below, and I have added some comments to explain how it works.
 
@@ -234,7 +234,6 @@ In this blog, I will introduce how to install `C++` dependencies and how to conf
 [conan]: https://conan.io/
 [cpm]: https://github.com/cpm-cmake/CPM.cmake
 [htslib]: https://github.com/samtools/htslib
-[rsut_htslib]: https://docs.rs/rust-htslib/latest/rust_htslib/
 [samtools]: http://www.htslib.org/
 [bcftools]: http://samtools.github.io/bcftools/bcftools.html
 [pysam]: https://github.com/pysam-developers/pysam

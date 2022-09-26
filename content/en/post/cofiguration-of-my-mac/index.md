@@ -113,19 +113,19 @@ _Vscode_ is an open-source editor, and I mainly use _Vscode_ to write _Markdown_
 
 - [pycharm](https://www.jetbrains.com/pycharm/)
 
-_Pycharm_ is my main editor when I develop tools or applications in _Python_. I use _EDU_ email to apply for the professional version. I think it is my favourite IDE when I develop project in local envirment. In one word, I love that very much! :smile:
+_Pycharm_ is my main editor when I develop tools or applications in _Python_. I use _EDU_ emails to apply for the professional version. I think it is my favorite IDE when I develop project in local environment. In one word, I love that very much! :smile:
 
 - [CLion](https://www.jetbrains.com/clion/)
 
-_CLion_ is my _C/C++_ IDE, which includes many features like code generation, code quality assurance. I use _EDU_ email to apply for the professional version.
+_CLion_ is my _C/C++_ IDE, which includes many features like code generation, code quality assurance. I use _EDU_ emails to apply for the professional version.
 
 - [Lunarvim](https://github.com/LunarVim/LunarVim)
 
-  _Lunarvim_ is a comprehensive configuration of Neovim, and It give you full-profile IDE developed experience! I cannot live without it! :rocket:
+  _Lunarvim_ is a comprehensive configuration of Neovim, and It gives you full-profile IDE developed experience! I cannot live without it! :rocket:
 
 ## 4. Application
 
-This part list variety of applications used for different goals. Every application has a one word description
+This part list variety of applications used for different goals. Every application has a one-word description
 
 - [Alfred][] A tool can give your different control and efficiency in mac
 - ~~[Sensei][] The Next Generation Mac performance tool~~
@@ -136,16 +136,16 @@ This part list variety of applications used for different goals. Every applicati
 - [Imagine][] Compress images before you upload somewhere. light and powerful!
 - [Magnet][] A tool is used to manage windows for different applications
 - [Office][] :smile:
-- [MonitorControl][] It manage brightness and sound for different monitors
+- [MonitorControl][] It manages brightness and sound for different monitors
 - [Monodraw][] A tool is used to design fancy ASCII strings
 - [PDF Expert][] Best pdf reader in Mac
 - [PicGo][] A tool is used to upload images to _Web service_ like _Github_. It is beneficial for writing blogs.
-- [SnippetsLab][] My favouriate tool stored code snippets, and it can be integrated with Alfred
+- [SnippetsLab][] My favorite tool stored code snippets, and it can be integrated with Alfred
 - [Xcode][] :smile:
 - [zoom][] MEETING!
 - [Xmind][] XMind always makes your creative and keeps your minds clears
 - [Transmit][] Upload, download and manage files on servers with beautiful and powerful UI
-- [Time Sink][] Time Sink a good tool to record your using time to track your behaviour
+- [Time Sink][] Time Sink a good tool to record your using time to track your behavior
 - [SoundSource][] SoundSource can help you get truly powerful control over all the audio
 - [Reeder 5][] A RSS reader and keep control of your reading
 - [Path Finder][] Better file manager for Macos
@@ -153,13 +153,13 @@ This part list variety of applications used for different goals. Every applicati
 - [One Switch][] One Switch can help you finish some progress like keep awake and hide icons on one button
 - [iShot][] A great tool to take screenshots
 - [Google Drive][] Google Drive is a cloud storage service that allows you to store and share files with anyone
-- [Ferdi][] Ferdi can integerate other tools like Gmail, Slack, or others to allow you manage information in one place
+- [Ferdi][] Ferdi can integrate other tools like Gmail, Slack, or others to allow you manage information in one place
 - [Dash][] Dash is a good friend for developers
-- [CleanShot X][] I usually use it to creat gif althought it can take screenshots as well
+- [CleanShot X][] I usually use it to create gif, although it can take screenshots as well
 - [Bartender][] Bartender is a great application to manage icons of all your working tools
 - [AltTab][] AltTab is a good tool to manage windows for different applications
-- [AlDente][] AlDente is able to keep your battery healthy by controling the power consumption
-- [Zotero][] My favourite tools to manage research papers
+- [AlDente][] AlDente is able to keep your battery healthy by controlling the power consumption
+- [Zotero][] My favorite tools to manage research papers
 
 <!-- link -->
 

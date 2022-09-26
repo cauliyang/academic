@@ -29,9 +29,7 @@ projects: []
 toc: true
 ---
 
-# Python project for development
-
-<br>
+## Python project for development
 
 ## **1. Git**
 
@@ -57,7 +55,7 @@ toc: true
 
 - [Python Docstring](https://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html)
 
-- [Sphinx and RST Syntas](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
+- [Sphinx and RST Syntax](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
 
 - [reStructuredText Markup Specification](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html)
 

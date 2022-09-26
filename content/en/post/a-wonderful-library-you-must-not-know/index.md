@@ -47,10 +47,26 @@ The library is available on [pypi][] so that you can install it with `pip` or `p
 
 ## 3. Usage
 
-<img src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20211203154400.png" alt="demo" style="zoom:50%;" />
+```console
+$ pybox -h # show help
+Usage: pybox [options] <command>
 
-```bash
-    pybox -h # show help
+  This tool include a bunch of useful commands:
+
+  1. Download single file or all files in a folder for Google Driver
+  2. Send message to Slack
+  3. more to come...
+
+Options:
+  -h, --help  Show this message and exit.
+
+Commands:
+  asyncdown  Download files in terms of links asynchronously.
+  gfile      Download file in Google Driver.
+  gfolder    Download files in folders in Google Drive.
+  slack      Send message to Slack.
+
+  Yangyang-Li https://yangyangli.top/ 2022
 ```
 
 ## 4. Features

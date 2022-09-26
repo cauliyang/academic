@@ -29,9 +29,9 @@ projects: []
 toc: true
 ---
 
-# 1. Introduction
+## 1. Introduction
 
-## 1.1 What's PCA?
+### 1.1 What's PCA?
 
 When it comes to methods of reducing dimension, PCA that is an unsupervised linear transformation technique, must be not ignored. Moreover, if you want to know the subtle relationships among data set and reduce the computational complexity in downstream analysis, the PCA may be your best choice! Meanwhile, if you would like to present your data in a 2-dimension or 3-dimension coordinate system, and PCA would sweep your problems!
 
@@ -53,12 +53,12 @@ Then, you could pick up PC1 and PC2 after PCA to reduce dimension for plotting:
 | data-2 | 0.1 | 1.2 |
 | ..     | ..  | ..  |
 
-**PC1** and **PC2** are the result obtained through data is projection on the unit vectors, which enable result to have the most biggest variance(means its distribution is wide) and to be irrelevant(covariance = 0).
+**PC1** and **PC2** are the result obtained through data is projection on the unit vectors, which enable result to have the biggest variance(means its distribution is wide) and to be irrelevant(covariance = 0).
 
 ## 1.2 Algorithm
 
 1. Normalize $d$ dimension raw data
-2. Creat the covariance matrix
+2. Greate the covariance matrix
 3. Calculate the eigenvalues of the covariance matrix and the corresponding eigenvectors
 4. The eigenvectors are sorted in the matrix according to the corresponding feature value, and the first k rows are formed into a matrix $W$. ($k<<d$)
 5. $Y = xW$ is the result after reducing dimension to k dimension
@@ -68,7 +68,7 @@ Then, you could pick up PC1 and PC2 after PCA to reduce dimension for plotting:
 - Raw data has no NA
 - The raw data should be normalized
 
-# 2. PCA from scratch
+## 2. PCA from scratch
 
 - Importing necessary modules
 
@@ -223,7 +223,7 @@ plt.savefig('distribution.png', format='png', bbox_inches='tight', dpi=300)
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572766761786.png)
 
-# 3. PCA by scikit-learn
+## 3. PCA by scikit-learn
 
 we can conduct PCA easily by **sklearn**
 
@@ -298,7 +298,7 @@ We can see that the classifier's accurate is excellent according to actual label
 
 You can set `n_components = None`, and the result would retain all principle components. Moreover, you could call `explained_variance_ration_` to use variance explanation ratio.
 
-# 3. Summary
+## 3. Summary
 
 All the above are the main content, welcome everybody communicates with me! 🤠
 

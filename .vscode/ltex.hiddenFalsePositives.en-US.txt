@@ -3,3 +3,5 @@
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtyping is a library that provides this feature for you.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgit-flow is another one you should not miss.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgit-flow is not only a theory, but a tool.\\E$"}
+{"rule":"LIGATURES","sentence":"^\\QThe Neighbor-joining Algorithm Given a distance matrix d compute an unrooted tree topology complete with edge lengths that tries to preserve the additive property: \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q where \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q is the ﬁrst node on both routes from \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"LIGATURES","sentence":"^\\QDeﬁne height \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q where \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q is the height of node that is the ancestor to all in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q .\\E$"}
