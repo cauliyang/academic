@@ -1,16 +1,15 @@
 ---
 title: Deep Learning
 linkTitle: Course Notes
-summary: Courses about deep learning instructed by Hung-Yee Li in NTU.  
-date: '2021-11-24'
+summary: Courses about deep learning instructed by Hung-Yee Li in NTU.
+date: "2021-11-24"
 type: book
 include_toc: true
 ---
 
 <!-- {{< figure src="featured.png" >}} -->
 
-
- ## Homeworks
+## Homeworks
 
 {{< list_children >}}
 

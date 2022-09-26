@@ -16,7 +16,7 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  caption: "Image credit: [**Unsplash**](https://unsplash.com/)"
   focal_point: ""
   preview_only: false
 
@@ -26,7 +26,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-toc : true
+toc: true
 ---
 
 # Python project for development
@@ -49,8 +49,6 @@ toc : true
 
 - [Jupyter notebook diff and merge](https://github.com/jupyter/nbdime/blob/master/docs/source/index.rst)
 
-  
-
 ## **2. Document system**
 
 ### 2.1 Sphinx and RST
@@ -65,27 +63,19 @@ toc : true
 
 - [Sphinx Themes Gallery](https://sphinx-themes.org/#themes)
 
-  
-
 ### 2.2 pdoc
 
 - [https://github.com/pdoc3/pdoc](https://github.com/pdoc3/pdoc)
 
-  
-
 ### 2.3 Mkdocs
 
 - [Getting Started - MkDocs](https://www.mkdocs.org/getting-started/)
-
-  
 
 ## **3. Module statics for installation**
 
 - [Pepy stats](https://pepy.tech/project/pyboxes)
 
 - [PyPI Stats](https://pypistats.org/search/%20pyboxes)
-
-  
 
 ## **4. Badge for Readme**
 
@@ -97,11 +87,7 @@ toc : true
 
 - [Simple Icons](https://simpleicons.org/?q=book)
 
-  
-
 ## **5. Readme**
-
-
 
 - [Awesome-Readme](https://github.com/matiassingers/awesome-readme)
 
@@ -137,23 +123,15 @@ toc : true
 
 ## **7. Code Example**
 
-
-
 - [Python Examples of pandas.HDFStore](https://www.programcreek.com/python/example/101333/pandas.HDFStore)
 
-  
-
-##  **8. Type Annotator**
-
-
+## **8. Type Annotator**
 
 - [https://github.com/instagram/MonkeyType](https://github.com/instagram/MonkeyType)
 
 - [pytype - 🦆✔](https://google.github.io/pytype/)
 
 ## **9. Type Checker**
-
-
 
 - [Mypy](http://mypy-lang.org/)
 
@@ -167,15 +145,9 @@ toc : true
 
 - [Pydantic](https://pydantic-docs.helpmanual.io/)
 
-  
-
 ## **10. Flake8 extension**
 
-
-
 - [awesome-flake8-extensions](https://github.com/DmytroLitvinov/awesome-flake8-extensions)
-
-  
 
 ### 10.1 Linter
 
@@ -189,7 +161,7 @@ toc : true
 
 - [pypi classifiers list](https://gist.github.com/nazrulworld/3800c84e28dc464b2b30cec8bc1287fc)
 
-##  **12. Test**
+## **12. Test**
 
 - [Pytest: helps you write better programs - pytest documentation](https://docs.pytest.org/en/6.2.x/)
 
@@ -240,8 +212,6 @@ toc : true
 - [Calendar Versioning](https://calver.org/)
 
 ## **21 Good articles**
-
-
 
 - [Take Your Github Repository To The Next Level 🚀️](https://dev.to/eludadev/take-your-github-repository-to-the-next-level-17ge)
 

@@ -3,9 +3,9 @@
 
 title: "Mining Cryptic Exon Using Deep Learning"
 summary: "Developing tools to detect Cryptic Exon and mining information of splicing events by deep learning"
-authors: ['admin']
-tags: ['Deep Learning', 'Development']
-categories: ['Computational Biology']
+authors: ["admin"]
+tags: ["Deep Learning", "Development"]
+categories: ["Computational Biology"]
 date: 2021-04-05T16:23:49+08:00
 
 # Optional external URL for project (replaces project detail page).

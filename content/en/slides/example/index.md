@@ -10,7 +10,7 @@ slides:
   theme: league
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
-  highlight_style: dracula 
+  highlight_style: dracula
 ---
 
 # Create slides in Markdown with Wowchemy
@@ -47,6 +47,7 @@ slides:
 Inline code: `variable`
 
 Code block:
+
 ```python
 porridge = "blueberry"
 if porridge == "blueberry":
@@ -98,17 +99,19 @@ Add speaker notes to your presentation
 
 ```markdown
 {{%/* speaker_note */%}}
+
 - Only the speaker can read these notes
 - Press `S` key to view
-{{%/* /speaker_note */%}}
+  {{%/* /speaker_note */%}}
 ```
 
 Press the `S` key to view the speaker notes!
 
 {{< speaker_note >}}
+
 - Only the speaker can read these notes
 - Press `S` key to view
-{{< /speaker_note >}}
+  {{< /speaker_note >}}
 
 ---
 

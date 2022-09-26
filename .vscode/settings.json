@@ -1,23 +1,15 @@
 {
-	"python.pythonPath": "/Users/liyang/miniconda3/bin/python",
-	"grammarly.overrides": [
-		{
-			"files": [
-				"**/content/en/post/how-to-build-python-library/index.md"
-			],
-			"config": {
-				"audience": "general",
-				"dialect": "american",
-				"domain": "general",
-				"emotions": [
-					"optimistic",
-					"friendly",
-					"analytical"
-				],
-				"goals": [
-					"tellStory"
-				]
-			}
-		}
-	]
+  "python.pythonPath": "/Users/liyang/miniconda3/bin/python",
+  "grammarly.overrides": [
+    {
+      "files": ["**/content/en/post/how-to-build-python-library/index.md"],
+      "config": {
+        "audience": "general",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["optimistic", "friendly", "analytical"],
+        "goals": ["tellStory"]
+      }
+    }
+  ]
 }

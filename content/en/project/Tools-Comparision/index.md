@@ -3,9 +3,9 @@
 
 title: "Tools Comparision"
 summary: "The project aim to compare the performance for several kinds of tools used to dectect alternative splicing."
-authors: ['admin']
-tags: ['Development']
-categories: ['Computational Biology']
+authors: ["admin"]
+tags: ["Development"]
+categories: ["Computational Biology"]
 date: 2021-04-17T05:37:29+08:00
 featured: false
 # Optional external URL for project (replaces project detail page).
@@ -40,22 +40,23 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+
 {{< toc  >}}
 
 # 1. Project Description
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210417053027.png)
 
-The project aim to compare the performance for several kinds of tools used to dectect alternative splicing. The  tools are shown below:
+The project aim to compare the performance for several kinds of tools used to dectect alternative splicing. The tools are shown below:
 
 # 2. Program Plan
 
-## 2.1  Installation of Software
+## 2.1 Installation of Software
 
-- [x]  [rMATs](http://rnaseq-mats.sourceforge.net/index.html) | [Documentation](https://github.com/Xinglab/rmats-turbo/blob/v4.1.1/README.md)
+- [x] [rMATs](http://rnaseq-mats.sourceforge.net/index.html) | [Documentation](https://github.com/Xinglab/rmats-turbo/blob/v4.1.1/README.md)
 - [x] [MAJIQ](https://majiq.biociphers.org/) | [Documentation](https://biociphers.bitbucket.io/majiq/MAJIQ.html#builder)
 - [x] [SplAdder](https://github.com/ratschlab/spladder) | [Documentation](https://spladder.readthedocs.io/en/latest/general.html)
-- [x] [Jum](https://github.com/qqwang-berkeley/JUM) | [Documentation](https://github.com/qqwang-berkeley/JUM/wiki/A-Hitchhiker's-guide-to-JUM-(version-2.0.2-))
+- [x] [Jum](https://github.com/qqwang-berkeley/JUM) | [Documentation](<https://github.com/qqwang-berkeley/JUM/wiki/A-Hitchhiker's-guide-to-JUM-(version-2.0.2-)>)
 - [x] [Whippet](https://github.com/timbitz/Whippet.jl) | [Documentation](https://github.com/timbitz/Whippet.jl)
 
 ## 2.2 Create Test Data
@@ -65,7 +66,7 @@ The project aim to compare the performance for several kinds of tools used to de
 ## 2.3 Test Tools for simple data
 
 - [x] [MISO](http://hollywood.mit.edu/burgelab/miso/)
-- [x]  [rMATs](http://rnaseq-mats.sourceforge.net/index.html)
+- [x] [rMATs](http://rnaseq-mats.sourceforge.net/index.html)
 - [x] [MAJIQ](https://majiq.biociphers.org/)
 - [x] [LeafCutter](https://davidaknowles.github.io/leafcutter/)
 - [x] [SplAdder](https://github.com/ratschlab/spladder)
@@ -76,11 +77,11 @@ The project aim to compare the performance for several kinds of tools used to de
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.7.0-brightgreen.svg?style=flat-square)](https://github.com/snakemake/snakemake-wrappers/blob/38ad23b0e4f58ce7dbd8d32612157f449ca02c62/docs/index.rst) is used to construct workflow.
 
-- [x] Creat simulated data  
+- [x] Creat simulated data
 - [x] Create Rna-align rule
 - [x] Create Run-tools rules
   - [x] [MISO](http://hollywood.mit.edu/burgelab/miso/)
-  - [x]  [rMATs](http://rnaseq-mats.sourceforge.net/index.html)
+  - [x] [rMATs](http://rnaseq-mats.sourceforge.net/index.html)
   - [x] [MAJIQ](https://majiq.biociphers.org/)
   - [x] [LeafCutter](https://davidaknowles.github.io/leafcutter/)
   - [x] [SplAdder](https://github.com/ratschlab/spladder)

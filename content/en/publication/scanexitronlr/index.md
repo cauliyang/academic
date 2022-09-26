@@ -3,15 +3,14 @@ title: "ScanExitronLR: characterization and quantification of exitron splicing e
 
 draft: false
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- admin
-
+  - admin
 
 # Author notes (optional)
 author_notes:
-- "Equal contribution"
+  - "Equal contribution"
 
 date: "2022-09-13T00:00:00Z"
 doi: ""
@@ -32,7 +31,7 @@ publication_short: In *Bioinform*
 abstract: Exitron splicing is a type of alternative splicing where coding sequences are spliced out. Recently, exitron splicing has been shown to increase proteome plasticity and play a role in cancer. Long-read RNA-seq is well suited for quantification and discovery of alternative splicing events; however, there are currently no tools available for detection and annotation of exitrons in long-read RNA-seq data. Here we present ScanExitronLR, an application for the characterization and quantification of exitron splicing events in long-reads. From a BAM alignment file, reference genome and reference gene annotation, ScanExitronLR outputs exitron events at the individual transcript level. Outputs of ScanExitronLR can be used in downstream analyses of differential exitron splicing. In addition, ScanExitronLR optionally reports exitron annotations such as truncation or frameshift type, nonsense-mediated decay status, and Pfam domain interruptions. We demonstrate that ScanExitronLR performs better on noisy long-reads than currently published exitron detection algorithms designed for short-read data.ScanExitronLR is freely available at https://github.com/ylab-hi/ScanExitronLR and distributed as a pip package on the Python Package Index.Supplementary data are available at Bioinformatics online.
 
 # Summary. An optional shortened abstract.
-summary: 
+summary:
 
 tags: []
 
@@ -44,19 +43,19 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'en/publication/scanexitronlr/scanexitron.pdf'
-url_code: 'https://github.com/ylab-hi/ScanExitronLR'
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+url_pdf: "en/publication/scanexitronlr/scanexitron.pdf"
+url_code: "https://github.com/ylab-hi/ScanExitronLR"
+url_dataset: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
   focal_point: ""
   preview_only: false
 
@@ -73,5 +72,4 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
-
 ---

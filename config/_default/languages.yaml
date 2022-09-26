@@ -18,28 +18,26 @@ zh:
   menu:
     main:
       - name: 主页
-        url: '#about'
+        url: "#about"
         weight: 10
 
       - name: 文章
-        url: '#posts'
+        url: "#posts"
         weight: 20
 
       - name: 项目
-        url: '#projects'
+        url: "#projects"
         weight: 30
       - name: 演讲
-        url: '#talk'
+        url: "#talk"
         weight: 40
       - name: 论文
-        url: '#featured'
+        url: "#featured"
         weight: 50
       - name: 课程
         url: courses/
         weight: 60
 
       - name: 联系我
-        url: '#contact'
+        url: "#contact"
         weight: 70
-
-

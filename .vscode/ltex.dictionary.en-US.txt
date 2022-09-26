@@ -20,3 +20,4 @@ Sphnix
 Numpy
 docstrings
 PyPI
+pybox

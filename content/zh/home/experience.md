@@ -22,24 +22,24 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Ph.D. 
+  - title: Ph.D.
     company: University of Minnesota
-    company_url: 'https://twin-cities.umn.edu/'
+    company_url: "https://twin-cities.umn.edu/"
     location: Minnesota, US
-    date_start: '2020-09-01'
-    date_end: ''
+    date_start: "2020-09-01"
+    date_end: ""
     description: |2-
         Responsibilities include:
-        
+
         * Analysing
         * Modelling
         * Deploying
-        
+
   - title: Master
-    company: China Agricultural University 
-    company_url: ''
+    company: China Agricultural University
+    company_url: ""
     location: Beijing, China
-    date_start: '2018-09-01'
-    date_end: '2020-07-01'
-    description: Mainly focus on crop genomics and population genetics. 
+    date_start: "2018-09-01"
+    date_end: "2020-07-01"
+    description: Mainly focus on crop genomics and population genetics.
 ---

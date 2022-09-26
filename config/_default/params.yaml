@@ -5,7 +5,7 @@
 
 # Appearance
 
-theme: Minimal 
+theme: Minimal
 day_night: true
 font: Arial
 font_size: m
@@ -13,43 +13,43 @@ font_size: m
 # SEO
 
 site_type: Academic
-local_business_type: ''
-org_name: 'Yangyang Li; Ph.D in Northwestern University'
-description: 'My personal academic blog about Deep Learning and Bioinformatics'
-twitter: 'yangyangliz5'
+local_business_type: ""
+org_name: "Yangyang Li; Ph.D in Northwestern University"
+description: "My personal academic blog about Deep Learning and Bioinformatics"
+twitter: "yangyangliz5"
 
 # Contact (edit or remove options as required)
 
 email: yangyang.li@northwestern.edu
 phone: 507-606-8822
 address:
-  street: 303 E Superior St. 
+  street: 303 E Superior St.
   city: Chicago
   region: IL
-  postcode: '60611'
+  postcode: "60611"
   country: United States
   country_code: US
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
+  latitude: "37.4275"
+  longitude: "-122.1697"
 # appointment_url: 'https://calendly.com'
 contact_links:
- - icon: twitter
-   icon_pack: fab
-   name: DM Me
-   link: 'https://twitter.com/yangyangliz5' 
-  # - icon: skype
-  #   icon_pack: fab
-  #   name: Skype Me
-  #   link: 'skype:echo123?call'
-  # - icon: keybase
-  #   icon_pack: fab
-  #   name: Chat on Keybase
-  #   link: 'https://keybase.io/'
-  # - icon: comments
-  #   icon_pack: fas
-  #   name: Discuss on Forum
-  #   link: 'https://discourse.gohugo.io'
+  - icon: twitter
+    icon_pack: fab
+    name: DM Me
+    link: "https://twitter.com/yangyangliz5"
+    # - icon: skype
+    #   icon_pack: fab
+    #   name: Skype Me
+    #   link: 'skype:echo123?call'
+    # - icon: keybase
+    #   icon_pack: fab
+    #   name: Chat on Keybase
+    #   link: 'https://keybase.io/'
+    # - icon: comments
+    #   icon_pack: fas
+    #   name: Discuss on Forum
+    #   link: 'https://discourse.gohugo.io'
 
 # Site header
 
@@ -64,8 +64,8 @@ main_menu:
 
 # Localization
 
-date_format: 'Jan 2, 2006'
-time_format: '3:04 PM'
+date_format: "Jan 2, 2006"
+time_format: "3:04 PM"
 address_format: en-us
 
 # Site features
@@ -82,8 +82,8 @@ math: true
 diagram: true
 privacy_pack: true
 edit_page:
-  repo_url: 'https://github.com/cauliyang/academic'
-  content_dir: 'content/en'
+  repo_url: "https://github.com/cauliyang/academic"
+  content_dir: "content/en"
   repo_branch: master
   editable:
     page: false
@@ -105,7 +105,7 @@ copyright_license:
   allow_derivatives: false
   share_alike: true
   allow_commercial: false
-  notice: 'This website is licensed under CC BY-NC-ND 4.0'
+  notice: "This website is licensed under CC BY-NC-ND 4.0"
 abstract_length: 135
 plugins_js: []
 avatar:
@@ -122,7 +122,7 @@ breadcrumb:
   page_types:
     book: true
 comments:
-  provider: ''
+  provider: ""
   commentable:
     post: true
     book: true
@@ -130,28 +130,28 @@ comments:
     publication: true
     event: true
   disqus:
-    shortname: 'yangliblog'
+    shortname: "yangliblog"
     show_count: true
   commento:
-    url: ''
+    url: ""
 search:
   provider: wowchemy
   algolia:
-    app_id: ''
-    api_key: ''
-    index_name: ''
+    app_id: ""
+    api_key: ""
+    index_name: ""
     show_logo: false
 map:
-  provider: ''
-  api_key: ''
+  provider: ""
+  api_key: ""
   zoom: 15
 marketing:
-  google_analytics: 'UA-193681907-1'
-  google_tag_manager: ''
-  google_site_verification: ''
-  baidu_site_verification: ''
-  microsoft_clarity: '9lonep7yby'
-  baidu_tongji: ''
+  google_analytics: "UA-193681907-1"
+  google_tag_manager: ""
+  google_site_verification: ""
+  baidu_site_verification: ""
+  microsoft_clarity: "9lonep7yby"
+  baidu_tongji: ""
 cms:
   branch: master
   local_backend: false

@@ -4,9 +4,9 @@
 title: "Kmeans by Python"
 subtitle: "使用Python实现kmeans算法"
 summary: "本篇文章，详细记录如何使用**Python**进行**K-means**，分别用两种方法实现，并记录如何选取K值，并进行可视化评估结果"
-authors: ['admin']
-tags: ['Python']
-categories: ['Algorithm']
+authors: ["admin"]
+tags: ["Python"]
+categories: ["Algorithm"]
 date: 2021-04-05T12:54:10+08:00
 lastmod: 2021-04-05T12:54:10+08:00
 featured: true
@@ -16,7 +16,7 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  caption: "Image credit: [**Unsplash**](https://unsplash.com/)"
   focal_point: "Center"
   placement: 0
   preview_only: false
@@ -32,15 +32,14 @@ image:
 #    name: Jupyter Notebook
 #    url: 'https://github.com/cauliyang/Python_book_practice/blob/master/effective_python_practice.ipynb'
 
-
-url_pdf: ''
-url_code: 'https://github.com/cauliyang/work/tree/master/001_k_mean'
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+url_pdf: ""
+url_code: "https://github.com/cauliyang/work/tree/master/001_k_mean"
+url_dataset: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -52,24 +51,23 @@ projects: []
 
 {{< toc  >}}
 
-
 ## 1. **K-means**概念介绍
 
 ### 1.1 基础概念
 
-**K-means**是一种常用的无监督学习技术，用于在无法知道正确答案下发现数据中隐藏的结构，聚类的目标是在数据中找到自然分组，确保相同集群中元素比不同的集群中元素更加相似。**K-means**方法非常擅长识别球形数据，其缺点是必须指定集群数**K**。如果选择**K**值不当会造成分群效果不好，后文将会介绍两种方法用来评估**K**值及分群效果。并且本文采用两种方式实现**K-means**  
+**K-means**是一种常用的无监督学习技术，用于在无法知道正确答案下发现数据中隐藏的结构，聚类的目标是在数据中找到自然分组，确保相同集群中元素比不同的集群中元素更加相似。**K-means**方法非常擅长识别球形数据，其缺点是必须指定集群数**K**。如果选择**K**值不当会造成分群效果不好，后文将会介绍两种方法用来评估**K**值及分群效果。并且本文采用两种方式实现**K-means**
 
 - 使用**scikit-learn**模块进行**K-means**聚类分析。
-- 从头手写**K-means**方法。  
-  
+- 从头手写**K-means**方法。
+
 ### 1.2 算法原理
 
 1. 随机在样本中选取**K**质心作为起始聚类的中心。
 2. 将每个样本根据欧式距离分到最近的质心$\mu$所在的群中。
 3. 将所有样本分群后，重新计算以每个群的中心作为新的质心。
-4. 重复2，3 两步，知道质心不再改变，或者达到用户自定义的阈值或最大迭代数。
+4. 重复 2，3 两步，知道质心不再改变，或者达到用户自定义的阈值或最大迭代数。
 
-**欧式距离**的计算方法为：  
+**欧式距离**的计算方法为：
 
 $$d(x,y)^2 = \sum^{m}_{j = 1}(x_j  - y_j )^2 = \left\|x - y \right\|^2_2$$
 
@@ -78,16 +76,15 @@ $$d(x,y)^2 = \sum^{m}_{j = 1}(x_j  - y_j )^2 = \left\|x - y \right\|^2_2$$
 
 $$SSE = \sum^n_{i=1}\sum^k_{j=1} w^{(i,j)}\left\|x^{(i)} - \mu^{(i)} \right\|^2_2 $$
 
-
 其中 $i$代表样本索引 $j$代表分群索引
 
-##  2. 使用**scikit-learn**实现**K-means**方法
+## 2. 使用**scikit-learn**实现**K-means**方法
 
 ### 2.1 创建测试数据并实现算法
 
 首先导入所需要的模块：
 
-```python 
+```python
 # import module
 import numpy as np
 from matplotlib import cm
@@ -99,35 +96,36 @@ from sklearn.metrics import silhouette_samples
 
 因为二维数据可是简单的绘制在笛卡尔坐标系上，所以生成二维测试数据进行测试：
 
-```python 
+```python
 # creat tested data
-X, y = make_blobs(n_samples=150, # volume of data 
-                  n_features=2, # number of feature 
+X, y = make_blobs(n_samples=150, # volume of data
+                  n_features=2, # number of feature
                   centers=3, # number of centroid
-                  cluster_std=0.5,  # distribution of data 
+                  cluster_std=0.5,  # distribution of data
                   shuffle=True,
                   random_state=0)
 ```
 
 绘图查看原始数据：
 
-```python 
+```python
 # plot tested data
 plt.figure()
 plt.scatter(X[:, 0], X[:, 1], c='white', marker='o', edgecolor='black', s=50)
 plt.grid()
 plt.show()
 ```
+
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572156791933.png)
-从图中可以看出创建的测试数据有明显的分群情况,当然在真实的数据当中原始数据可能没有这么理想。我们先在没有推理的情况下确定**K**的值为3。
+从图中可以看出创建的测试数据有明显的分群情况,当然在真实的数据当中原始数据可能没有这么理想。我们先在没有推理的情况下确定**K**的值为 3。
 
 ```python
 # k-means
-km = KMeans(n_clusters=3, # K value 
+km = KMeans(n_clusters=3, # K value
             init='random',
-            n_init=10, # number of repeatation 
-            max_iter=300, 
-            tol=1e-4, 
+            n_init=10, # number of repeatation
+            max_iter=300,
+            tol=1e-4,
             random_state=0)
 # predict labels
 y_km = km.fit_predict(X)
@@ -135,8 +133,8 @@ y_km = km.fit_predict(X)
 
 我们进行可视化分群结果：
 
-```python 
-#creating function of ploting graph for reusing 
+```python
+#creating function of ploting graph for reusing
 def plot_res(y_km, X, n_cluster):
     # init colors and markers
     colors = ['lightgreen', 'orange', 'lightblue'][:n_cluster]
@@ -167,6 +165,7 @@ def plot_res(y_km, X, n_cluster):
     plt.show()
 
 ```
+
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572158215803.png)
 可以明显看到分群效果十分明显。不过其中还有许多问题：
 
@@ -175,9 +174,9 @@ def plot_res(y_km, X, n_cluster):
 
 ### 2.2 如何选取**K**值
 
-下面介绍如何使用肘解法选取合适的**K**值，肘解法目的是找出SSE变化幅度最大的**K**值。使用`km.inertia_` 即可调出$SSE$的值。
+下面介绍如何使用肘解法选取合适的**K**值，肘解法目的是找出 SSE 变化幅度最大的**K**值。使用`km.inertia_` 即可调出$SSE$的值。
 
-```python 
+```python
 
 distortions = []
 # test different  numbers of cluster  to  pick up the best K
@@ -192,7 +191,8 @@ for i in range(1, 11):
     distortions.append(km.inertia_)
 
 ```
-测试1-11的**K**值选取，并进行可视化查看结果。
+
+测试 1-11 的**K**值选取，并进行可视化查看结果。
 
 ```python
 # plot the tested result for the best K
@@ -204,7 +204,7 @@ plt.show()
 ```
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572160740933.png)
-从图中我们可以看出在**K**值为3的时候，$SSE$变化幅度最大，即可得知**K**为3是最优解。
+从图中我们可以看出在**K**值为 3 的时候，$SSE$变化幅度最大，即可得知**K**为 3 是最优解。
 
 ### 2.3 如何评估分群的质量
 
@@ -216,9 +216,9 @@ plt.show()
 
 $$s^{(i)} = \frac{b^{(i)} - a^{(i)}}{\max \\{{b^{(i)},a^{(i)}}\\}}$$
 
-轮廓系数的范围在-1到1之间，如果集群分离度和集群内聚度相等，即$b^{(i)}=a^{(i)}$。那么轮廓系数为0，如果$b^{(i)} >> a^{(i)}$ 则接近理想的轮廓系数 1 。
+轮廓系数的范围在-1 到 1 之间，如果集群分离度和集群内聚度相等，即$b^{(i)}=a^{(i)}$。那么轮廓系数为 0，如果$b^{(i)} >> a^{(i)}$ 则接近理想的轮廓系数 1 。
 
-可以使用**scikit-learn**中**metric**中的**silhouette_samples**计算样本的轮廓系数。也可以更方便的使用**silhouette_scores**直接计算所有样本的平均轮廓系数。下面显示**K**值基于3的分群结果。
+可以使用**scikit-learn**中**metric**中的**silhouette_samples**计算样本的轮廓系数。也可以更方便的使用**silhouette_scores**直接计算所有样本的平均轮廓系数。下面显示**K**值基于 3 的分群结果。
 
 ```python
 # we can use the graph of silhouette to evaluate  result
@@ -248,7 +248,7 @@ def plot_sil(y_km, X):
     yticks = []
     for i, c in enumerate(cluster_lables):
         # get values of  each cluster
-        c_silhouette_vals = silhouette_vals[y_km == c] 
+        c_silhouette_vals = silhouette_vals[y_km == c]
         c_silhouette_vals.sort()  # sort value for ploting
         y_ax_upper += len(c_silhouette_vals)
         color = cm.jet(float(i) / n_clusters)
@@ -272,13 +272,13 @@ def plot_sil(y_km, X):
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572162327225.png)
 
-从图中我们可以看出轮廓系数不接近于0，且接近于1表明我们的分群结果良好。且在图中轮廓系数的高度代表群内样本数量，如果样本数量相差太大，说明分群效果不是很好。图中虚线表示平均轮廓系数。
+从图中我们可以看出轮廓系数不接近于 0，且接近于 1 表明我们的分群结果良好。且在图中轮廓系数的高度代表群内样本数量，如果样本数量相差太大，说明分群效果不是很好。图中虚线表示平均轮廓系数。
 
-为更好的理解轮廓系数的使用，将**K**值变为2，进行聚类。
+为更好的理解轮廓系数的使用，将**K**值变为 2，进行聚类。
 
 ```python
 km = KMeans(
-    n_clusters=2,  # value of k has changed 
+    n_clusters=2,  # value of k has changed
     init='k-means++',
     n_init=10,
     max_iter=10,
@@ -286,6 +286,7 @@ km = KMeans(
     random_state=0)
 y_km = km.fit_predict(X)
 ```
+
 使用上方作图函数，先观察分群效果。
 
 ![](https://cauliyang.github.io/post-images/1572162593247.png)
@@ -294,9 +295,9 @@ y_km = km.fit_predict(X)
 
 ![](https://cauliyang.github.io/post-images/1572162888640.png)
 
-两个群的高度不一致表明分群效果不是很理想，且有的样本轮廓系数极低接近于0。表示分群有很大的问题，需要重新思考**K**值的选取。
+两个群的高度不一致表明分群效果不是很理想，且有的样本轮廓系数极低接近于 0。表示分群有很大的问题，需要重新思考**K**值的选取。
 
-##  3. K-means from scratch
+## 3. K-means from scratch
 
 我们根据算法原理使用**Python**一步步实现**K-means**，首先展示我们所用到的数据集，有关基因在不同条件下处理的表达数据，其中基因数量为样本数量，处理方式为纬度。并且设计为**Terminal**端使用。
 
@@ -304,21 +305,21 @@ y_km = km.fit_predict(X)
 
 `Usage : python k_mean.py k data max_it (cetroids)`
 
-其中 
+其中
 
-- k_mean.py 为程序脚本 
-- k 为分群数量  
-- data 为原始数据文件 
+- k_mean.py 为程序脚本
+- k 为分群数量
+- data 为原始数据文件
 - max_it 为最大递归次数
 - centroids 为初始的质心，用户可以选择提供或者不提供
 
 原始数据：
 
-gene_expression|treat_1|treat_2|...
--|-|-|-
-g_1|0.2|0.5|...
-g_2|1.4|1.6|...
-...|4.2|2.1|...
+| gene_expression | treat_1 | treat_2 | ... |
+| --------------- | ------- | ------- | --- |
+| g_1             | 0.2     | 0.5     | ... |
+| g_2             | 1.4     | 1.6     | ... |
+| ...             | 4.2     | 2.1     | ... |
 
 ### 3.1 Get parameters from terminal
 
@@ -332,6 +333,7 @@ import numpy as np
 from collections import Counter
 from operator import itemgetter
 ```
+
 从终端获取用户传递参数：
 
 ```python
@@ -346,7 +348,7 @@ def get_argv():
     argv_name = (
         'data',
         'init_cetroids',
-        'gene_num',  # numbers of row 
+        'gene_num',  # numbers of row
         'ndim',
         'max_it',  # max numbers of  iter
         'k')
@@ -366,7 +368,7 @@ def get_argv():
         #  if numbers of parameters is less than  need parameters  then print help
         print('''
             -------------------------------------------------
-            Requirement : numpy 
+            Requirement : numpy
 
             Usage : python k_mean.py k data max_it (cetroids)
 
@@ -385,8 +387,8 @@ def get_argv():
 
 ### 3.2 Creating function of report
 
-```python 
-# difining  function of reporting summary 
+```python
+# difining  function of reporting summary
 def summary(kw, tim, kmeanout='kmeans.out'):
     '''
     Create a summary function, count recursive times, run time, etc.。
@@ -406,9 +408,9 @@ def summary(kw, tim, kmeanout='kmeans.out'):
     print_cluster()
     # print overall information
     print(f'''
-    Max_iter_number : {kw['max_it']} 
-    Cluster_number  :{kw['k']} 
-    Time  : {tim:.2f}s 
+    Max_iter_number : {kw['max_it']}
+    Cluster_number  :{kw['k']}
+    Time  : {tim:.2f}s
     Date  : {time.asctime()}''')
     # creat statistic tial
     print('{:-<40}\n'.format('-'))
@@ -419,7 +421,7 @@ def summary(kw, tim, kmeanout='kmeans.out'):
 ```python
 # defining function to calculate Euclidean distance
 def eucl_Distance(init_cetroids, piece_data):
-    ''' 
+    '''
     Calculate the Euclidean distance between each data and the centroid
     '''
     distance = np.sqrt(np.sum((init_cetroids - piece_data)**2, axis=1))
@@ -430,9 +432,9 @@ def eucl_Distance(init_cetroids, piece_data):
 
 ### 3.4 Getting centroid information and recursive function
 
-```python 
+```python
 def get_Cetroid(file, k, cetroid_file=None):
-    ''' 
+    '''
     This function is used to get raw data file information: raw data, centroid, data volume, feature dimension
     '''
     # get content of  file
@@ -483,7 +485,7 @@ def get_Cetroid(file, k, cetroid_file=None):
 ```python
 def run(arg_dict, it_num=0):
     '''
-     the body of  k-means 
+     the body of  k-means
     '''
     # perform an iteration and verify that the results are stable
     # then  calculate the new centroid to be returned in dictionary form
@@ -521,9 +523,3 @@ def main():
 ```
 
 谢谢观看，欢迎交流！😎
-
-
-
-
-
-

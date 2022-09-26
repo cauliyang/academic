@@ -4,9 +4,9 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 # https://app.tinyletter.com/#!/
 
-title: None  # Website name
-baseurl: 'https://cauliyang.github.io/' # Website URL
-copyright: '© 2022 Yangyang Li. All Rights Reserved.' # Footer text, e.g. '© {year} Me'
+title: None # Website name
+baseurl: "https://cauliyang.github.io/" # Website URL
+copyright: "© 2022 Yangyang Li. All Rights Reserved." # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
@@ -30,7 +30,7 @@ module:
 ## ADVANCED
 ############################
 
-enableGitInfo: true 
+enableGitInfo: true
 summaryLength: 30
 paginate: 10
 enableEmoji: true
@@ -38,13 +38,13 @@ enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
-  event: '/talk/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
+  event: "/talk/:slug/"
+  tags: "/tag/:slug/"
+  categories: "/category/:slug/"
+  publication_types: "/publication-type/:slug/"
 disableAliases: true
 outputs:
-  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects ]
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
 markup:
   defaultMarkdownHandler: goldmark
@@ -80,4 +80,3 @@ security:
     getenv:
       - ^HUGO_
       - ^WC_
-

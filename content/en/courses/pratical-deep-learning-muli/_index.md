@@ -1,11 +1,10 @@
 ---
 title: Practical Deep Learning 	by Muli
 linkTitle: Learning Link
-summary: Online Courses for Practical Deep Learning  
-date: '2021-11-24'
+summary: Online Courses for Practical Deep Learning
+date: "2021-11-24"
 type: book
 ---
-
 
 {{< toc hide_on="xl" >}}
 
