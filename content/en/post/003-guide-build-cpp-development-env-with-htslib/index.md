@@ -9,16 +9,16 @@ tags: ["develop"]
 categories: ["c++"]
 date: 2022-06-15T23:17:30-05:00
 lastmod: 2022-06-15T23:17:30-05:00
-featured: true
+featured: false
 draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/)"
+  caption: "Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)"
   focal_point: Smart
-  preview_only: True
+  preview_only: False
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
