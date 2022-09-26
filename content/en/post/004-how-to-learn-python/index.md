@@ -38,7 +38,6 @@ projects: []
 toc: true
 ---
 
-
 ## 1. Introduction
 
 I have been learned and wrote _Python_ for about 4 years so far, and I still remember how I feel like when I begin to learn python in first time. That is my first time to reach the world of programming, and I am very excited about it. However, I never programmed before, so I don't know how to start. I just type _How to learn Python_ in search engine and I found a lot of tutorials and books. I pick up relatively popular one and start to learn it. So many wearied character and informal rules make me confused, but I persistently learn it. I will skip certain parts if I cannot understand them. I told myself that I should have a whole picture of _Python_ firstly then I will come back to read it again to get deeper upstanding. The most important thing is to persistently what you are doing whatever you encounter. Here is my path to become a _Pythoner_ from zero, and I hope my girlfriend :heart: will become beautiful and happy _Pythoner_
