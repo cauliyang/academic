@@ -24,11 +24,11 @@ feature:
     icon: python
     icon_pack: fab
     name: Python
-  - description: 10%
+  - description: 50%
     icon: rust
     icon_pack: fab
     name: rust
-  - description: 55%
+  - description: 45%
     icon: r-project
     icon_pack: fab
     name: R
