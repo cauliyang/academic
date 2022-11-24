@@ -30,3 +30,6 @@ Docstring
 MkDocs
 Snakemake
 fastq
+pypi
+Zlib
+Stackoverflow

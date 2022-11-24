@@ -27,6 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 toc: true
+show_related: true
 ---
 
 ## Python project for development

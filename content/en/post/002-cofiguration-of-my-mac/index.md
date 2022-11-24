@@ -42,10 +42,10 @@ toc: true
 
 ## 1. Introduction
 
-My new M1 Macbook Pro is a powerful machine, and I am very happy to use it. Also, many powerful tools make my life easier.
+My new M1 MacBook Pro is a powerful machine, and I am very happy to use it. Also, many powerful tools make my life easier.
 Here is a list of tools I use:
 
-{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.26.58.png" caption="Page 1" numbered="true"  width="500">}}
+{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.26.58.png" caption="Page 1" numbered="true" width="500">}}
 {{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27 22.27.07.png" caption="Page 2" numbered="true" width="500" >}}
 {{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27 22.27.14.png" caption="Page 3" numbered="true" width="500" >}}
 

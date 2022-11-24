@@ -14,7 +14,7 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/)"
+  caption: "Image credit: [**Pixilart**](https://www.pixilart.com/)"
   focal_point: Smart
   preview_only: True
 
@@ -44,7 +44,7 @@ I have been learned and wrote _Python_ for about 4 years so far, and I still rem
 
 ## 2. Conquer Your Fear
 
-In the beginning, programming is not a hard thing just like cooking. If you can conduct enough practice, you will be able to write elegant and excise code with good readability and sustanatity. So you do not need to worry about you cannot learn it. You are a smart girl, and you must, can master it and use it properly in the future.
+In the beginning, programming is not a hard thing just like cooking. If you can conduct enough practice, you will be able to write elegant and excise code with good readability and sustantity. So you do not need to worry about you cannot learn it. You are a smart girl, and you must, can master it and use it properly in the future.
 
 ## 3. The First Book I Read
 

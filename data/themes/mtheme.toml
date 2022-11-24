@@ -1,0 +1,23 @@
+# Theme metadata
+name = "mtheme"
+
+[light]
+# Primary
+primary = "#1565c0"
+
+# Menu
+menu_primary = "#181818"
+menu_text = "#f8f8f8"
+menu_text_active = "#2962ff"
+menu_title = "#a1b56c"
+
+# Home sections
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(247, 247, 247)"
+
+[dark]
+# Primary
+primary = "#bbdefb"
+
+link = "#bbdefb"
+link_hover = "#bbdefb"
