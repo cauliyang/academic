@@ -8,7 +8,7 @@ authors: [admin]
 tags: [Development]
 categories: [Python]
 date: 2021-12-03T00:03:50-06:00
-lastmod: 2021-12-03T00:03:50-06:00
+lastmod: 2022-11-28T00:03:50-06:00
 featured: false
 draft: false
 
@@ -88,7 +88,7 @@ If you would like to contribute to this toolbox, please feel free to fork it on 
 <!-- link -->
 
 [conda]: https://conda.io/
-[contributing guide]: https://github.com/cauliyang/pybox/blob/main/CONTRIBUTING.rst
+[contributing guide]: https://github.com/cauliyang/pybox/blob/main/CONTRIBUTING.md
 [github]: https://github.com/cauliyang/pybox
 [google driver]: https://drive.google.com/
-[pypi]: https://pypi.org/project/pybox/
+[pypi]: https://pypi.org/project/pyboxes/
