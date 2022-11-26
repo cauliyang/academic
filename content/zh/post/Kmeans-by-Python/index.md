@@ -481,7 +481,6 @@ def get_Cetroid(file, k, cetroid_file=None):
                                                   k)
     # return informattion
     return Result, Handle.all(), argv, max_it
-
 ```
 
 ### 3.5 Creating Body function and Main function

@@ -43,9 +43,11 @@ I will divide the configuration into two parts.
 In the first part, I will introduce the software I heavily use, and then share the configuration files in the second part.
 My newest device is MacBook Pro of M1 model, Here is a list of tools I use:
 
-{{\< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.26.58.png" caption="Page 1" numbered="true" width="333">}}
-{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main/img/iShot2021-11-27%2022.27.07.png" caption="Page 2" numbered="true" width="330" >}}
-{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.27.14.png" caption="Page 3" numbered="true" width="333" >}}
+{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.26.58.png" caption="Page 1" numbered="true" width="333">}}
+
+{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main/img/iShot2021-11-27%2022.27.07.png" caption="Page 2" numbered="true" width="330" >}}
+
+{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.27.14.png" caption="Page 3" numbered="true" width="333" >}}
 
 ## 2. System Environment Tools
 
@@ -144,7 +146,7 @@ The TLDR pages are a community effort to simplify the beloved man pages with pra
 You can get usage clearly and quickly by using `tldr` compared to `man`.
 In mac, you can install that by `brew install tldr`.
 
-{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190712.png" caption="tldr" numbered="true" width="500" >}}
+{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190712.png" caption="tldr" numbered="true" width="500" >}}
 
 - [tree]
 
@@ -154,25 +156,25 @@ When directory arguments are given, tree lists all the files or directories foun
 Upon completion of listing all files and directories found, tree returns the total number of files.
 You can install that by `brew install tree`.
 
-{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png" caption="tree" numbered="true" width="500" >}}
+{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png" caption="tree" numbered="true" width="500" >}}
 
 - [cheat.sh]
 
 **cheat.sh** is the unified access to the best community driven cheat sheets repositories of the world. I like it very much :heart:
 
-{{\< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="400" >}}
+{{< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="400" >}}
 
 - [dust]
 
 dust = du + rust. It like du but more intuitive.
 
-{{\< figure src= "https://raw.githubusercontent.com/bootandy/dust/master/media/snap.png" caption="dust" numbered="true" width="500" >}}
+{{< figure src= "https://raw.githubusercontent.com/bootandy/dust/master/media/snap.png" caption="dust" numbered="true" width="500" >}}
 
 - [hyperfine]
 
 **hyperfine** is a command-line benchmarking tool.
 
-{{\< figure src= "https://camo.githubusercontent.com/88a0cb35f42e02e28b0433d4b5e0029e52e723d8feb8df753e1ed06a5161db56/68747470733a2f2f692e696d6775722e636f6d2f7a31394f5978452e676966" caption="hyperfine" numbered="true" width="500" >}}
+{{< figure src= "https://camo.githubusercontent.com/88a0cb35f42e02e28b0433d4b5e0029e52e723d8feb8df753e1ed06a5161db56/68747470733a2f2f692e696d6775722e636f6d2f7a31394f5978452e676966" caption="hyperfine" numbered="true" width="500" >}}
 
 ## 3. Editor
 
