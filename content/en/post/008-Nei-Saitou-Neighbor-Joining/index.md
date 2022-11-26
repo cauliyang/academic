@@ -1,12 +1,13 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Nei Saitou Neighbor Joining"
-subtitle: "Code for implementing NJ Algorithm"
-summary: "one of my homework that requires me to implement Nei-Saitou Neighbor Joining algorithm to construct phylogenetic tree, as well as evaluating the bootstrap cconfidence"
-authors: ["admin"]
-tags: ["Bioinformatics"]
-categories: ["Algorithm "]
+title: Nei Saitou Neighbor Joining
+subtitle: Code for implementing NJ Algorithm
+summary: one of my homework that requires me to implement Nei-Saitou Neighbor Joining
+  algorithm to construct phylogenetic tree, as well as evaluating the bootstrap cconfidence
+authors: [admin]
+tags: [Bioinformatics]
+categories: ['Algorithm ']
 date: 2021-04-03T11:15:00+08:00
 lastmod: 2021-04-03T11:15:00+08:00
 featured: false
@@ -17,8 +18,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/)"
-  focal_point: "Smart"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  focal_point: Smart
   placement: 0
   preview_only: true
 
@@ -38,31 +39,31 @@ Before diving into code, the description of NJ algorithm can be found in ![This 
 
 ## 2. Neighbor Joining Algorithm
 
-The Neighbor-joining Algorithm Given a distance matrix d compute an unrooted tree topology complete with edge lengths that tries to preserve the additive property: $d_{i,m} + d_{j,m} − d_{i,j} = 2d_{k,m}$ where $k$ is the ﬁrst node on both routes from $i$ and $j$ to $m$.
+The Neighbor-joining Algorithm Given a distance matrix d compute an unrooted tree topology complete with edge lengths that tries to preserve the additive property: $d\_{i,m} + d\_{j,m} − d\_{i,j} = 2d\_{k,m}$ where $k$ is the ﬁrst node on both routes from $i$ and $j$ to $m$.
 
-1. Let the set of clusters be called $L$ and initially $i → C_i; ∀i$ that is $| C_i | = 1$ and $L = C_1 , C_2 , . . . C_N$.
-2. $d_{i,j}$ is the distance from the initial distance matrix.
-3. Compute “normalized distance matrix” $D_{i,j}$ for all $i, j$ such that
-   $$D_{i,j} = d_{i,j} − (r_i + r_j ) \ where\ r_i = \frac{1}{|L|-2} \sum_{z \in L} d_{i,z}$$
-   This subtracts the average distance to all other nodes than the pair involved. **Note: this is not where we use the distance identity.**
-4. Use normalized distance to ﬁnd $(i, j) = argmin D_{i,j}; C_i,C_j \in L$
-5. Merge $C_i ∪ C_j → C_k$ where $k$ is a new cluster number.
-6. Mark old clusters as used so that effectively: $L ← L − C_i − C_j$
-7. Compute a new normalized distance matrix including the new cluster $k$ and excluding $i, j$.
-   $$d_{k,z} = d_{z,k} = (d_{i,z} + d_{j,,z} − d_{i,j} ) for all z ∈ L 2$$
-   This uses the additivity of the distances to compute the distance to the new cluster from each other node.
-8. Compute the length of the edges from $k$ to $i$ and $j$. Even though $C_k$has assumed the role of both $C_i$ and $C_j$ you still need the edge length to $i$ and $j$ from $k$ in order to “draw” the tree.
-   $$edge_{i,k} = (d_{i,j} + r_i − r_j)$$
-   $$edge_{j,k} = (d_{i,j} + r_j − r_i)$$
-9. Deﬁne height $h_k = d_{i,j} /2$ where $h_k$ is the height of node that is the ancestor to all in $C_k$. When drawing the tree $h_k$ is the height above the baseline (where all the leaves are).
+01. Let the set of clusters be called $L$ and initially $i → C_i; ∀i$ that is $| C_i | = 1$ and $L = C_1 , C_2 , . . . C_N$.
+02. $d\_{i,j}$ is the distance from the initial distance matrix.
+03. Compute “normalized distance matrix” $D\_{i,j}$ for all $i, j$ such that
+    $$D\_{i,j} = d\_{i,j} − (r_i + r_j ) \\ where\\ r_i = \\frac{1}{|L|-2} \\sum\_{z \\in L} d\_{i,z}$$
+    This subtracts the average distance to all other nodes than the pair involved. **Note: this is not where we use the distance identity.**
+04. Use normalized distance to ﬁnd $(i, j) = argmin D\_{i,j}; C_i,C_j \\in L$
+05. Merge $C_i ∪ C_j → C_k$ where $k$ is a new cluster number.
+06. Mark old clusters as used so that effectively: $L ← L − C_i − C_j$
+07. Compute a new normalized distance matrix including the new cluster $k$ and excluding $i, j$.
+    $$d\_{k,z} = d\_{z,k} = (d\_{i,z} + d\_{j,,z} − d\_{i,j} ) for all z ∈ L 2$$
+    This uses the additivity of the distances to compute the distance to the new cluster from each other node.
+08. Compute the length of the edges from $k$ to $i$ and $j$. Even though $C_k$has assumed the role of both $C_i$ and $C_j$ you still need the edge length to $i$ and $j$ from $k$ in order to “draw” the tree.
+    $$edge\_{i,k} = (d\_{i,j} + r_i − r_j)$$
+    $$edge\_{j,k} = (d\_{i,j} + r_j − r_i)$$
+09. Deﬁne height $h_k = d\_{i,j} /2$ where $h_k$ is the height of node that is the ancestor to all in $C_k$. When drawing the tree $h_k$ is the height above the baseline (where all the leaves are).
 10. $L ← L ∪ C_k$
 11. While there is more than two clusters left go to step 3
 12. Finally, join the remaining two clusters with:
-    $$edge_{j,k} = d_{i,j} $$
+    $$edge\_{j,k} = d\_{i,j} $$
 
 **Implementation Notes Consider this part of the computation:**
-$$D_{i,j} = d_{i,j} − (r_i + r_j ) \ where \ r_i =  \frac{1}{|L|-2} \sum_{z \in L}d_{i,z}$$
-The values of r*z can be computed once each time we want to compute matrix $D$. This saves a vast amount of time. Furthermore, since $D*{i,j}$ is only used to ﬁnd the argmin of $D_{i,j}$ we actually don’t have to save array $D$; we only need to ﬁnd the argmin of it. So ﬁrst compute all the r and then combine the argmin step with the computation of $D_{i,j}$
+$$D\_{i,j} = d\_{i,j} − (r_i + r_j ) \\ where \\ r_i =  \\frac{1}{|L|-2} \\sum\_{z \\in L}d\_{i,z}$$
+The values of r*z can be computed once each time we want to compute matrix $D$. This saves a vast amount of time. Furthermore, since $D*{i,j}$ is only used to ﬁnd the argmin of $D\_{i,j}$ we actually don’t have to save array $D$; we only need to ﬁnd the argmin of it. So ﬁrst compute all the r and then combine the argmin step with the computation of $D\_{i,j}$
 
 ## 3. Implementation
 
@@ -71,11 +72,11 @@ I write code contained comments, and it is about 1000 lines that consumes me two
 ```python
 # -*- coding: UTF-8 -*-
 # Time 20201109
-'''
-This code integrate bootstrap, geting edge_file and tree_file
+"""
+This code integrate bootstrap, getting edge_file and tree_file
 
 USAGE: python -i fa_file -d out_distance_matrix -e out_edge -t out_tree -b number_bootstrap
-'''
+"""
 # import needed library
 import argparse
 import logging
@@ -87,8 +88,8 @@ import pandas as pd
 
 
 class Timer:
-    """[construct  Timer to show working time of tasks]
-    """
+    """[construct  Timer to show working time of tasks]"""
+
     def __init__(self, func=time.perf_counter):
         """[init values]
 
@@ -109,7 +110,7 @@ class Timer:
         """
 
         if self._start is not None:
-            raise RuntimeError('Already started')
+            raise RuntimeError("Already started")
 
         self._start = self._func()
 
@@ -120,7 +121,7 @@ class Timer:
             RuntimeError[if task has not started then raise error]
         """
         if self._start is None:
-            raise RuntimeError('Not started')
+            raise RuntimeError("Not started")
 
         end = self._func()
 
@@ -129,8 +130,7 @@ class Timer:
         self._start = None
 
     def reset(self):
-        """[reset the working time]
-        """
+        """[reset the working time]"""
         self.elapsed = 0
 
     def running(self):
@@ -143,24 +143,21 @@ class Timer:
         return self._start is not None
 
     def __enter__(self):
-        """[function used to address 'with text']
-        """
+        """[function used to address 'with text']"""
 
         self.start()
 
         return self
 
     def __exit__(self, *args):
-        """[function used to address 'with text']
-        """
+        """[function used to address 'with text']"""
 
         self.stop()
 
 
 class TreeNode:
-    """[class of tree node]
+    """[class of tree node]"""
 
-    """
     def __init__(self, key=None):
         """[init values of tree node]
 
@@ -203,7 +200,7 @@ class TreeNode:
         """
         # create a new node
         temp = TreeNode(right_object)
-        # if right childern exist
+        # if right children exist
         if self.right:
 
             temp.right = self.right
@@ -222,17 +219,17 @@ class TreeNode:
 
         handle = False
 
-        if self.key[0] == 'root':
+        if self.key[0] == "root":
 
             handle = True
 
         return handle
 
     def isLeaf(self):
-        """[check if the node is Leaf node]
+        """check if the node is Leaf node
 
         Returns:
-            [bool]: [if the node is Leaf return True]
+            bool: if the node is Leaf return True
         """
 
         handle = False
@@ -244,10 +241,10 @@ class TreeNode:
         return handle
 
     def catch_leaf(self):
-        """[show the partion list of leafs below the node, and mainly used to debug]
+        """show the partition list of leafs below the node, and mainly used to debug
 
         Returns:
-            [list]: [a list contained all leaf below the node]
+            list: a list contained all leaf below the node
         """
 
         LIST = []
@@ -268,8 +265,7 @@ class TreeNode:
         return LIST
 
     def postorder(self):
-        """[tree traversal with postorder, and mainly used to debug]
-        """
+        """[tree traversal with postorder, and mainly used to debug]"""
         if self.left:
 
             self.left.postorder()
@@ -288,54 +284,57 @@ def get_parser() -> dict:
         [dict]: [return a dict stored parameters]
     """
     # set logging
-    logging.basicConfig(level=logging.DEBUG,
-                        format='%(levelname)s:%(asctime)s:%(message)s')
+    logging.basicConfig(
+        level=logging.DEBUG, format="%(levelname)s:%(asctime)s:%(message)s"
+    )
 
     # set parser
     parser = argparse.ArgumentParser(
-        prog='PROG',
-        description='Program designed to condcut NJ ',
-        formatter_class=argparse.MetavarTypeHelpFormatter)
+        prog="PROG",
+        description="Program designed to condcut NJ ",
+        formatter_class=argparse.MetavarTypeHelpFormatter,
+    )
 
     # add parameter for input of fa file
-    parser.add_argument('-i',
-                        '--input',
-                        help='The input file (fasta format)',
-                        required=True,
-                        type=str)
-
-    # add parameter for outout of edge file
     parser.add_argument(
-        '-e',
-        '--edge',
-        help='The output file of edges matrix. Default: edges.txt',
-        default='edges.txt',
-        type=str)
+        "-i", "--input", help="The input file (fasta format)", required=True, type=str
+    )
+
+    # add parameter for output of edge file
+    parser.add_argument(
+        "-e",
+        "--edge",
+        help="The output file of edges matrix. Default: edges.txt",
+        default="edges.txt",
+        type=str,
+    )
 
     # add parameter for output of tree file
     parser.add_argument(
-        '-t',
-        '--tree',
-        help='The output file of newick tree. Default: tree.txt',
-        default='tree.txt',
-        type=str)
+        "-t",
+        "--tree",
+        help="The output file of newick tree. Default: tree.txt",
+        default="tree.txt",
+        type=str,
+    )
 
     # add parameter for output of distance matrix
     parser.add_argument(
-        '-d',
-        '--distance',
-        help=
-        'The output file of distance matrix. Default: genetic_distance.txt',
-        default='genetic_distance.txt',
-        type=str)
+        "-d",
+        "--distance",
+        help="The output file of distance matrix. Default: genetic_distance.txt",
+        default="genetic_distance.txt",
+        type=str,
+    )
 
-    # add parametr for number of boostrap; Default: not conduct bootstrap
+    # add parameter for number of bootstrap; Default: not conduct bootstrap
     parser.add_argument(
-        '-b',
-        '--bootstrap',
-        help="The number of boostrap. Result will be stored in 'bootstrap.txt'",
+        "-b",
+        "--bootstrap",
+        help="The number of bootstrap. Result will be stored in 'bootstrap.txt'",
         default=None,
-        type=int)
+        type=int,
+    )
 
     # get parameters
     args = parser.parse_args()
@@ -344,7 +343,7 @@ def get_parser() -> dict:
 
 
 ##############################################
-#CELL FOR GETING GENETIC DISTANCE MATRIX
+# CELL FOR GETTING GENETIC DISTANCE MATRIX
 ##############################################
 
 
@@ -358,7 +357,7 @@ def read_input(input: str) -> dict:
         dict: [seq_label: (seq,index )]
     """
     #  create namedtuple to store information
-    seqs, seq = {}, namedtuple('info', ['seq', 'index'])
+    seqs, seq = {}, namedtuple("info", ["seq", "index"])
 
     # open file as a list
     content = open(input).readlines()
@@ -369,10 +368,9 @@ def read_input(input: str) -> dict:
     # read seq into the dict
     for index, line in enumerate(content):
         # check header
-        if line.startswith('>'):
+        if line.startswith(">"):
 
-            seqs[line.strip('>\n')] = seq(content[index + 1].strip(),
-                                          read_index)
+            seqs[line.strip(">\n")] = seq(content[index + 1].strip(), read_index)
             read_index += 1
 
     return seqs
@@ -404,9 +402,8 @@ def genetic_distance(seq1: str, seq2: str) -> float:
     return mismatch / length
 
 
-def fetch_distance(seq1_index: str, seq2_index: str,
-                   matrix: dict) -> float or None:
-    """[fetch distance from distance matrix in case comupute pair distance repeatly]
+def fetch_distance(seq1_index: str, seq2_index: str, matrix: dict) -> float or None:
+    """[fetch distance from distance matrix in case comupute pair distance repeatedly]
 
     Args:
         seq1_index (str): [seq1 label]
@@ -435,21 +432,21 @@ def get_distance_matrix(seqs: dict, out: str) -> dict:
     """[write distance matrix to file]
 
     Args:
-        seqs (dict): [store infomation of seqs like {seq_label: (seq:, index:)}]
+        seqs (dict): [store information of seqs like {seq_label: (seq:, index:)}]
         out (str): [the name of genetic distance file]
 
     Returns:
         dict: [{(seq1_label,seq2_label):genetic_distance}]
     """
     # open new file
-    out_put = open(out, 'w')
+    out_put = open(out, "w")
 
     # init dict
     distance_map = {}
 
     # write header
-    header = '\t'.join(seqs.keys())
-    out_put.write(f'\t{header}\n')
+    header = "\t".join(seqs.keys())
+    out_put.write(f"\t{header}\n")
 
     # begin to calculate distance and write to file
     for seq1_label, seq1_info in seqs.items():
@@ -468,8 +465,8 @@ def get_distance_matrix(seqs: dict, out: str) -> dict:
 
             line.append(distance)
         # write every line
-        line = '\t'.join([str(element) for element in line])
-        out_put.write(f'{seq1_label}\t{line}\n')
+        line = "\t".join([str(element) for element in line])
+        out_put.write(f"{seq1_label}\t{line}\n")
 
     out_put.close()
 
@@ -481,8 +478,7 @@ def get_distance_matrix(seqs: dict, out: str) -> dict:
 ##############################################
 
 
-def cacl_sum_distance(taxa: str, leaf_set: set,
-                      distance_matrix: dict) -> float:
+def cacl_sum_distance(taxa: str, leaf_set: set, distance_matrix: dict) -> float:
     """[calculate sum distance of node away from other nodes]
 
     Args:
@@ -515,10 +511,10 @@ def find_qmin(leaf_set: set, distance_matrix: dict) -> dict:
     """
     # init dict
     qmin = {
-        'combination': None,  # combination of node for merging
-        'q_value': None,  # min Q value
-        'taxa1_sum': None,  # sum distance of node away from others
-        'taxa2_sum': None
+        "combination": None,  # combination of node for merging
+        "q_value": None,  # min Q value
+        "taxa1_sum": None,  # sum distance of node away from others
+        "taxa2_sum": None,
     }
 
     # calculate  Q value every combinatin of nodes
@@ -527,22 +523,29 @@ def find_qmin(leaf_set: set, distance_matrix: dict) -> dict:
         taxa1, taxa2 = combination
         # calculate sum distance of node away from others
         taxa1_sum, taxa2_sum = cacl_sum_distance(
-            taxa1, leaf_set,
-            distance_matrix), cacl_sum_distance(taxa2, leaf_set,
-                                                distance_matrix)
+            taxa1, leaf_set, distance_matrix
+        ), cacl_sum_distance(taxa2, leaf_set, distance_matrix)
         # get Q value
         value = (len(leaf_set) - 2) * distance - taxa1_sum - taxa2_sum
         # compare Q value
-        if not qmin['q_value']:
+        if not qmin["q_value"]:
             # if Q value does not exist then store related information
-            qmin['q_value'], qmin['combination'], qmin['taxa1_sum'], qmin[
-                'taxa2_sum'] = value, combination, taxa1_sum, taxa2_sum
-        # if Q value exist then compare to choose minimun value
+            (
+                qmin["q_value"],
+                qmin["combination"],
+                qmin["taxa1_sum"],
+                qmin["taxa2_sum"],
+            ) = (value, combination, taxa1_sum, taxa2_sum)
+        # if Q value exist then compare to choose minimum value
         else:
-            if value < qmin['q_value']:
+            if value < qmin["q_value"]:
 
-                qmin['q_value'], qmin['combination'], qmin['taxa1_sum'], qmin[
-                    'taxa2_sum'] = value, combination, taxa1_sum, taxa2_sum
+                (
+                    qmin["q_value"],
+                    qmin["combination"],
+                    qmin["taxa1_sum"],
+                    qmin["taxa2_sum"],
+                ) = (value, combination, taxa1_sum, taxa2_sum)
 
     return qmin
 
@@ -556,7 +559,7 @@ def help_nj(leaf_set: set, distance_matrix: dict):
 
     Returns:
         TREEDICT: a dict stored node that has been merged in binary tree format
-        final_leaf_set: final twos node after finshing NJ
+        final_leaf_set: final twos node after finishing NJ
         final_matrix:  genetic distances of final two nodes
     """
     # init dict to store nodes that has been merged in format of Binary Tree
@@ -581,28 +584,28 @@ def help_nj(leaf_set: set, distance_matrix: dict):
             # find min Q value
             qmin_info = find_qmin(leaf_set, distance_matrix)
             # get nodes needed to be merged
-            taxa1, taxa2 = qmin_info['combination']
+            taxa1, taxa2 = qmin_info["combination"]
             # edge from taxa1 to new node
-            edge_taxa1_node = 0.5 * distance_matrix[
-                qmin_info['combination']] + (qmin_info['taxa1_sum'] -
-                                             qmin_info['taxa2_sum']) / (
-                                                 2 * (len(leaf_set) - 2))
+            edge_taxa1_node = 0.5 * distance_matrix[qmin_info["combination"]] + (
+                qmin_info["taxa1_sum"] - qmin_info["taxa2_sum"]
+            ) / (2 * (len(leaf_set) - 2))
             # edge from taxa1 to new node
-            edge_taxa2_node = distance_matrix[
-                qmin_info['combination']] - edge_taxa1_node
+            edge_taxa2_node = (
+                distance_matrix[qmin_info["combination"]] - edge_taxa1_node
+            )
 
             # init dict to update genetic matrix
             matrix = {}
             # create label for new node
-            new_node = f'{taxa1}_{taxa2}'
+            new_node = f"{taxa1}_{taxa2}"
             # calculate distance from new node to other nodes
-            for node in leaf_set - set(qmin_info['combination']):
+            for node in leaf_set - set(qmin_info["combination"]):
                 # store in new genetic matrix with information of old genetic matrix
-                matrix[(
-                    new_node,
-                    node)] = (fetch_distance(taxa1, node, distance_matrix) +
-                              fetch_distance(taxa2, node, distance_matrix) -
-                              distance_matrix[(taxa1, taxa2)]) * 0.5
+                matrix[(new_node, node)] = (
+                    fetch_distance(taxa1, node, distance_matrix)
+                    + fetch_distance(taxa2, node, distance_matrix)
+                    - distance_matrix[(taxa1, taxa2)]
+                ) * 0.5
 
             # store genetic distances of other nodes in new genetic matrix
             for combination, distance in distance_matrix.items():
@@ -612,7 +615,7 @@ def help_nj(leaf_set: set, distance_matrix: dict):
                     matrix[combination] = distance
 
             # store phylogenetic nodes that has been merged in Binary Tree format
-            # creat a tree node that linked two merged nodes in Binary Tree
+            # create a tree node that linked two merged nodes in Binary Tree
 
             # if one of merged nodes has been in Binary Tree then add edges
             # taxa1 is always regarded as left children
@@ -649,7 +652,7 @@ def help_nj(leaf_set: set, distance_matrix: dict):
             # update genetic distance matrix
             distance_matrix = matrix
             # update current phylogenetic nodes needed to be merged
-            leaf_set -= set(qmin_info['combination'])
+            leaf_set -= set(qmin_info["combination"])
             leaf_set.add(new_node)
 
             return neighbor_joining(leaf_set, distance_matrix)
@@ -666,10 +669,10 @@ def help_nj(leaf_set: set, distance_matrix: dict):
 
 
 def my_tree(TREEDICT: dict, final_distance_matrix: dict, seqs: dict):
-    """   function to create Binary tree but it has fake root
-            because phylogenetic node has three childern
+    """function to create Binary tree but it has fake root
+            because phylogenetic node has three children
             hence create a fake node as root to get a Binary Tree
-            all following behaivors related Binar Tree usually consider this situation
+            all following behaviors related Binary Tree usually consider this situation
 
             for binary_tree.key:
 
@@ -701,17 +704,17 @@ def my_tree(TREEDICT: dict, final_distance_matrix: dict, seqs: dict):
                 last_node_label = label
 
     # create a fake root with label 'root'
-    fake_root = TreeNode(('root', ' '))
+    fake_root = TreeNode(("root", " "))
     # get node label of final two nodes after NJ
     current_node_index = list(TREEDICT.keys())
     # if final two nodes are merged node
     if not last_node_label:
 
-        # add last edge to right childern of fake root
-        # because the left childern of fake root is "TRUE root", which has three childerns
-        # the right childern of fake root is linked to left children of it in real
-        # so the edge indictes the distance between left childern and right childern
-        # even though right childern is linked to fake root in binary_tree
+        # add last edge to right children of fake root
+        # because the left children of fake root is "TRUE root", which has three childerns
+        # the right children of fake root is linked to left children of it in real
+        # so the edge indicates the distance between left children and right children
+        # even though right children is linked to fake root in binary_tree
         TREEDICT[current_node_index[1]].key[1] = last_node_edges
 
         # create tree structure
@@ -724,10 +727,10 @@ def my_tree(TREEDICT: dict, final_distance_matrix: dict, seqs: dict):
         # set node that is not merged node as tree structure
         right_node = TreeNode([last_node_label, last_node_edges])
 
-        # set one of final two nodes, a merged node, as left childern of fake root
+        # set one of final two nodes, a merged node, as left children of fake root
         fake_root.left = TREEDICT[current_node_index[0]]
 
-        # add right childern
+        # add right children
         fake_root.right = right_node
 
     return fake_root
@@ -747,7 +750,7 @@ def help_edge_matrix(tree, seqs: dict, edge_file: str):
     # init index for internal node
     N = len(seqs) + 1
     # open new file
-    EDGE_FILE = open(edge_file, 'w')  # changes
+    EDGE_FILE = open(edge_file, "w")  # changes
 
     def edge_matrix(tree):
         # get nonlocal value
@@ -760,7 +763,7 @@ def help_edge_matrix(tree, seqs: dict, edge_file: str):
                 tree.index = None
             # tree.key[0] is label of node
             # if it not in seqs then it is internal node
-            elif (tree.key[0] not in seqs):
+            elif tree.key[0] not in seqs:
                 # set index for internal node
                 tree.index = N
                 N += 1
@@ -768,20 +771,18 @@ def help_edge_matrix(tree, seqs: dict, edge_file: str):
             else:
                 # get index of leaf node
                 tree.index = seqs[tree.key[0]].index
-            # write information of parent and chilren
-            # left and right childern of fake root have no parent : None
+            # write information of parent and children
+            # left and right children of fake root have no parent : None
             if tree.parent:
 
-                EDGE_FILE.write(
-                    f'{tree.parent.index}\t{tree.index}\t{tree.key[1]}\n')
+                EDGE_FILE.write(f"{tree.parent.index}\t{tree.index}\t{tree.key[1]}\n")
             edge_matrix(tree.left)
             edge_matrix(tree.right)
 
     edge_matrix(tree)
 
     # add the TRUE ROOT and its children
-    EDGE_FILE.write(
-        f'{tree.left.index}\t{tree.right.index}\t{tree.right.key[1]}\n')
+    EDGE_FILE.write(f"{tree.left.index}\t{tree.right.index}\t{tree.right.key[1]}\n")
 
     EDGE_FILE.close()
     return tree
@@ -801,8 +802,8 @@ def help_newick_parse(tree, tree_file: str):
         tree_file (str): [output of tree]
     """
     # open tree file
-    TREE_FILE = open(tree_file, 'w')
-    # get true root lable (left children of fake root)
+    TREE_FILE = open(tree_file, "w")
+    # get true root label (left children of fake root)
     true_root_label = tree.left.key[0]
 
     def newick_parse(tree):
@@ -817,22 +818,22 @@ def help_newick_parse(tree, tree_file: str):
             if left and right:
                 # check if node is true node
                 if tree.key[0] == true_root_label:
-                    # not add '( )' so as to have three childern finally
-                    return f'{left},{right}'
+                    # not add '( )' so as to have three children finally
+                    return f"{left},{right}"
                 # check if node is root
                 elif tree.isRoot():
                     # add '()' finally
-                    return f'({left},{right})'
+                    return f"({left},{right})"
                 # if node is internal node
                 else:
-                    return f'({left},{right}):{tree.key[1]}'
+                    return f"({left},{right}):{tree.key[1]}"
             # if node is leaf node
             else:
-                return f'{tree.key[0]}:{tree.key[1]}'
+                return f"{tree.key[0]}:{tree.key[1]}"
 
     newick = newick_parse(tree)
 
-    TREE_FILE.write(f'{newick};')
+    TREE_FILE.write(f"{newick};")
 
     TREE_FILE.close()
 
@@ -843,24 +844,21 @@ def help_newick_parse(tree, tree_file: str):
 
 
 def bootstrap(original_seqs: dict):
-    """[bootstrap original seqs and return bootstrap sample and bootstrap seqs]
+    """bootstrap original seqs and return bootstrap sample and bootstrap seqs
 
     Args:
-        original_seqs ([dict]): [original seqs]
+        original_seqs (dict): original seqs
 
     Returns:
         tree_root_with_node_index: bootstrap sample whose node has index
         seqs_bootstrap : bootstrap seqs contained information like index, label, and sequences
     """
-    # change data structure in oder to use pandas:
+    # change data structure in order to use pandas:
     #               0 1 2  (column_number)
-    #label 1
-    #label 2
-    #...
-    seqs_pd = {
-        index: list(value.seq)
-        for index, value in original_seqs.items()
-    }
+    # label 1
+    # label 2
+    # ...
+    seqs_pd = {index: list(value.seq) for index, value in original_seqs.items()}
     df = pd.DataFrame(seqs_pd).T
 
     # using random to resample
@@ -871,7 +869,8 @@ def bootstrap(original_seqs: dict):
     # change sequences to bootstrap sequences
     for index, value in df_bootstrap.iterrows():
         seqs_bootstrap[index] = seqs_bootstrap[index]._replace(
-            seq=''.join(value.values))
+            seq="".join(value.values)
+        )
 
     # get nodes needed to be coudcted NJ
     leaf_set = set(seqs_bootstrap.keys())
@@ -895,21 +894,22 @@ def bootstrap(original_seqs: dict):
     # construct binary_tree
     # get edge file for  last bootstrap (NOT USED)
     tree_root = my_tree(TREEDICT, final_distance_matrix, seqs_bootstrap)
-    tree_root_with_node_index = help_edge_matrix(tree_root, seqs_bootstrap,
-                                                 'last_bootstrap.edge')
+    tree_root_with_node_index = help_edge_matrix(
+        tree_root, seqs_bootstrap, "last_bootstrap.edge"
+    )
     return tree_root_with_node_index, seqs_bootstrap
 
 
 def help_find_partion(tree) -> dict:
-    """[function to partion list for internal nodes in a binary tree]
+    """function to partition list for internal nodes in a binary tree
 
     Args:
-        tree ([binary_tree]): [binary_tree with fake root]
+        tree (binary_tree): [binary_tree with fake root
 
     Returns:
-        [dict]: [node_index: partion list]
+        dict: node_index: partition list
     """
-    # init dict to store index and its partion list
+    # init dict to store index and its partition list
     internal_node_partion = defaultdict(list)
 
     # postorder traversal to find leafs for every internal node
@@ -930,23 +930,23 @@ def help_find_partion(tree) -> dict:
                 # flatten list
                 LIST.extend([*left, *right])
 
-                internal_node_partion[tree.index].extend(
-                    sorted([*left, *right]))
+                internal_node_partion[tree.index].extend(sorted([*left, *right]))
 
             return LIST
 
-    # change partion list of fake root to true root
+    # change partition list of fake root to true root
     find_partion(tree)
-    internal_node_partion[tree.left.index] = internal_node_partion.pop(
-        tree.index)
+    internal_node_partion[tree.left.index] = internal_node_partion.pop(tree.index)
 
     return internal_node_partion
 
 
-def get_bootstrap_value(bootstrap_number: int,
-                        original_seqs: dict,
-                        original_tree,
-                        bootstrap_file: str = 'bootstrap.txt'):
+def get_bootstrap_value(
+    bootstrap_number: int,
+    original_seqs: dict,
+    original_tree,
+    bootstrap_file: str = "bootstrap.txt",
+):
     """[function to integrate relation methods to get bootstrap values for original tree]
 
     Args:
@@ -957,33 +957,31 @@ def get_bootstrap_value(bootstrap_number: int,
     """
     # init list to store bootstrap value for every internal node
     internal_node_bootstrap_value = [0] * (len(original_seqs) - 2)
-    # get partion list of every internal node in original tree
+    # get partition list of every internal node in original tree
     original_partion_dict = help_find_partion(original_tree)
     # init list to store dict contained bootstrap_partion and its node_index
     bootstrap_partion_list = []
     # begin to bootstrap and consruct binary tree
 
     for number in range(bootstrap_number):
-        logging.info(f'BOOTSTRAP NUMBER : {number+1}')
+        logging.info(f"BOOTSTRAP NUMBER : {number+1}")
         bootstrap_tree, _ = bootstrap(original_seqs)
         bootstrap_partion_list.append(help_find_partion(bootstrap_tree))
 
-    # compare partion list to update bootstrap value
+    # compare partition list to update bootstrap value
     for internal_node_index, partion_conent in original_partion_dict.items():
 
         for bootstrap_partion in bootstrap_partion_list:
 
             if partion_conent in bootstrap_partion.values():
 
-                internal_node_bootstrap_value[internal_node_index -
-                                              len(original_seqs) - 1] += 1
+                internal_node_bootstrap_value[
+                    internal_node_index - len(original_seqs) - 1
+                ] += 1
     # change format for the bootstrap values
-    result = [
-        f'{value/bootstrap_number}\n'
-        for value in internal_node_bootstrap_value
-    ]
+    result = [f"{value/bootstrap_number}\n" for value in internal_node_bootstrap_value]
     # write to file
-    with open(bootstrap_file, 'w') as file:
+    with open(bootstrap_file, "w") as file:
         file.writelines(result)
 
 
@@ -1010,13 +1008,12 @@ def worker(args: dict):
     distance_matrix = get_distance_matrix(seqs, args.distance)
     # delete distances between same sequences
     distance_matrix = {
-        item: value
-        for item, value in distance_matrix.items() if value != 0
+        item: value for item, value in distance_matrix.items() if value != 0
     }
     # get TREEDICT and distance of final two nodes
     TREEDICT, _, final_distance_matrix = help_nj(leaf_set, distance_matrix)
     # construct binary tree REMEMBER it has fake root
-    # left childern of fake root is regarded as true root
+    # left children of fake root is regarded as true root
     tree_root = my_tree(TREEDICT, final_distance_matrix, seqs)
     # get edge file and add index for every node in binary tree
     tree_root_with_index = help_edge_matrix(tree_root, seqs, args.edge)
@@ -1031,26 +1028,25 @@ def main():
     args = get_parser()
 
     with Timer() as t:
-        logging.info(f'Neighbor Joining begin.......')
+        logging.info(f"Neighbor Joining begin.......")
         tree_root_with_index, seqs = worker(args)
 
-    logging.info(f'Neighbor Joining  DONE : TIME {t.elapsed:.2f}s\n')
+    logging.info(f"Neighbor Joining  DONE : TIME {t.elapsed:.2f}s\n")
 
     if args.bootstrap:
         with Timer() as t:
             get_bootstrap_value(args.bootstrap, seqs, tree_root_with_index)
-        logging.info(f'BOOTSTRAP IS DONE : TIME {t.elapsed:.2f}s\n')
+        logging.info(f"BOOTSTRAP IS DONE : TIME {t.elapsed:.2f}s\n")
     else:
-        logging.info(f'BOOTSTRAP IS NOT DONE')
+        logging.info(f"BOOTSTRAP IS NOT DONE")
 
-    logging.info(f'EDGE_FILE : {args.edge}')
-    logging.info(f'TREE_FILE :  {args.tree}')
-    logging.info(f'DISTANCE_FILE: {args.distance}')
+    logging.info(f"EDGE_FILE : {args.edge}")
+    logging.info(f"TREE_FILE :  {args.tree}")
+    logging.info(f"DISTANCE_FILE: {args.distance}")
 
 
 if __name__ == "__main__":
     main()
-
 ```
 
 **Thanks for your reading! Hopefully helpful!**

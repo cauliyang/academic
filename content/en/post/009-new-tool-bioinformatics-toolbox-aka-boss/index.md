@@ -1,12 +1,12 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Bioinformatics Toolbox Aka Boss"
-subtitle: "A toolbox for bioinformatics analysis in C++"
-summary: "Efficient tools for bioinformatics analysis"
-authors: ["admin"]
-tags: ["Bioinformatics", "Development", "C++"]
-categories: ["Computational Biology"]
+title: Bioinformatics Toolbox Aka Boss
+subtitle: A toolbox for bioinformatics analysis in C++
+summary: Efficient tools for bioinformatics analysis
+authors: [admin]
+tags: [Bioinformatics, Development, C++]
+categories: [Computational Biology]
 date: 2022-09-25T23:22:31-05:00
 lastmod: 2022-09-25T23:22:31-05:00
 featured: true
@@ -16,8 +16,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)"
-  focal_point: "Smart"
+  caption: 'Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)'
+  focal_point: Smart
   preview_only: false
 
 links:
@@ -31,7 +31,7 @@ links:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: ["Bioinformatics Toolbox aka BOSS"]
+projects: [Bioinformatics Toolbox aka BOSS]
 toc: true
 ---
 

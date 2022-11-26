@@ -31,18 +31,18 @@ content:
     street: 303 E Superior St.
     city: Chicago
     region: IL
-    postcode: "60611"
+    postcode: '60611'
     country: United States
     country_code: US
   coordinates:
-    latitude: "37.4275"
-    longitude: "-122.1697"
+    latitude: '37.4275'
+    longitude: '-122.1697'
   # appointment_url: 'https://calendly.com'
   contact_links:
     - icon: twitter
       icon_pack: fab
       name: DM Me
-      link: "https://twitter.com/yangyangliz5"
+      link: https://twitter.com/yangyangliz5
       # - icon: skype
       #   icon_pack: fab
       #   name: Skype Me
@@ -57,5 +57,5 @@ content:
       #   link: 'https://discourse.gohugo.io'
 
 design:
-  columns: "2"
+  columns: '2'
 ---

@@ -13,7 +13,7 @@ title: Books
 subtitle:
 
 design:
-  columns: "2"
+  columns: '2'
 ---
 
-{{< gallery >}}
+{{\< gallery >}}

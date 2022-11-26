@@ -1,12 +1,12 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Face Recognition"
-subtitle: "实现在视频中识别特定人物并获取时间记录"
-summary: "本篇记录最近边学边做的一个无趣的小项目，用于帮助同窗提高工作效率"
-authors: ["admin"]
-tags: ["Computer Vision"]
-categories: ["Deep Learning"]
+title: Face Recognition
+subtitle: 实现在视频中识别特定人物并获取时间记录
+summary: 本篇记录最近边学边做的一个无趣的小项目，用于帮助同窗提高工作效率
+authors: [admin]
+tags: [Computer Vision]
+categories: [Deep Learning]
 date: 2021-04-05T12:54:10+08:00
 lastmod: 2021-04-05T12:54:10+08:00
 featured: false
@@ -16,8 +16,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/)"
-  focal_point: ""
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  focal_point: ''
   placement: 0
   preview_only: true
 
@@ -25,14 +25,14 @@ image:
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ""
-url_code: ""
-url_dataset: ""
-url_poster: ""
-url_project: ""
-url_slides: ""
-url_source: ""
-url_video: ""
+url_pdf: ''
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -42,7 +42,7 @@ url_video: ""
 projects: []
 ---
 
-{{< toc  >}}
+{{\< toc  >}}
 
 <style>
 img{
@@ -127,16 +127,15 @@ img{
 ### 3.1 编码照片
 
 ```python
-
 # 导入模块
-from imutils import paths # 操作文件
-import face_recognition   # 识别人脸并编码
+from imutils import paths  # 操作文件
+import face_recognition  # 识别人脸并编码
 import pickle  # 使用pickle文件形式储存节省空间
-import cv2     # 操作视频流
+import cv2  # 操作视频流
 
 # 获取照片
 print("[INFO] quantifying faces...")
-imagePaths = list(paths.list_images("./dataset")) # dataset为储存照片文件夹
+imagePaths = list(paths.list_images("./dataset"))  # dataset为储存照片文件夹
 
 # 初始化储存所有照片编码
 knownEncodings = []
@@ -151,9 +150,7 @@ for (i, imagePath) in enumerate(imagePaths):
     rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
     # 识别人脸并返回位置
-    boxes = face_recognition.face_locations(rgb,
-                                            model='hog' # model 可以选择 cnn 或 hog
-                                            )
+    boxes = face_recognition.face_locations(rgb, model="hog")  # model 可以选择 cnn 或 hog
 
     # 编码照片并储存
     encodings = face_recognition.face_encodings(rgb, boxes)
@@ -162,9 +159,8 @@ for (i, imagePath) in enumerate(imagePaths):
 # 写入照片的编码
 print("[INFO] serializing encodings...")
 data = {"encodings.pickle": knownEncodings}
-with open('encoding_face.pickle', "wb") as f:
+with open("encoding_face.pickle", "wb") as f:
     f.write(pickle.dumps(data))
-
 ```
 
 在编码照片时要注意模式的选择：
@@ -180,7 +176,6 @@ with open('encoding_face.pickle', "wb") as f:
 采用**Opencv**处理视频流，一帧一帧进行操作。
 
 ```python
-
 # 导入模块
 from imutils import paths
 import face_recognition
@@ -199,15 +194,17 @@ FRAME_STEP = 20
 # 获取目标文件夹中视频文件，并判断格式
 def get_files():
     return [
-        file for file in paths.list_files('./videos/')
-        if os.path.splitext(file)[1] in ['.mp4', '.avi', '.rmvb']
+        file
+        for file in paths.list_files("./videos/")
+        if os.path.splitext(file)[1] in [".mp4", ".avi", ".rmvb"]
     ]
+
 
 # 获取时间戳
 def get_time_stamp(stream):
-    '''
+    """
     stream: 已读取的视频
-    '''
+    """
     # 获取时间，单位为毫秒 1000毫秒 = 1秒
     milliseconds = stream.get(cv2.CAP_PROP_POS_MSEC)
     seconds = milliseconds // 1000
@@ -223,17 +220,18 @@ def get_time_stamp(stream):
         hours = minutes // 60
         minutes = minutes % 60
     # 返回时间戳
-    return f'{int(hours)}:{int(minutes)}:{int(seconds)}'
+    return f"{int(hours)}:{int(minutes)}:{int(seconds)}"
+
 
 # 处理视频流
 def worker(file, data, display=1):
-    '''
+    """
     file: 视频文件地址
     data: 已经读取的编码文件
     display: 是否实时展示视频处理过程 [0,1]，1为展示
-    '''
+    """
     # 创建结果文件
-    new_file = open(f'{file}.txt', 'w')
+    new_file = open(f"{file}.txt", "w")
     # 初始化当前帧
     current_frame = 0
     # 显示正在处理视频文件
@@ -254,7 +252,7 @@ def worker(file, data, display=1):
             # 获取缩放比例
             r = frame.shape[1] / float(rgb.shape[1])
             # 识别每一帧中的人脸 model 可以选择 hog 或 cnn
-            boxes = face_recognition.face_locations(rgb, model='hog')
+            boxes = face_recognition.face_locations(rgb, model="hog")
             # 对每一帧中人脸进行编码
             encodings = face_recognition.face_encodings(rgb, boxes)
 
@@ -265,16 +263,16 @@ def worker(file, data, display=1):
             # 每一个 encoding 都是一张被编码的人脸
             for encoding in encodings:
                 # 和目标所有被编码的照片进行比对
-                matches = face_recognition.compare_faces(data["encodings"],
-                                                         encoding,
-                                                         tolerance=THRESHOLD)
+                matches = face_recognition.compare_faces(
+                    data["encodings"], encoding, tolerance=THRESHOLD
+                )
                 # 初始化姓名
                 name = "Unknown"
                 # 获取视频中人脸匹配目标所有照片的比例
-                true_value = (sum(matches) / len(data['encodings']))
+                true_value = sum(matches) / len(data["encodings"])
                 # 满足阈值则认定识别成功
                 if true_value > FILTER_STANDARD:
-                    name = 'Identified'
+                    name = "Identified"
                 names.append(name)
 
             # 获取当前帧时间戳
@@ -288,12 +286,18 @@ def worker(file, data, display=1):
                 left = int(left * r)
 
                 # 绘出人脸位置
-                cv2.rectangle(frame, (left, top), (right, bottom),
-                    (0, 255, 0), 2)
+                cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
                 # 添加每一人脸相应信息，主要有姓名和匹配目标照片比例
                 y = top - 15 if top - 15 > 15 else top + 15
-                cv2.putText(frame, f'{name} {true_value:.2f}', (left, y), cv2.FONT_HERSHEY_SIMPLEX,
-                    0.75, (0, 255, 0), 2)
+                cv2.putText(
+                    frame,
+                    f"{name} {true_value:.2f}",
+                    (left, y),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    0.75,
+                    (0, 255, 0),
+                    2,
+                )
                 # 判断是否进行实时播放处理
                 if display > 0:
                     cv2.imshow("Frame", frame)
@@ -304,10 +308,10 @@ def worker(file, data, display=1):
                     break
 
             # 如果一帧中是否包好目标并写入相应信息
-            if 'Identified' in names:
-                new_file.write(f'Identified\t{time}\n')
+            if "Identified" in names:
+                new_file.write(f"Identified\t{time}\n")
             else:
-                new_file.write(f'Unknown\t{time}\n')
+                new_file.write(f"Unknown\t{time}\n")
         # 处理下一帧
         current_frame += 1
 
@@ -316,12 +320,13 @@ def worker(file, data, display=1):
 
 
 def main(encoding_file):
-    data  = pickle.loads(open(encoding_file, "rb").read())
+    data = pickle.loads(open(encoding_file, "rb").read())
     for file in get_files():
-        worker(file,data=data)
+        worker(file, data=data)
 
-if __main__ == '__name__':
-    main('./encodings.pickle')
+
+if __main__ == "__name__":
+    main("./encodings.pickle")
 ```
 
 在视频实时处理过程：

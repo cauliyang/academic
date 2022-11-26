@@ -10,7 +10,7 @@ headless: true
 weight: 50
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: "Accomplish&shy;ments"
+title: Accomplish&shy;ments
 subtitle:
 
 # Date format
@@ -24,13 +24,13 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
   - certificate_url: https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.html
-    date_end: ""
-    date_start: "2020-03-01"
-    description: ""
+    date_end: ''
+    date_start: '2020-03-01'
+    description: ''
     organization: NTU
     organization_url: https://speech.ee.ntu.edu.tw/~hylee
     title: Deep Learning
-    url: ""
+    url: ''
 #- certificate_url: https://www.edx.org
 #  date_end: ""
 #  date_start: "2018-03-01"

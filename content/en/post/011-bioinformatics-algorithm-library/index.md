@@ -1,12 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Bioinformatics Algorithm Library aka BINARY"
-subtitle: "A collection of algorithms and data structures that are designed for modern C++ bioinformatics applications."
-summary: "The library is a collection of algorithms and data structures that are designed for modern C++ bioinformatics applications."
-authors: ["admin"]
-tags: ["Bioinformatics", "C++", "Algorithms", "Data Structures"]
-categories: ["Computational Biology"]
+title: Bioinformatics Algorithm Library aka BINARY
+subtitle: A collection of algorithms and data structures that are designed for modern
+  C++ bioinformatics applications.
+summary: The library is a collection of algorithms and data structures that are designed
+  for modern C++ bioinformatics applications.
+authors: [admin]
+tags: [Bioinformatics, C++, Algorithms, Data Structures]
+categories: [Computational Biology]
 date: 2022-09-26T13:07:28-05:00
 lastmod: 2022-09-26T13:07:28-05:00
 featured: false
@@ -16,8 +18,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)"
-  focal_point: "Smart"
+  caption: 'Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)'
+  focal_point: Smart
   preview_only: true
 
 links:
@@ -31,7 +33,7 @@ links:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: ["content/en/project/004-bioinformatics-algorithm-library/index.md"]
+projects: [content/en/project/004-bioinformatics-algorithm-library/index.md]
 ---
 
 The library is a collection of algorithms and data structures that are designed for modern C++ bioinformatics applications.

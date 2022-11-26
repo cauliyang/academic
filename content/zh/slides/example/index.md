@@ -4,7 +4,7 @@ summary: An introduction to using Wowchemy's Slides feature.
 authors: []
 tags: []
 categories: []
-date: "2019-02-05T00:00:00Z"
+date: '2019-02-05T00:00:00Z'
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: black
@@ -17,7 +17,7 @@ slides:
 
 [Wowchemy](https://wowchemy.com/) | [Documentation](https://owchemy.com/docs/managing-content/#create-slides)
 
----
+______________________________________________________________________
 
 ## Features
 
@@ -26,7 +26,7 @@ slides:
 - Supports speaker notes
 - Mobile friendly slides
 
----
+______________________________________________________________________
 
 ## Controls
 
@@ -40,7 +40,7 @@ slides:
 - Zoom: `Alt + Click`
 - [PDF Export](https://github.com/hakimel/reveal.js#pdf-export): `E`
 
----
+______________________________________________________________________
 
 ## Code Highlighting
 
@@ -54,7 +54,7 @@ if porridge == "blueberry":
     print("Eating...")
 ```
 
----
+______________________________________________________________________
 
 ## Math
 
@@ -63,10 +63,10 @@ In-line math: $x + y = z$
 Block math:
 
 $$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+f\\left( x \\right) = ;\\frac{{2\\left( {x + 4} \\right)\\left( {x - 4} \\right)}}{{\\left( {x + 4} \\right)\\left( {x + 1} \\right)}}
 $$
 
----
+______________________________________________________________________
 
 ## Fragments
 
@@ -84,14 +84,14 @@ Press `Space` to play!
 {{% fragment %}} **Two** {{% /fragment %}}
 {{% fragment %}} Three {{% /fragment %}}
 
----
+______________________________________________________________________
 
 A fragment can accept two optional parameters:
 
 - `class`: use a custom style (requires definition in custom CSS)
 - `weight`: sets the order in which a fragment appears
 
----
+______________________________________________________________________
 
 ## Speaker Notes
 
@@ -107,13 +107,13 @@ Add speaker notes to your presentation
 
 Press the `S` key to view the speaker notes!
 
-{{< speaker_note >}}
+{{\< speaker_note >}}
 
 - Only the speaker can read these notes
 - Press `S` key to view
-  {{< /speaker_note >}}
+  {{\< /speaker_note >}}
 
----
+______________________________________________________________________
 
 ## Themes
 
@@ -123,16 +123,16 @@ Press the `S` key to view the speaker notes!
 - beige: Beige background, dark text, brown links
 - sky: Blue background, thin dark text, blue links
 
----
+______________________________________________________________________
 
 - night: Black background, thick white text, orange links
 - serif: Cappuccino background, gray text, brown links
 - simple: White background, black text, blue links
 - solarized: Cream-colored background, dark green text, blue links
 
----
+______________________________________________________________________
 
-{{< slide background-image="/media/boards.jpg" >}}
+{{\< slide background-image="/media/boards.jpg" >}}
 
 ## Custom Slide
 
@@ -144,7 +144,7 @@ Customize the slide style and background
 {{</* slide class="my-style" */>}}
 ```
 
----
+______________________________________________________________________
 
 ## Custom CSS Example
 
@@ -160,7 +160,7 @@ Create `assets/css/reveal_custom.css` with:
 }
 ```
 
----
+______________________________________________________________________
 
 # Questions?
 

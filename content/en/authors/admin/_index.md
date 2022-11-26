@@ -46,7 +46,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: "/#contact"
+    link: /#contact
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/yangyangliz5
@@ -68,7 +68,7 @@ social:
     link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "yangyang.li@northwestern.edu"
+email: yangyang.li@northwestern.edu
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -76,4 +76,4 @@ highlight_name: false
 
 I am a Ph.D student of DGP Program in Northwestern University Feinberg School of Medicine. Now I work in [Dr.Yang's lab](https://ylab-hi.github.io/) to pay high attention on machine learning, deep learning, and cancer genomics. I am very willing to share my thoughts and knowledge with others. Welcome to reach me!
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{\< icon name="download" pack="fas" >}} Download my {{\< staticref "media/resume.pdf" "newtab" >}}resumé{{\< /staticref >}}.

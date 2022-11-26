@@ -1,10 +1,10 @@
 ---
-title: "The Important  Steps You Cannot Miss When Building Python Library Part 1"
-subtitle: "Build Python Library from Scratch"
-summary: "Some golden tips to build Python library"
-authors: ["admin"]
-tags: ["Development"]
-categories: ["Python"]
+title: The Important  Steps You Cannot Miss When Building Python Library Part 1
+subtitle: Build Python Library from Scratch
+summary: Some golden tips to build Python library
+authors: [admin]
+tags: [Development]
+categories: [Python]
 date: 2021-12-03T09:56:07-06:00
 lastmod: 2021-12-03T09:56:07-06:00
 featured: false
@@ -13,8 +13,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)"
-  focal_point: "Smart"
+  caption: 'Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)'
+  focal_point: Smart
   preview_only: false
 
 links:
@@ -54,7 +54,7 @@ I'm sure you've heard of [*GitHub*], which is the first tool you'll need to get 
 
 ## 4. Documentation
 
-The default document system for Python is [**Sphinx**](https://www.sphinx-doc.org/en/master/) and [**reStructuredText (RST)**](https://docutils.sourceforge.io/rst.html). _Sphinx_ is a tool that makes it simple to create intelligent and visually appealing documentation. _RST_ is an easy-to-read plaintext markup syntax and parser system that is what you see is what you get. I recommend a [great blog][https://realpython.com/documenting-python-code/] from [_Real Python_](https://realpython.com/), a cool website with a lot of great tutorials.
+The default document system for Python is [**Sphinx**](https://www.sphinx-doc.org/en/master/) and [**reStructuredText (RST)**](https://docutils.sourceforge.io/rst.html). _Sphinx_ is a tool that makes it simple to create intelligent and visually appealing documentation. _RST_ is an easy-to-read plaintext markup syntax and parser system that is what you see is what you get. I recommend a \[great blog\]\[https://realpython.com/documenting-python-code/\] from [_Real Python_](https://realpython.com/), a cool website with a lot of great tutorials.
 
 I will leave some other useful resources for you to explore:
 
@@ -108,16 +108,6 @@ Here is a list of extensions I use:
 
 <!-- Link -->
 
-[flake8-bandit]: https://pypi.org/project/flake8-bandit/
-[flake8-bugbear]: https://pypi.org/project/flake8-bugbear/
-[flake8-docstrings]: https://pypi.org/project/flake8-docstrings/
-[flake8-rst-docstrings]: https://pypi.org/project/flake8-rst-docstrings/
-[flake8-broken-line]: https://pypi.org/project/flake8-broken-line/
-[flake8-comprehensions]: https://pypi.org/project/flake8-comprehensions/
-[flake8-eradicate]: https://pypi.org/project/flake8-eradicate/
-[darglint]: https://pypi.org/project/darglint/
-[safety]: https://pypi.org/project/safety/
-
 ## 8. Package
 
 _Python_ provides [a tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-the-package-files) about how to build and public package. However, I like to use [poetry](https://python-poetry.org/) as a tool to build and public package. Also, _poetry_ is good tool to manage your dependencies, and _poetry_ is a project manage tool. It helps me save lots of time and effort.
@@ -152,5 +142,14 @@ This section contains some other useful information about how to build a profess
 <!-- link -->
 
 [*github*]: https://github.com
-[git-flow]: https://jeffkreeftmeijer.com/git-flow/
+[darglint]: https://pypi.org/project/darglint/
+[flake8-bandit]: https://pypi.org/project/flake8-bandit/
+[flake8-broken-line]: https://pypi.org/project/flake8-broken-line/
+[flake8-bugbear]: https://pypi.org/project/flake8-bugbear/
+[flake8-comprehensions]: https://pypi.org/project/flake8-comprehensions/
+[flake8-docstrings]: https://pypi.org/project/flake8-docstrings/
+[flake8-eradicate]: https://pypi.org/project/flake8-eradicate/
+[flake8-rst-docstrings]: https://pypi.org/project/flake8-rst-docstrings/
 [git]: https://git-scm.com
+[git-flow]: https://jeffkreeftmeijer.com/git-flow/
+[safety]: https://pypi.org/project/safety/

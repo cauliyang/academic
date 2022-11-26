@@ -5,10 +5,10 @@ weight: 10
 title: <img src="https://readme-typing-svg.herokuapp.com?font=New+Roman+Times&size=22&color=6AF738&center=true&vCenter=true&width=440&height=45&lines=Ph.D.+In+Bioinformatics;Experienced+Algorithm+Development;Focus+on+Deep+Learning+Application;Always+Learning+!">
 # hero_media: hero-academic.png
 cta:
-  label: "**Subscribed**"
+  label: '**Subscribed**'
   url: https://tinyletter.com/yangliz5
 cta_alt:
-  label: "*RSS Feed*"
+  label: '*RSS Feed*'
   url: https://yangyangli.top/en/index.xml
 design:
   background:

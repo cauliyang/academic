@@ -3,8 +3,8 @@ title: Courses
 type: page
 
 header:
-  caption: "test"
-  image: ""
+  caption: test
+  image: ''
   focal_point: Smart
   placement: 0
 ---

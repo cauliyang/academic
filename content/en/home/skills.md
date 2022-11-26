@@ -17,9 +17,9 @@ subtitle:
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
   - icon: cpp
-    icon_pack: "custom"
-    name: "C++"
-    description: "49%"
+    icon_pack: custom
+    name: C++
+    description: 49%
   - description: 90%
     icon: python
     icon_pack: fab
@@ -38,10 +38,10 @@ feature:
     name: Latex
 
   # Uncomment to use emoji icons.
-  - icon: ":smile:"
-    icon_pack: "emoji"
+  - icon: ':smile:'
+    icon_pack: emoji
     name: Optimism
-    description: "100%"
+    description: 100%
 # Uncomment to use custom SVG icons.
 # Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
 # Reference the SVG icon name (without `.svg` extension) in the `icon` field.

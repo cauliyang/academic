@@ -25,19 +25,19 @@ feature:
     icon_pack: fab
     name: R
   - icon: cpp
-    icon_pack: "custom"
-    name: "C++"
-    description: "50%"
+    icon_pack: custom
+    name: C++
+    description: 50%
   - description: 90%
     icon: overleaf
     icon_pack: ai
     name: Latex
 
   # Uncomment to use emoji icons.
-  - icon: ":smile:"
-    icon_pack: "emoji"
+  - icon: ':smile:'
+    icon_pack: emoji
     name: Optimism
-    description: "100%"
+    description: 100%
   - description: 80%
     icon: kaggle
     icon_pack: fab

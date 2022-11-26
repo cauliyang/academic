@@ -28,31 +28,31 @@ experience:
     location: Chicago, IL
     date_start: 2022-06-01
     date_end: 2025-06-01
-    description: |2-
-        Responsibilities include:
+    description: |-
+      Responsibilities include:
 
-        * Developing Research and Development projects
-        * Developing and maintaining software applications
-        * Designing algorithms
+      * Developing Research and Development projects
+      * Developing and maintaining software applications
+      * Designing algorithms
 
   - title: Ph.D.
     company: University of Minnesota
-    company_url: "https://twin-cities.umn.edu/"
+    company_url: https://twin-cities.umn.edu/
     location: Minnesota, US
-    date_start: "2020-09-01"
-    date_end: ""
-    description: |2-
-        Responsibilities include:
+    date_start: '2020-09-01'
+    date_end: ''
+    description: |-
+      Responsibilities include:
 
-        * Analysing
-        * Modelling
-        * Deploying
+      * Analysing
+      * Modelling
+      * Deploying
 
   - title: Master
     company: China Agricultural University
-    company_url: "https://en.cau.edu.cn/"
+    company_url: https://en.cau.edu.cn/
     location: Beijing, China
-    date_start: "2018-09-01"
-    date_end: "2020-07-01"
+    date_start: '2018-09-01'
+    date_end: '2020-07-01'
     description: Mainly focus on crop genomics and population genetics.
 ---

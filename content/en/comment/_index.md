@@ -9,8 +9,8 @@ cms_exclude: true
 view: 2
 # Optional header image (relative to `static/media/` folder).
 header:
-  caption: ""
-  image: ""
+  caption: ''
+  image: ''
 ---
 
 Welcome your comments and suggestions. Please give use respectful comments! :smile:

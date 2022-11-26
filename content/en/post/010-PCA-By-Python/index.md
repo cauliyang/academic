@@ -1,12 +1,13 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "PCA by Python"
-subtitle: "Two method for implementing PCA algorithm"
-summary: "This article records two methods of PCA analysis using Python, and visualizes 2-dimensional results."
-authors: ["admin"]
-tags: ["Python", "Machine Learning"]
-categories: ["Algorithm"]
+title: PCA by Python
+subtitle: Two method for implementing PCA algorithm
+summary: This article records two methods of PCA analysis using Python, and visualizes
+  2-dimensional results.
+authors: [admin]
+tags: [Python, Machine Learning]
+categories: [Algorithm]
 date: 2021-04-04T23:58:37+08:00
 lastmod: 2021-04-04T23:58:37+08:00
 featured: false
@@ -16,8 +17,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/)"
-  focal_point: "Center"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  focal_point: Center
   preview_only: true
 
 # Projects (optional).
@@ -43,7 +44,7 @@ First, suppose you have a five-dimensional data set :
 | ------ | --- | --- | --- | --- | --- |
 | data-1 | 1   | 2   | 3   | 4   | 5   |
 | data-2 | 6   | 7   | 8   | 9   | 10  |
-| ..     | ..  | ..  | ..  | ..  |
+| ..     | ..  | ..  | ..  | ..  |     |
 
 Then, you could pick up PC1 and PC2 after PCA to reduce dimension for plotting:
 
@@ -58,9 +59,9 @@ Then, you could pick up PC1 and PC2 after PCA to reduce dimension for plotting:
 ## 1.2 Algorithm
 
 1. Normalize $d$ dimension raw data
-2. Greate the covariance matrix
+2. Create the covariance matrix
 3. Calculate the eigenvalues of the covariance matrix and the corresponding eigenvectors
-4. The eigenvectors are sorted in the matrix according to the corresponding feature value, and the first k rows are formed into a matrix $W$. ($k<<d$)
+4. The eigenvectors are sorted in the matrix according to the corresponding feature value, and the first k rows are formed into a matrix $W$. ($k\<\<d$)
 5. $Y = xW$ is the result after reducing dimension to k dimension
 
 **Note:** There are two prerequisites for conducting PCA
@@ -85,9 +86,10 @@ from sklearn.preprocessing import StandardScaler
 ```python
 # get  data set
 df_wine = pd.read_csv(
-    'http://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data',
+    "http://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data",
     header=None,
-    engine='python')
+    engine="python",
+)
 # check data
 df_wine.head()
 ```
@@ -97,14 +99,13 @@ df_wine.head()
 - Creating train and test data set
 
 ```python
-# creat train and test data set
+# create train and test data set
 
 X, y = df_wine.iloc[:, 1:], df_wine.iloc[:, 0]
 
-x_train,x_test,y_train,y_test = \
-    train_test_split(X,y,test_size = 0.3 ,
-                    stratify= y,
-                    random_state = 0 )
+x_train, x_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, stratify=y, random_state=0
+)
 ```
 
 - Standardizing the features
@@ -121,7 +122,7 @@ x_test_std = sc.fit_transform(x_test)
 
 the calculation of the covariance matrix :
 
-$$\sigma_{jk} =  \frac{1}{n} \sum^{n}_{i=1}\bigg(x_{j}^{(i)} - \mu_j\bigg)\bigg(x_{k}^{(i)} - \mu_k\bigg)$$
+$$\\sigma\_{jk} =  \\frac{1}{n} \\sum^{n}_{i=1}\\bigg(x_{j}^{(i)} - \\mu_j\\bigg)\\bigg(x\_{k}^{(i)} - \\mu_k\\bigg)$$
 
 Then, using `numpy.cov` and `numpy.linalg.eig` to get the covariance matrix and eigenvectors respectively
 
@@ -134,8 +135,8 @@ eigen_vals, eigen_vecs = np.linalg.eig(cov_mat)
 
 **NOTE:** there are 13 eigenvectors totally, the number of eigenvalues might be not as same as the number of features sometimes.
 
-Firstly, plotting the Variance interpretation ratio, which is obtained through eigenvalue $\lambda_j$ divided by the sum of all the eigenvalues:
-$$ \frac{\lambda*j}{\sum^d*{j=1}\lambda_j}$$
+Firstly, plotting the Variance interpretation ratio, which is obtained through eigenvalue $\\lambda_j$ divided by the sum of all the eigenvalues:
+$$ \\frac{\\lambda*j}{\\sum^d*{j=1}\\lambda_j}$$
 
 ```python
 # get sum of all the eigenvalues
@@ -148,26 +149,23 @@ cum_var_exp = np.cumsum(var_exp)
 Besides, plotting the result to get in-depth understanding:
 
 ```python
-plt.figure() # creat plot
-# creat bar plot
+plt.figure()  # create plot
+# create bar plot
 plt.bar(
     range(1, 14),
     var_exp,
     alpha=0.5,
-    label='individual explained variance',
+    label="individual explained variance",
 )
-# creat step plot
-plt.step(range(1, 14),
-         cum_var_exp,
-         where='mid',
-         label='cumulative explained variance')
+# create step plot
+plt.step(range(1, 14), cum_var_exp, where="mid", label="cumulative explained variance")
 # add label
-plt.ylabel('Explained variance ratio')
-plt.xlabel('Principal component index')
+plt.ylabel("Explained variance ratio")
+plt.xlabel("Principal component index")
 # add legend
-plt.legend(loc='best')
+plt.legend(loc="best")
 # save picture
-plt.savefig('pca_index.png', format='png', bbox_inches='tight', dpi=300)
+plt.savefig("pca_index.png", format="png", bbox_inches="tight", dpi=300)
 ```
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572764173795.png)
@@ -177,13 +175,13 @@ We can conclude that **PC1** only takes account for about 40%. Furthermore, the 
 
 ```python
 # integrate eigenvalues  and eigenvectors
-eigen_paris = [(np.abs(eigen_vals[i]), eigen_vecs[:, i])
-               for i in range(len(eigen_vals))]
+eigen_paris = [
+    (np.abs(eigen_vals[i]), eigen_vecs[:, i]) for i in range(len(eigen_vals))
+]
 # sort according to eigenvalues
 eigen_paris.sort(key=lambda x: x[0], reverse=True)
 # pick up the first 2 eigenvalues
-w = np.hstack(
-    [eigen_paris[0][1][:, np.newaxis], eigen_paris[1][1][:, np.newaxis]])
+w = np.hstack([eigen_paris[0][1][:, np.newaxis], eigen_paris[1][1][:, np.newaxis]])
 # check matrix x
 w
 ```
@@ -205,20 +203,22 @@ Then plotting the result and putting the label in terms of original info, but ke
 
 ```python
 # init colors and markers
-colors = ['r', 'b', 'g']
-markers = ['s', 'x', 'o']
+colors = ["r", "b", "g"]
+markers = ["s", "x", "o"]
 # plot scatter
 for l, c, m in zip(np.unique(y_train), colors, markers):
-    plt.scatter(x_train_pca[y_train == l, 0],
-                x_train_pca[y_train == l, 1],
-                c=c,
-                label=1,
-                marker=m)
+    plt.scatter(
+        x_train_pca[y_train == l, 0],
+        x_train_pca[y_train == l, 1],
+        c=c,
+        label=1,
+        marker=m,
+    )
 # add label and legend
-plt.xlabel('PC 1')
-plt.ylabel('PC 2')
-plt.legend(loc='lower left')
-plt.savefig('distribution.png', format='png', bbox_inches='tight', dpi=300)
+plt.xlabel("PC 1")
+plt.ylabel("PC 2")
+plt.legend(loc="lower left")
+plt.savefig("distribution.png", format="png", bbox_inches="tight", dpi=300)
 ```
 
 ![](https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/1572766761786.png)
@@ -238,21 +238,21 @@ from sklearn.linear_model import LogisticRegression
 - Defining function of plot_decision_region
 
 ```python
-
 def plot_dicision_regions(X, y, classifier, resolution=0.02):
     # init markers and colors
-    markers = ('s', 'x', 'o', '^', 'v')
-    colors = ('red', 'blue', 'lightgreen', 'gray', 'cyan')
-    cmap = ListedColormap(colors[:len(np.unique(y))])
-    # creat info for plot region
+    markers = ("s", "x", "o", "^", "v")
+    colors = ("red", "blue", "lightgreen", "gray", "cyan")
+    cmap = ListedColormap(colors[: len(np.unique(y))])
+    # create info for plot region
     x1_min, x1_max = X[:, 0].min() - 1, X[:, 0].max() + 1
     x2_min, x2_max = X[:, 1].min() - 1, X[:, 1].max() + 1
-    xx1, xx2 = np.meshgrid(np.arange(x1_min, x1_max, resolution),
-                           np.arange(x2_min, x2_max, resolution))
+    xx1, xx2 = np.meshgrid(
+        np.arange(x1_min, x1_max, resolution), np.arange(x2_min, x2_max, resolution)
+    )
     # test classifier's accurate
     z = classifier.predict(np.array([xx1.ravel(), xx2.ravel()]).T)
     z = z.reshape(xx1.shape)
-    # plot desicion region
+    # plot decision region
     plt.contourf(xx1, xx2, z, alpha=0.4, cmap=cmap)
     # set x,y length
     plt.xlim(xx1.min(), xx1.max())
@@ -264,7 +264,7 @@ def plot_dicision_regions(X, y, classifier, resolution=0.02):
             y=X[y == cl, 1],
             alpha=0.6,
             color=cmap(idx),
-            edgecolor='black',
+            edgecolor="black",
             marker=markers[idx],
             label=cl,
         )
@@ -273,21 +273,21 @@ def plot_dicision_regions(X, y, classifier, resolution=0.02):
 - PCA by sklearn
 
 ```python
-# creat pca instance
-pca = PCA(n_components = 2 )
-# creat classifier instance
+# create pca instance
+pca = PCA(n_components=2)
+# create classifier instance
 lr = LogisticRegression()
 # reduce dimension for  data set
 x_train_pca = pca.fit_transform(x_train_std)
-x_test_pca  = pca.transform(x_test_std)
+x_test_pca = pca.transform(x_test_std)
 # classify x_train_pca
-lr.fit(x_train_pca,y_train)
+lr.fit(x_train_pca, y_train)
 # plot dicision region
-plot_dicision_regions(x_train_pca,y_train,classifier=lr)
+plot_dicision_regions(x_train_pca, y_train, classifier=lr)
 # add info
-plt.xlabel('PC 1')
-plt.ylabel('PC 2')
-plt.legend(loc='lower left')
+plt.xlabel("PC 1")
+plt.ylabel("PC 2")
+plt.legend(loc="lower left")
 plt.show()
 ```
 
@@ -302,4 +302,4 @@ You can set `n_components = None`, and the result would retain all principle com
 
 All the above are the main content, welcome everybody communicates with me! 🤠
 
-**Reference book :** [Python machine learning](https://www.amazon.com/dp/B0742K7HYF/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=27TEKOK8R4TOR&keywords=python+machine+learning+sebastian+raschka&qid=1572770147&s=digital-text&sprefix=python+machine++learning+seb%2Cdigital-text%2C389&sr=1-1)
+**Reference book :** [Python machine learning](https://m.media-amazon.com/images/I/41ehHjX-XhL.jpg)

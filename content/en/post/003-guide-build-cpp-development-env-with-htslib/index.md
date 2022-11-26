@@ -1,12 +1,13 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Guide for building Cpp Development in Bioinformatics"
-subtitle: "Cmake as build system and use htslib as dependency"
-summary: "Config cpp development environment in macos or linux and fix dependencies for htslib"
-authors: ["admin"]
-tags: ["develop"]
-categories: ["c++"]
+title: Guide for building Cpp Development in Bioinformatics
+subtitle: Cmake as build system and use htslib as dependency
+summary: Config cpp development environment in macos or linux and fix dependencies
+  for htslib
+authors: [admin]
+tags: [develop]
+categories: [c++]
 date: 2022-06-15T23:17:30-05:00
 lastmod: 2022-06-15T23:17:30-05:00
 featured: false
@@ -16,9 +17,9 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)"
+  caption: 'Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)'
   focal_point: Smart
-  preview_only: False
+  preview_only: false
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -57,7 +58,7 @@ export LDFLAGS="-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,no
 
 **[Htslib]** is a classic and well-known library used to manage bioinformatics format files, including _bam_, _sam_, _vcf_, and _bcf,_ etc.
 
-**Htslib** is implemented in _C_ so that it is able to meet high performance requirements. So far, many popular tools, for example _[samtools]_ and _[bcftools],_ are all based on htslib. There are wrappers for other languages like _[pysam]_ based on _Python_, _[rhtslib]_ based on _R, and_ _[rust_htslib]_ based on _Rust_. That will enable people using different languages to apply htslib in their applications.
+**Htslib** is implemented in _C_ so that it is able to meet high performance requirements. So far, many popular tools, for example _[samtools]_ and _[bcftools],_ are all based on htslib. There are wrappers for other languages like _[pysam]_ based on _Python_, _[rhtslib]_ based on _R, and_ _\[rust_htslib\]_ based on _Rust_. That will enable people using different languages to apply htslib in their applications.
 
 _[Zlib]_ is only one library that htslib must depend on. In the meantime, htslib has other dependencies, which enables htslib to have more rich features. Here, I will not explain what feature dependencies will provide respectably. The detailed information can be found on the [Htslib] website. **However, \*Conda\* can install htslib easily by `conda install htslib`**. Keep in mind that we can also define the library version with `conda install htslib=1.15.1` As mentioned above, htslib may have been installed in your environment if samtools or bcftools are already installed.
 
@@ -91,7 +92,7 @@ I use [Cmake] as a build system, and here are several useful and valuable Cmake 
   include(htslib)
   ```
 
-  If `htslib` is found in your current environment, `cmake` will define the variables `HTSlib_FOUND` and HTSlib_INCLUDE_DIRS``and`HTSlib_LIBRARIES`. Otherwise, `cmake`will build static htslib from sources, and`cmake`will check if every dependency of htslib exists respectively. If it exists,`cmake`will use the compiler flags of htslib to build a static library. Otherwise,`cmake`will disable related compiler flags. However, [zlib] is the only one that must exist. So, if [zlib] does not exist,`cmake` will help you build [zlib] from source. All these CMake scripts can be found at the above link. Please feel free to explore that.
+  If `htslib` is found in your current environment, `cmake` will define the variables `HTSlib_FOUND` and HTSlib_INCLUDE_DIRS\`\`and`HTSlib_LIBRARIES`. Otherwise, `cmake`will build static htslib from sources, and`cmake`will check if every dependency of htslib exists respectively. If it exists,`cmake`will use the compiler flags of htslib to build a static library. Otherwise,`cmake`will disable related compiler flags. However, [zlib] is the only one that must exist. So, if [zlib] does not exist,`cmake` will help you build [zlib] from source. All these CMake scripts can be found at the above link. Please feel free to explore that.
 
   Indeed, we use [FindHTSlib.cmake] to search for htslib. [htslib.cmake] is shown below, and I have added some comments to explain how it works.
 
@@ -229,21 +230,21 @@ In this blog, I will introduce how to install `C++` dependencies and how to conf
 
 <!---link--->
 
-[conda]: https://docs.conda.io/en/latest/
-[vcpkg]: https://vcpkg.io/en/index.html
-[conan]: https://conan.io/
-[cpm]: https://github.com/cpm-cmake/CPM.cmake
-[htslib]: https://github.com/samtools/htslib
-[samtools]: http://www.htslib.org/
 [bcftools]: http://samtools.github.io/bcftools/bcftools.html
-[pysam]: https://github.com/pysam-developers/pysam
-[rhtslib]: https://bioconductor.org/packages/release/bioc/html/Rhtslib.html
-[zlib]: https://zlib.net/
-[conda cloud]: https://anaconda.org/
-[gcc]: https://gcc.gnu.org/
 [clang]: https://clang.llvm.org/
-[htslib.cmake]: https://gist.github.com/cauliyang/c6d69c43a8a05266c6d05bc2c5324f45
+[cmake]: https://cmake.org/
+[conan]: https://conan.io/
+[conda]: https://docs.conda.io/en/latest/
+[conda cloud]: https://anaconda.org/
+[cpm]: https://github.com/cpm-cmake/CPM.cmake
 [finddeflate.cmake]: https://gist.github.com/cauliyang/a39f3b10ed3d85d2ca13645d81dd829e
 [findhtslib.cmake]: https://gist.github.com/cauliyang/01f360df26fa287a1e111dd00bb076e4
+[gcc]: https://gcc.gnu.org/
+[htslib]: https://github.com/samtools/htslib
+[htslib.cmake]: https://gist.github.com/cauliyang/c6d69c43a8a05266c6d05bc2c5324f45
+[pysam]: https://github.com/pysam-developers/pysam
+[rhtslib]: https://bioconductor.org/packages/release/bioc/html/Rhtslib.html
+[samtools]: http://www.htslib.org/
+[vcpkg]: https://vcpkg.io/en/index.html
+[zlib]: https://zlib.net/
 [zlib.cmake]: https://gist.github.com/cauliyang/0aa4487e58a0e5c830915ddbade5ce71
-[cmake]: https://cmake.org/

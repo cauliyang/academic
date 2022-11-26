@@ -1,12 +1,12 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Comprehensive Resources for Python Development"
-subtitle: "Information collection about python development"
-summary: "Useful resources about python development"
-authors: ["admin"]
-tags: ["python"]
-categories: ["development"]
+title: Comprehensive Resources for Python Development
+subtitle: Information collection about python development
+summary: Useful resources about python development
+authors: [admin]
+tags: [python]
+categories: [development]
 date: 2022-06-16T16:40:06-05:00
 lastmod: 2022-06-16T16:40:06-05:00
 featured: false
@@ -16,8 +16,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)"
-  focal_point: ""
+  caption: 'Image credit: [**pixilart**](https://www.pixilart.com/art/dragon-hill-8ef3a436b8ad7b1?ft=staff-picks&ft_id=)'
+  focal_point: ''
   preview_only: false
 
 # Projects (optional).
@@ -70,7 +70,7 @@ show_related: true
 
 - [Getting Started - MkDocs](https://www.mkdocs.org/getting-started/)
 
-## **3. Module statics for installation**
+## **3. Module statistics for installation**
 
 - [Pepy stats](https://pepy.tech/project/pyboxes)
 
@@ -93,13 +93,21 @@ show_related: true
 - [Analytics for Github - trackgit](https://trackgit.com/)
 
 - [Beautiful insights for your GitHub repositories](https://repobeats.axiom.co/)
+
 - [waka-readme-stats](https://github.com/anmol098/waka-readme-stats)
+
 - [waka-readme](https://github.com/athul/waka-readme)
+
 - [amazing-github-template](https://github.com/dec0dOS/amazing-github-template#readme)
+
 - [awesome-pinned-gists](https://github.com/matchai/awesome-pinned-gists)
+
 - [awesome-open-source](https://awesomeopensource.com/project/anmol098/waka-readme-stats)
+
 - [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/usage.html)
+
 - [readme-so](https://readme.so/editor)
+
 - [how-to-write-readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
 - [EmojiCopy | Simple emoji copy and paste keyboard by JoyPixels®](https://www.emojicopy.com/)

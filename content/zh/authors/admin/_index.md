@@ -42,7 +42,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: "/#contact"
+    link: /#contact
   #- icon: twitter
   #  icon_pack: fab
   #  link: https://twitter.com/GeorgeCushen
@@ -64,7 +64,7 @@ social:
     link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "li002252@umn.edu"
+email: li002252@umn.edu
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -72,4 +72,4 @@ highlight_name: false
 
 我是一名来自明尼苏达大学 BICB 项目的博士生，现在工作与 Dr.Yang 的[实验室](https://ylab-hi.github.io/)。我主要工作兴趣集中在机器学习，深度学习和癌症基因组学。并且我非常愿意同其他人分享我的想法和知识， 欢迎随时联系我！
 
-{{< icon name="download" pack="fas" >}} 下载我的 {{< staticref "media/resume.pdf" "newtab" >}}简历{{< /staticref >}}.
+{{\< icon name="download" pack="fas" >}} 下载我的 {{\< staticref "media/resume.pdf" "newtab" >}}简历{{\< /staticref >}}.

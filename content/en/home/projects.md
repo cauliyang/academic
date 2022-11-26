@@ -10,7 +10,7 @@ headless: true
 weight: 65
 
 title: Projects
-subtitle: ""
+subtitle: ''
 
 content:
   # Page type to display. E.g. project.
@@ -26,7 +26,7 @@ content:
   # To remove the toolbar, delete the entire `filter_button` block.
   filter_button:
     - name: All
-      tag: "*"
+      tag: '*'
     - name: Deep Learning
       tag: Deep Learning
     - name: Other
@@ -34,7 +34,7 @@ content:
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: "2"
+  columns: '2'
 
   # Toggle between the various page layout types.
   #   1 = List

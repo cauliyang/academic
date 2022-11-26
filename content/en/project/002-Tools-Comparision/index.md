@@ -1,22 +1,23 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Tools Comparision"
-summary: "The project aim to compare the performance for several kinds of tools used to dectect alternative splicing."
-authors: ["admin"]
-tags: ["Development"]
-categories: ["Computational Biology"]
+title: Tools Comparison
+summary: The project aim to compare the performance for several kinds of tools used
+  to detect alternative splicing.
+authors: [admin]
+tags: [Development]
+categories: [Computational Biology]
 date: 2021-04-17T05:37:29+08:00
 featured: false
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+external_link: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com)"
-  focal_point: "Center"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  focal_point: Center
   preview_only: false
   placement: 0
 
@@ -28,17 +29,17 @@ image:
 #   icon_pack: fab
 #   icon: twitter
 
-url_code: "https://github.com/cauliyang/tools-compare"
-url_pdf: ""
-url_slides: ""
-url_video: ""
+url_code: https://github.com/cauliyang/tools-compare
+url_pdf: ''
+url_slides: ''
+url_video: ''
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: ""
+slides: ''
 toc: true
 ---
 
@@ -74,7 +75,7 @@ The project aim to compare the performance for several kinds of tools used to de
 
 ### 2.4 Construct Snakemake Workflow
 
-[![Snakemake](https://img.shields.io/badge/snakemake-≥5.7.0-brightgreen.svg?style=flat-square)](https://github.com/snakemake/snakemake-wrappers/blob/38ad23b0e4f58ce7dbd8d32612157f449ca02c62/docs/index.rst) is used to construct workflow.
+[![Snakemake](https://img.shields.io/badge/snakemake-%E2%89%A55.7.0-brightgreen.svg?style=flat-square)](https://github.com/snakemake/snakemake-wrappers/blob/38ad23b0e4f58ce7dbd8d32612157f449ca02c62/docs/index.rst) is used to construct workflow.
 
 - [x] Create simulated data
 - [x] Create Rna-align rule

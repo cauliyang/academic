@@ -1,12 +1,12 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Configuration of macOS for development and research part 1"
-subtitle: "The Best Mac Apps Makes Life Easier"
-summary: "Concrete description about how to config my mac"
-authors: ["admin"]
-tags: ["tool"]
-categories: ["macos"]
+title: Configuration of macOS for development and research part 1
+subtitle: The Best Mac Apps Makes Life Easier
+summary: Concrete description about how to config my mac
+authors: [admin]
+tags: [tool]
+categories: [macos]
 date: 2021-11-10T13:38:00+08:00
 lastmod: 2022-06-15T13:38:00+08:00
 featured: false
@@ -19,8 +19,8 @@ pager: true
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   placement: 0
-  caption: "Image credit: [**Pixilart**](https://www.pixilart.com/)"
-  focal_point: "Center"
+  caption: 'Image credit: [**Pixilart**](https://www.pixilart.com/)'
+  focal_point: Center
   preview_only: true
 
 # header:
@@ -43,9 +43,9 @@ I will divide the configuration into two parts.
 In the first part, I will introduce the software I heavily use, and then share the configuration files in the second part.
 My newest device is MacBook Pro of M1 model, Here is a list of tools I use:
 
-{{< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.26.58.png" caption="Page 1" numbered="true" width="333">}}
-{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main/img/iShot2021-11-27%2022.27.07.png" caption="Page 2" numbered="true" width="330" >}}
-{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.27.14.png" caption="Page 3" numbered="true" width="333" >}}
+{{\< figure src="https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.26.58.png" caption="Page 1" numbered="true" width="333">}}
+{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main/img/iShot2021-11-27%2022.27.07.png" caption="Page 2" numbered="true" width="330" >}}
+{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.27.14.png" caption="Page 3" numbered="true" width="333" >}}
 
 ## 2. System Environment Tools
 
@@ -65,7 +65,7 @@ However, I still leave information about previous tools.
 
 - [Alacritty]
 
-Alacritty is light-weight terminal emulator compared to [iterm2].
+**Alacritty** is light-weight terminal emulator compared to [iterm2].
 It is flexible, and it is configured by yaml file directly.
 I think I will keep using it so far.
 Meanwhile, I use it with [zellij] to manage the terminal windows.
@@ -75,18 +75,18 @@ Both are blazing fast, and they are implemented by [rust].
 
 - [fish]
 
-Fish is a smart and user-friendly command line shell for Linux, macOS, and the rest of the family.
+**Fish** is a smart and user-friendly command line shell for Linux, macOS, and the rest of the family.
 It includes some valuable features by default in comparison with [zsh].
 For example, autosuggestion.
 Hence, you can use it out of box without any efforts for configuration.
-However, Fish has plugins system as well, and I use [fisher] to manage plugins.
+However, Fish has plugins system as well, and I use \[fisher\] to manage plugins.
 Importantly, the customization and configuration of Fish is easy and friendly.
 
 - ~~[iterm2]~~
 
-iTerm2 is a replacement for Terminal and the successor to iTerm.
+**iterm2** is a replacement for Terminal and the successor to iterm.
 It works on Macs with macOS 10.14 or newer.
-iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
+iterm2 brings the terminal into the modern age with features you never knew you always wanted.
 Also, iterm2 has integrated [tmux], you can try to use **tmux**, which is a terminal multiplexer.
 It lets you switch easily between several programs in one terminal, detach them (they keep running in the background), and reattach them to a different terminal.
 
@@ -99,33 +99,33 @@ In addition, [Tmuxinator] is great choice to empower **tmux**
 
 - ~~[zsh]~~
 
-Zsh is an alternative to Bash, and it has more advanced features.
+**Zsh** is an alternative to Bash, and it has more advanced features.
 Oh My Zsh is a delightful, open-source, community-driven framework for managing your Zsh configuration.
 It comes bundled with thousands of helpful functions, helpers, plugins, themes, and a few things that make you shout.
 The screenshot of my terminal is shown in the figure below.
 
-{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610155159.png" caption="zsh" numbered="true" width="600" >}}
+{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610155159.png" caption="zsh" numbered="true" width="600" >}}
 
 You can customize your own terminal, which will improve working efficiency.
 Also, there are many plugins you can use to improve your working efficiency.
 
 - [vim]
 
-Vim is an editor used in the terminal, and I use it every day.
+**Vim** is an editor used in the terminal, and I use it every day.
 Vim is shipped with macOS, and you also install other vim-extended editors such as [neovim] and [spacevim].
 Currently, I use [LunarVim], an opinionated, extensible, and fast IDE layer for NeoVim.
 I think it is so cool and powerful.
 
 - [git]
 
-Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+**Git** is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 Also, Git a t tool used in the terminal to download and upload data or code to the _GitHub_.
 Similarly, Git is shipped with macOS, so you may need to update that by `brew upgrade git`.
 What is more, **Oh my zsh** provides some alias and plugins, which help us to use git easily.
 
 - [conda]
 
-Conda is a package, dependency, and environment management for any language such as _Python_, _R_, _Ruby_, _C/C++_, and more.
+**Conda** is a package, dependency, and environment management for any language such as _Python_, _R_, _Ruby_, _C/C++_, and more.
 Conda is an open-source package management system and environment management system that runs on Windows, macOS, and Linux.
 Conda quickly installs, runs, and updates packages and their dependencies.
 Conda easily creates, saves, loads, and switches between environments on your local computer.
@@ -144,7 +144,7 @@ The TLDR pages are a community effort to simplify the beloved man pages with pra
 You can get usage clearly and quickly by using `tldr` compared to `man`.
 In mac, you can install that by `brew install tldr`.
 
-{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190712.png" caption="tldr" numbered="true" width="500" >}}
+{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190712.png" caption="tldr" numbered="true" width="500" >}}
 
 - [tree]
 
@@ -154,25 +154,25 @@ When directory arguments are given, tree lists all the files or directories foun
 Upon completion of listing all files and directories found, tree returns the total number of files.
 You can install that by `brew install tree`.
 
-{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png" caption="tree" numbered="true" width="500" >}}
+{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png" caption="tree" numbered="true" width="500" >}}
 
 - [cheat.sh]
 
 **cheat.sh** is the unified access to the best community driven cheat sheets repositories of the world. I like it very much :heart:
 
-{{< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="400" >}}
+{{\< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="400" >}}
 
 - [dust]
 
 dust = du + rust. It like du but more intuitive.
 
-{{< figure src= "https://raw.githubusercontent.com/bootandy/dust/master/media/snap.png" caption="dust" numbered="true" width="500" >}}
+{{\< figure src= "https://raw.githubusercontent.com/bootandy/dust/master/media/snap.png" caption="dust" numbered="true" width="500" >}}
 
 - [hyperfine]
 
 **hyperfine** is a command-line benchmarking tool.
 
-{{< figure src= "https://camo.githubusercontent.com/88a0cb35f42e02e28b0433d4b5e0029e52e723d8feb8df753e1ed06a5161db56/68747470733a2f2f692e696d6775722e636f6d2f7a31394f5978452e676966" caption="hyperfine" numbered="true" width="500" >}}
+{{\< figure src= "https://camo.githubusercontent.com/88a0cb35f42e02e28b0433d4b5e0029e52e723d8feb8df753e1ed06a5161db56/68747470733a2f2f692e696d6775722e636f6d2f7a31394f5978452e676966" caption="hyperfine" numbered="true" width="500" >}}
 
 ## 3. Editor
 
@@ -245,63 +245,63 @@ This part list variety of applications used for different goals. Every applicati
 
 <!-- link -->
 
+[alacritty]: https://github.com/alacritty/alacritty
+[aldente]: https://github.com/davidwernhart/AlDente
 [alfred]: https://www.alfredapp.com/
-[sensei]: https://sensei.app/
+[alttab]: https://alt-tab-macos.netlify.app/
+[bartender]: https://www.macbartender.com/
+[cheat.sh]: https://github.com/chubin/cheat.sh
+[chrome]: https://www.google.com/chrome/?brand=FKPE&geo=US&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI0QHFokL1RZC_foWkHv92lRIhon6vMSWCm_2Zfe6g5vrkRO-JxOwJcaAsToEALw_wcB&gclsrc=aw.ds
+[cleanshot x]: https://cleanshot.com/
+[clion]: https://www.jetbrains.com/clion/
+[conda]: https://docs.conda.io/en/latest/
+[dash]: https://kapeli.com/dash
 [default folder x]: https://www.stclairsoft.com/DefaultFolderX/
 [docker]: https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI1yYmAI5cysoIDN2Vbhs5tplap41qP5MKKybSNbg9nTCA8oPe2yeXAaAofgEALw_wcB
-[chrome]: https://www.google.com/chrome/?brand=FKPE&geo=US&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI0QHFokL1RZC_foWkHv92lRIhon6vMSWCm_2Zfe6g5vrkRO-JxOwJcaAsToEALw_wcB&gclsrc=aw.ds
+[dust]: https://github.com/bootandy/dust
+[ferdi]: https://getferdi.com/
+[fish]: https://fishshell.com/
+[git]: https://git-scm.com/
+[google drive]: https://www.google.com/drive/
+[homebrew]: https://brew.sh/
+[hyperfine]: https://github.com/sharkdp/hyperfine/
 [iina]: https://iina.io/
 [imagine]: https://www.electronjs.org/apps/imagine
+[ishot]: https://apps.apple.com/cn/app/ishot-%E4%BC%98%E7%A7%80%E7%9A%84%E6%88%AA%E5%9B%BE%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/id1485844094?mt=12
+[iterm2]: https://iterm2.com
+[lunarvim]: https://github.com/LunarVim/LunarVim
 [magnet]: https://apps.apple.com/us/app/magnet/id441258766?mt=12
-[office]: https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products-b?&ef_id=Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB:G:s&OCID=AID2200006_SEM_Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB:G:s&lnkd=Google_O365SMB_Brand&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB
+[mamba]: https://mamba.readthedocs.io/en/latest/
+[micromamba]: https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html
+[miniforge]: https://github.com/conda-forge/miniforge/
 [monitorcontrol]: https://github.com/MonitorControl/MonitorControl
 [monodraw]: https://monodraw.helftone.com/
+[neovim]: https://neovim.io/
+[notion]: https://www.notion.so/product?utm_source=google&utm_campaign=2075789710&utm_medium=85296176828&utm_content=495341253306&utm_term=notion%20mac%20app&targetid=aud-1053779029641:kwd-664489244375&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI0me9d6EJGOKlH-sgSwEymK7hvXwpwMTH8k_y_0QGZDbzO_qokQi70aAuAOEALw_wcB
+[office]: https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products-b?&ef_id=Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB:G:s&OCID=AID2200006_SEM_Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB:G:s&lnkd=Google_O365SMB_Brand&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB
+[one switch]: https://fireball.studio/oneswitch
+[path finder]: https://cocoatech.com/?utm_medium=adwords&utm_campaign=&utm_source=&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI393QWmb2txQXFvOVvRvNoD7sXYhkfmZ2x2d173JdcNsBvlLB1rr3saArwFEALw_wcB#/
 [pdf expert]: https://pdfexpert.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand-hp&utm_google-campaign=brand-hp&utm_content=264692671625&utm_term=pdf%20expert&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI2Mb-84Xo5XJBQWkPHxGL-G11BnR8iF65B4kGDm2huhRRUa0wJy5VMaAjoREALw_wcB
 [picgo]: https://picgo.github.io/PicGo-Doc/en/guide/
+[pycharm]: https://www.jetbrains.com/pycharm/
+[rectangle]: https://rectangleapp.com/
+[reeder 5]: https://reederapp.com/
+[rust]: https://www.rust-lang.org/
+[sensei]: https://sensei.app/
 [snippetslab]: https://www.renfei.org/snippets-lab/
-[zoom]: https://zoom.us/download
+[soundsource]: https://rogueamoeba.com/soundsource/
+[spacevim]: https://www.google.com/search?q=spacevim
+[time sink]: https://manytricks.com/timesink/
+[tldr]: https://tldr.sh/
+[tmux]: https://github.com/tmux/tmux/wiki
+[tmuxinator]: https://github.com/tmuxinator/tmuxinator
+[transmit]: https://panic.com/transmit/
+[tree]: https://www.geeksforgeeks.org/tree-command-unixlinux/
+[vim]: https://vimawesome.com/
+[vs code]: https://code.visualstudio.com/
 [xcode]: https://developer.apple.com/xcode/
 [xmind]: https://www.xmind.net/download/
-[transmit]: https://panic.com/transmit/
-[time sink]: https://manytricks.com/timesink/
-[soundsource]: https://rogueamoeba.com/soundsource/
-[reeder 5]: https://reederapp.com/
-[path finder]: https://cocoatech.com/?utm_medium=adwords&utm_campaign=&utm_source=&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI393QWmb2txQXFvOVvRvNoD7sXYhkfmZ2x2d173JdcNsBvlLB1rr3saArwFEALw_wcB#/
-[notion]: https://www.notion.so/product?utm_source=google&utm_campaign=2075789710&utm_medium=85296176828&utm_content=495341253306&utm_term=notion%20mac%20app&targetid=aud-1053779029641:kwd-664489244375&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI0me9d6EJGOKlH-sgSwEymK7hvXwpwMTH8k_y_0QGZDbzO_qokQi70aAuAOEALw_wcB
-[one switch]: https://fireball.studio/oneswitch
-[ishot]: https://apps.apple.com/cn/app/ishot-%E4%BC%98%E7%A7%80%E7%9A%84%E6%88%AA%E5%9B%BE%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/id1485844094?mt=12
-[google drive]: https://www.google.com/drive/
-[ferdi]: https://getferdi.com/
-[dash]: https://kapeli.com/dash
-[cleanshot x]: https://cleanshot.com/
-[bartender]: https://www.macbartender.com/
-[alttab]: https://alt-tab-macos.netlify.app/
-[aldente]: https://github.com/davidwernhart/AlDente
+[zellij]: https://zellij.dev/documentation/introduction.html
+[zoom]: https://zoom.us/download
 [zotero]: https://www.zotero.org/
-[iterm2]: https://iterm2.com
-[tmux]: https://github.com/tmux/tmux/wiki
-[vs code]: https://code.visualstudio.com/
-[pycharm]: https://www.jetbrains.com/pycharm/
-[clion]: https://www.jetbrains.com/clion/
-[lunarvim]: https://github.com/LunarVim/LunarVim
-[tldr]: https://tldr.sh/
-[tree]: https://www.geeksforgeeks.org/tree-command-unixlinux/
-[cheat.sh]: https://github.com/chubin/cheat.sh
-[conda]: https://docs.conda.io/en/latest/
-[git]: https://git-scm.com/
-[vim]: https://vimawesome.com/
 [zsh]: https://ohmyz.sh/
-[homebrew]: https://brew.sh/
-[tmuxinator]: https://github.com/tmuxinator/tmuxinator
-[spacevim]: https://www.google.com/search?q=spacevim
-[neovim]: https://neovim.io/
-[mamba]: https://mamba.readthedocs.io/en/latest/
-[fish]: https://fishshell.com/
-[miniforge]: https://github.com/conda-forge/miniforge/
-[micromamba]: https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html
-[dust]: https://github.com/bootandy/dust
-[hyperfine]:https://github.com/sharkdp/hyperfine/
-[rectangle]: https://rectangleapp.com/
-[alacritty]: https://github.com/alacritty/alacritty
-[zellij]:https://zellij.dev/documentation/introduction.html
-[rust]:https://www.rust-lang.org/

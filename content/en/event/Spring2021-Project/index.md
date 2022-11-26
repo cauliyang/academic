@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Courses Presentations on Spring2021 "
+title: 'Courses Presentations on Spring2021 '
 event: Final Project Presentations
 event_url:
 location: Online Recorded Video
@@ -12,9 +12,12 @@ address:
   postcode:
   country: The US
 
-summary: "Two presentations of final projects for course CSCI 5525 Machine Learning Analysis and CSCI 5461."
+summary: Two presentations of final projects for course CSCI 5525 Machine Learning
+  Analysis and CSCI 5461.
 
-abstract: "I will give two presentations about **CS5461 Functional Genomics** and **CS5525 Machine Learning Analysis**. We use online video form and related slides, code and report for the two final projects will be shared later"
+abstract: I will give two presentations about **CS5461 Functional Genomics** and **CS5525
+  Machine Learning Analysis**. We use online video form and related slides, code and
+  report for the two final projects will be shared later
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -25,8 +28,8 @@ all_day: false
 # Schedule page publish date (NOT event date).
 publishDate: 2021-04-03T10:04:04+08:00
 
-authors: ["admin"]
-tags: ["Course"]
+authors: [admin]
+tags: [Course]
 
 # Is this a featured event? (true/false)
 featured: false
@@ -35,8 +38,8 @@ featured: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)"
-  focal_point: ""
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  focal_point: ''
   preview_only: false
 
 # Custom links (optional).
@@ -59,7 +62,7 @@ url_video:
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: ""
+slides: ''
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
