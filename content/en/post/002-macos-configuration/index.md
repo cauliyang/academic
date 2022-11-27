@@ -1,28 +1,23 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Configuration of macOS for development and research part 1
+title: Configuration of macOS for development and research
 subtitle: The Best Mac Apps Makes Life Easier
 summary: Concrete description about how to config my mac
 authors: [admin]
 tags: [tool]
 categories: [macos]
-date: 2021-11-10T13:38:00+08:00
-lastmod: 2022-06-15T13:38:00+08:00
-featured: false
+date: 2022-11-26T23:10:02-06:00
+lastmod: 2022-11-26T23:10:02-06:00
+featured: true
 draft: false
-include_toc: true
 
-pager: true
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   placement: 0
   caption: 'Image credit: [**Pixilart**](https://www.pixilart.com/)'
   focal_point: Center
   preview_only: true
-
+      
 # header:
 #   image: "featured.jpeg"
 #   caption: "test"
@@ -35,6 +30,7 @@ links:
 projects: []
 toc: true
 ---
+
 
 ## 1. Introduction
 
@@ -81,7 +77,7 @@ Both are blazing fast, and they are implemented by [rust].
 It includes some valuable features by default in comparison with [zsh].
 For example, autosuggestion.
 Hence, you can use it out of box without any efforts for configuration.
-However, Fish has plugins system as well, and I use \[fisher\] to manage plugins.
+However, Fish has plugins system as well, and I use [fisher] to manage plugins.
 Importantly, the customization and configuration of Fish is easy and friendly.
 
 - ~~[iterm2]~~
@@ -106,7 +102,7 @@ Oh My Zsh is a delightful, open-source, community-driven framework for managing 
 It comes bundled with thousands of helpful functions, helpers, plugins, themes, and a few things that make you shout.
 The screenshot of my terminal is shown in the figure below.
 
-{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610155159.png" caption="zsh" numbered="true" width="600" >}}
+{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610155159.png" caption="zsh" numbered="true" width="600" >}}
 
 You can customize your own terminal, which will improve working efficiency.
 Also, there are many plugins you can use to improve your working efficiency.
@@ -152,8 +148,9 @@ In mac, you can install that by `brew install tldr`.
 
 **tree** is a recursive directory listing program that produces a depth-indented listing of files.
 With no arguments, tree lists the files in the current directory.
-When directory arguments are given, tree lists all the files or directories found in the given directories each in turn.
-Upon completion of listing all files and directories found, tree returns the total number of files.
+When directory arguments are given, tree lists all the files or directories
+found in the given directories each in turn.  Upon completion of listing all
+files and directories found, tree returns the total number of files.
 You can install that by `brew install tree`.
 
 {{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png" caption="tree" numbered="true" width="500" >}}
@@ -162,7 +159,7 @@ You can install that by `brew install tree`.
 
 **cheat.sh** is the unified access to the best community driven cheat sheets repositories of the world. I like it very much :heart:
 
-{{< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="400" >}}
+{{< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="500" >}}
 
 - [dust]
 
@@ -279,10 +276,9 @@ This part list variety of applications used for different goals. Every applicati
 [monitorcontrol]: https://github.com/MonitorControl/MonitorControl
 [monodraw]: https://monodraw.helftone.com/
 [neovim]: https://neovim.io/
-[notion]: https://www.notion.so/product?utm_source=google&utm_campaign=2075789710&utm_medium=85296176828&utm_content=495341253306&utm_term=notion%20mac%20app&targetid=aud-1053779029641:kwd-664489244375&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI0me9d6EJGOKlH-sgSwEymK7hvXwpwMTH8k_y_0QGZDbzO_qokQi70aAuAOEALw_wcB
-[office]: https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products-b?&ef_id=Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB:G:s&OCID=AID2200006_SEM_Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB:G:s&lnkd=Google_O365SMB_Brand&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI1A9wssm6IqR6G-9UkDRVIQ1NPnkqIJ6den59wcV_uYTkAhYtLZZ_waAjCiEALw_wcB
+[notion]: https://www.notion.so/product
+[office]: https://www.office.com/
 [one switch]: https://fireball.studio/oneswitch
-[path finder]: https://cocoatech.com/?utm_medium=adwords&utm_campaign=&utm_source=&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI393QWmb2txQXFvOVvRvNoD7sXYhkfmZ2x2d173JdcNsBvlLB1rr3saArwFEALw_wcB#/
 [pdf expert]: https://pdfexpert.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand-hp&utm_google-campaign=brand-hp&utm_content=264692671625&utm_term=pdf%20expert&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI2Mb-84Xo5XJBQWkPHxGL-G11BnR8iF65B4kGDm2huhRRUa0wJy5VMaAjoREALw_wcB
 [picgo]: https://picgo.github.io/PicGo-Doc/en/guide/
 [pycharm]: https://www.jetbrains.com/pycharm/

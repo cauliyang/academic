@@ -9,7 +9,7 @@ tags: [Bioinformatics, Development, C++]
 categories: [Computational Biology]
 date: 2022-09-25T23:22:31-05:00
 lastmod: 2022-09-25T23:22:31-05:00
-featured: true
+featured: false
 draft: false
 
 # Featured image

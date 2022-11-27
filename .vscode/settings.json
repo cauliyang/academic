@@ -2,17 +2,26 @@
   "python.pythonPath": "/Users/liyang/miniconda3/bin/python",
   "grammarly.overrides": [
     {
-      "files": ["**/content/en/post/how-to-build-python-library/index.md"],
+      "files": [
+        "**/content/en/post/how-to-build-python-library/index.md"
+      ],
       "config": {
         "audience": "general",
         "dialect": "american",
         "domain": "general",
-        "emotions": ["optimistic", "friendly", "analytical"],
-        "goals": ["tellStory"]
+        "emotions": [
+          "optimistic",
+          "friendly",
+          "analytical"
+        ],
+        "goals": [
+          "tellStory"
+        ]
       }
     }
   ],
   "yaml.schemas": {
     "https://json.schemastore.org/yamllint.json": "file:///Users/ylk4626/PycharmProjects/academic/config/_default/params.yaml"
-  }
+  },
+  "python.formatting.provider": "black"
 }

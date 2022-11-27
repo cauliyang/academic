@@ -70,3 +70,5 @@ micromamba
 du
 hyperfine
 iterm
+Cmake
+cmake

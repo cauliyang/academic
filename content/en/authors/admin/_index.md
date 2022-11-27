@@ -50,9 +50,9 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/yangyangliz5
-  # - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  #   icon_pack: fas
-  #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
+    icon_pack: fas
+    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
   - icon: github
     icon_pack: fab
     link: https://github.com/cauliyang
@@ -74,6 +74,8 @@ email: yangyang.li@northwestern.edu
 highlight_name: false
 ---
 
-I am a Ph.D student of DGP Program in Northwestern University Feinberg School of Medicine. Now I work in [Dr.Yang's lab](https://ylab-hi.github.io/) to pay high attention on machine learning, deep learning, and cancer genomics. I am very willing to share my thoughts and knowledge with others. Welcome to reach me!
+I am a Ph.D. student of DGP Program in Northwestern University Feinberg School of Medicine.
+Now I work in [Dr.Yang's lab](https://ylab-hi.github.io/) to pay high attention on machine learning, deep learning, and cancer genomics.
+I am very willing to share my thoughts and knowledge with others. Welcome to reach me!
 
-{{\< icon name="download" pack="fas" >}} Download my {{\< staticref "media/resume.pdf" "newtab" >}}resumé{{\< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

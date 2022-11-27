@@ -39,7 +39,7 @@ Before diving into code, the description of NJ algorithm can be found in ![This 
 
 ## 2. Neighbor Joining Algorithm
 
-The Neighbor-joining Algorithm Given a distance matrix d compute an unrooted tree topology complete with edge lengths that tries to preserve the additive property: $d\_{i,m} + d\_{j,m} − d\_{i,j} = 2d\_{k,m}$ where $k$ is the ﬁrst node on both routes from $i$ and $j$ to $m$.
+The Neighbor-joining Algorithm Given a distance matrix d compute an uprooted tree topology complete with edge lengths that tries to preserve the additive property: $d\_{i,m} + d\_{j,m} − d\_{i,j} = 2d\_{k,m}$ where $k$ is the k-th node on both routes from $i$ and $j$ to $m$.
 
 01. Let the set of clusters be called $L$ and initially $i → C_i; ∀i$ that is $| C_i | = 1$ and $L = C_1 , C_2 , . . . C_N$.
 02. $d\_{i,j}$ is the distance from the initial distance matrix.

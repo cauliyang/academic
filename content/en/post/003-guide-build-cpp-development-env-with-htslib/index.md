@@ -129,7 +129,7 @@ I use [Cmake] as a build system, and here are several useful and valuable Cmake 
       list(APPEND disable_flags --disable-lzma)
     endif()
 
-  	# find curl if not founed the disable compiler flags
+  # find curl if not founed the disable compiler flags
     find_package(CURL)
     if(CURL_FOUND)
       include_directories(SYSTEM ${CURL_INCLUDE_DIRS})
@@ -138,7 +138,7 @@ I use [Cmake] as a build system, and here are several useful and valuable Cmake 
       list(APPEND disable_flags --disable-libcurl)
     endif()
 
-  	#find bzip2 if not founed the disable compiler flags
+  #find bzip2 if not founed the disable compiler flags
     find_package(BZip2)
     if(BZIP2_FOUND)
       include_directories(SYSTEM ${BZIP2_INCLUDE_DIRS})
@@ -167,7 +167,7 @@ I use [Cmake] as a build system, and here are several useful and valuable Cmake 
       INSTALL_COMMAND ${MAKE_COMMAND} install prefix=${htslib_INSTALL}
     )
 
-  	# user pre-defined variable (-DZLIB_BUILD=ON) to control is build zlib from sources
+  # user pre-defined variable (-DZLIB_BUILD=ON) to control is build zlib from sources
     message(STATUS "ZLIB_BUILD: ${ZLIB_BUILD}")
     if(ZLIB_BUILD)
       include(cmake/zlib.cmake)
@@ -187,7 +187,7 @@ I use [Cmake] as a build system, and here are several useful and valuable Cmake 
     endif()
     list(APPEND deps_LIB ${zlib_LIBRARIES})
 
-  	# define two variables for usage
+  # define two variables for usage
     set(HTSlib_INCLUDE_DIRS ${htslib_INSTALL}/include)
     set(HTSlib_LIBRARIES ${htslib_INSTALL}/lib/libhts.a ${deps_LIB})
     message(STATUS "HTSlib_INCLUDE_DIRS: ${HTSlib_INCLUDE_DIRS}")
