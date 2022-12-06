@@ -35,7 +35,6 @@ links:
     icon: github
 ---
 
-
 ## 1. Introduction
 
 Many people have been asking for a toolbox of useful commands for their everyday tasks.
@@ -94,11 +93,12 @@ Please make sure you read the [contributing guide] before you start.
 Also, please make sure you pass all the tests before you pull request.
 
 <!-- link -->
+
+[a simple and easy to download files by sharing link]: https://github.com/cauliyang/pybox#a-simple-and-easy-to-download-files-by-sharing-link
+[a simple and easy to send message to slack channel]: https://github.com/cauliyang/pybox#a-simple-and-easy-to-send-message-to-slack-channel
 [conda]: https://conda.io/
 [contributing guide]: https://github.com/cauliyang/pybox/blob/main/CONTRIBUTING.md
+[download multiple files asynchronously]: https://github.com/cauliyang/pybox#download-multiple-files-asynchronously
 [github]: https://github.com/cauliyang/pybox
 [google driver]: https://drive.google.com/
 [pypi]: https://pypi.org/project/pyboxes/
-[a simple and easy to download files by sharing link]: https://github.com/cauliyang/pybox#a-simple-and-easy-to-download-files-by-sharing-link
-[a simple and easy to send message to slack channel]: https://github.com/cauliyang/pybox#a-simple-and-easy-to-send-message-to-slack-channel
-[download multiple files asynchronously]: https://github.com/cauliyang/pybox#download-multiple-files-asynchronously

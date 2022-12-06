@@ -17,7 +17,7 @@ image:
   caption: 'Image credit: [**Pixilart**](https://www.pixilart.com/)'
   focal_point: Center
   preview_only: true
-      
+
 # header:
 #   image: "featured.jpeg"
 #   caption: "test"
@@ -30,7 +30,6 @@ links:
 projects: []
 toc: true
 ---
-
 
 ## 1. Introduction
 
@@ -45,6 +44,8 @@ My newest device is MacBook Pro of M1 model, Here is a list of tools I use:
 
 {{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/iShot2021-11-27%2022.27.14.png" caption="Page 3" numbered="true" width="333" >}}
 
+Most software are installed by [Homebrew] and how to install will be shown in every section.
+
 ## 2. System Environment Tools
 
 The first part will show the applications and tools I used for production, and every app or tool has a simple description. If you have an interest in a certain app, you can click the link I leave to get more information.
@@ -53,6 +54,12 @@ The first part will show the applications and tools I used for production, and e
 
 Homebrew is an important tool for package manager in mac, which help you download and uninstall applications or tools efficiently.
 For detailed information, please click the link above to check that.
+**Installation**
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 Now I replace some tool with more interesting ones:
 
 - [iterm2] → [alacritty]
@@ -62,6 +69,11 @@ Now I replace some tool with more interesting ones:
 However, I still leave information about previous tools.
 
 - [Alacritty]
+
+```bash
+brew install --cask alacritty
+brew install zellij
+```
 
 **Alacritty** is light-weight terminal emulator compared to [iterm2].
 It is flexible, and it is configured by yaml file directly.
@@ -81,6 +93,10 @@ However, Fish has plugins system as well, and I use [fisher] to manage plugins.
 Importantly, the customization and configuration of Fish is easy and friendly.
 
 - ~~[iterm2]~~
+
+```bash
+brew install --cask iterm2
+```
 
 **iterm2** is a replacement for Terminal and the successor to iterm.
 It works on Macs with macOS 10.14 or newer.
@@ -109,12 +125,20 @@ Also, there are many plugins you can use to improve your working efficiency.
 
 - [vim]
 
+```bash
+brew install nvim
+```
+
 **Vim** is an editor used in the terminal, and I use it every day.
 Vim is shipped with macOS, and you also install other vim-extended editors such as [neovim] and [spacevim].
 Currently, I use [LunarVim], an opinionated, extensible, and fast IDE layer for NeoVim.
 I think it is so cool and powerful.
 
 - [git]
+
+```bash
+brew install git
+```
 
 **Git** is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 Also, Git a t tool used in the terminal to download and upload data or code to the _GitHub_.
@@ -146,6 +170,10 @@ In mac, you can install that by `brew install tldr`.
 
 - [tree]
 
+```bash
+brew install tree
+```
+
 **tree** is a recursive directory listing program that produces a depth-indented listing of files.
 With no arguments, tree lists the files in the current directory.
 When directory arguments are given, tree lists all the files or directories
@@ -153,21 +181,29 @@ found in the given directories each in turn.  Upon completion of listing all
 files and directories found, tree returns the total number of files.
 You can install that by `brew install tree`.
 
-{{< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png" caption="tree" numbered="true" width="500" >}}
+{{\< figure src= "https://cdn.jsdelivr.net/gh/cauliyang/blog-image@main//img/20210610190826.png" caption="tree" numbered="true" width="500" >}}
 
 - [cheat.sh]
 
 **cheat.sh** is the unified access to the best community driven cheat sheets repositories of the world. I like it very much :heart:
 
-{{< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="500" >}}
+{{\< figure src= "https://camo.githubusercontent.com/6072fd18893f3b0cc2efdc1f28630af858744c15ad953628799910502113456e/68747470733a2f2f63686561742e73682f66696c65732f64656d6f2d6375726c2e676966" caption="cheat.sh" numbered="true" width="500" >}}
 
 - [dust]
+
+```bash
+brew install dust
+```
 
 dust = du + rust. It like du but more intuitive.
 
 {{< figure src= "https://raw.githubusercontent.com/bootandy/dust/master/media/snap.png" caption="dust" numbered="true" width="500" >}}
 
 - [hyperfine]
+
+```bash
+brew install hyperfine
+```
 
 **hyperfine** is a command-line benchmarking tool.
 
@@ -205,7 +241,13 @@ I really like [neovim] when I develop some project about rust.
 
 ## 4. Application
 
-This part list variety of applications used for different goals. Every application has a one-word description
+This part list variety of applications used for different goals.
+Every application has a one-word description.
+{{% callout note %}}
+Some of them can be installed by Homebrew.
+My config files and installation commands are kept in GitHub.
+{{% /callout %}}
+{{< cta cta_text="Go to My Repo" cta_link="https://github.com/cauliyang/dot-files" cta_new_tab="false" >}}
 
 - [Alfred] A tool can give your different control and efficiency in mac
 - ~~[Sensei] The Next Generation Mac performance tool~~
@@ -229,7 +271,7 @@ This part list variety of applications used for different goals. Every applicati
 - [Time Sink] is a good tool to record your using time to track your behavior
 - [SoundSource] can help you get truly powerful control over all the audio
 - [Reeder 5] A RSS reader and keep control of your reading
-- [Path Finder] Better file manager for macOS
+- \[Path Finder\] Better file manager for macOS
 - [Notion] A excellent notion tool
 - [One Switch] can help you finish some progress like keep awake and hide icons on one button
 - [iShot] A great tool to take screenshots
@@ -303,3 +345,4 @@ This part list variety of applications used for different goals. Every applicati
 [zoom]: https://zoom.us/download
 [zotero]: https://www.zotero.org/
 [zsh]: https://ohmyz.sh/
+[fisher]: https://github.com/jorgebucaran/fisher

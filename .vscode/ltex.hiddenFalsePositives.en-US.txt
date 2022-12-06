@@ -15,3 +15,4 @@
 {"rule":"EN_SPECIFIC_CASE","sentence":"^\\Qvs code pycharm clion lunarvim\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QYang's lab to pay high attention on machine learning, deep learning, and cancer genomics.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qpdoc\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\Q{{% /callout %}} {{< cta cta_text=\"Go to My Repo\" cta_link=\"https://github.com/cauliyang/dot-files\" cta_new_tab=\"false\" >}}\\E$"}
