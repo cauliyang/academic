@@ -52,7 +52,7 @@ social:
     link: https://twitter.com/yangyangliz5
   - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com/citations?user=ByWsRVMAAAAJ&hl=en
   - icon: github
     icon_pack: fab
     link: https://github.com/cauliyang

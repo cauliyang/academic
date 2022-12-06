@@ -21,7 +21,7 @@ repos:
     rev: v2.7.1
     hooks:
       - id: prettier
-        types: [yaml]
+        types: [yaml, markdown]
 
   # # shell scripts linter
   # - repo: https://github.com/shellcheck-py/shellcheck-py
@@ -29,8 +29,8 @@ repos:
   #   hooks:
   #     - id: shellcheck
 
-  # md formatting
-  # #
+  #  md formatting
+  #
   # - repo: https://github.com/executablebooks/mdformat
   #   rev: 0.7.14
   #   hooks:
